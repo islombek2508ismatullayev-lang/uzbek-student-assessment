@@ -1019,6 +1019,43 @@ app.post("/api/student/profile-photo", async (req, res) => {
     }
 });
 
+app.post("/api/student/goals", async (req, res) => {
+    try {
+        const studentId = String(req.body?.studentId || "").trim();
+        const dreamScore = String(req.body?.dreamScore || "").trim();
+        const dreamUniversity = String(req.body?.dreamUniversity || "").trim();
+
+        if (!studentId) {
+            return res.status(400).json({ message: "Student ID talab qilinadi." });
+        }
+
+        if (!dreamScore || Number(dreamScore) < 100 || Number(dreamScore) > 189) {
+            return res.status(400).json({ message: "Dream score 100 dan 189 gacha bo'lishi kerak." });
+        }
+
+        if (!dreamUniversity) {
+            return res.status(400).json({ message: "Dream universitet tanlanishi kerak." });
+        }
+
+        const students = await readStudents();
+        const student = students.find((entry) => entry.id === studentId);
+
+        if (!student) {
+            return res.status(404).json({ message: "Student topilmadi." });
+        }
+
+        student.dreamScore = dreamScore;
+        student.dreamUniversity = dreamUniversity;
+        student.updatedAt = new Date().toISOString();
+        await writeStudents(students);
+
+        return res.json({ student: serializeStudent(student) });
+    } catch (error) {
+        console.error("Dream maqsadlar saqlanmadi.", error);
+        return res.status(500).json({ message: "Dream maqsadlar saqlanmadi." });
+    }
+});
+
 app.listen(PORT, async () => {
     await ensureStorage();
     console.log(`Server ishga tushdi: http://localhost:${PORT}`);
@@ -1802,6 +1839,8 @@ function mergeStudentsByIdentity(students) {
             id: existing.id,
             createdAt: new Date(student.createdAt || 0) < new Date(existing.createdAt || 0) ? student.createdAt : existing.createdAt,
             photoDataUrl: latestStudent.photoDataUrl || existing.photoDataUrl || "",
+            dreamUniversity: latestStudent.dreamUniversity || existing.dreamUniversity || "",
+            dreamScore: latestStudent.dreamScore || existing.dreamScore || "",
             mergedStudentIds: Array.from(new Set([...existing.mergedStudentIds, student.id].filter(Boolean))),
             visitorIds: Array.from(new Set([...existing.visitorIds, student.visitorId].filter(Boolean)))
         });

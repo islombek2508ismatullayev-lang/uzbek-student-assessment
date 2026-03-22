@@ -18,7 +18,7 @@
         <aside class="sidebar">
             <div class="sidebar__brand">
                 <div class="auth-logo">
-                    <span class="auth-logo__mark">MS</span>
+                    <img class="auth-logo__mark auth-logo__mark--image" src="assets/admin-profile.jpg" alt="Admin profil rasmi">
                     <div>
                         <strong>Islombek Ismatullayev</strong>
                         <span>Website admini</span>
@@ -29,16 +29,22 @@
             <nav class="sidebar__nav">
                 <button class="sidebar__link is-active" type="button" data-section="exams">Imtihon Testlari</button>
                 <button class="sidebar__link" type="button" data-section="dashboard">Asosiy panel</button>
-                <button class="sidebar__link" type="button" data-section="profile">Profilim</button>
-                <button class="sidebar__link" type="button" data-section="feedback">Feedback panel</button>
-                <button class="sidebar__link" type="button" data-section="analysis">Testlar tahlili</button>
-                <a class="sidebar__link sidebar__link--anchor sidebar__link--admin" href="admin.html">Admin panel</a>
+                <button class="sidebar__link" type="button" data-section="profile">Profilim 😎</button>
+                <button class="sidebar__link sidebar__link--gold" type="button" data-section="feedback">Feedback panel</button>
+                <button class="sidebar__link sidebar__link--green" type="button" data-section="analysis">Testlar tahlili</button>
                 <a class="sidebar__link sidebar__link--anchor sidebar__link--logout" href="index.html">Chiqish</a>
             </nav>
         </aside>
 
         <main class="dashboard-main">
             <header class="dashboard-topbar">
+                <div class="dashboard-user">
+                    <span class="dashboard-user__avatar" id="dashboard-avatar">MS</span>
+                    <div class="dashboard-user__meta">
+                        <strong id="dashboard-user-name">Foydalanuvchi</strong>
+                        <span id="dashboard-user-role">Website foydalanuvchisi</span>
+                    </div>
+                </div>
                 <div class="dashboard-notifications">
                     <button class="dashboard-notifications__button" id="notifications-toggle" type="button" aria-expanded="false">
                         <span>Bildirishnomalar</span>
@@ -52,13 +58,6 @@
                         <div class="dashboard-notifications__list" id="notifications-list">
                             <p class="dashboard-notifications__empty">Hali bildirishnoma yo'q.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="dashboard-user">
-                    <span class="dashboard-user__avatar" id="dashboard-avatar">MS</span>
-                    <div>
-                        <strong id="dashboard-user-name">Foydalanuvchi</strong>
-                        <span id="dashboard-user-role">Website foydalanuvchisi</span>
                     </div>
                 </div>
             </header>
@@ -197,11 +196,6 @@
                 <h1>Testlar tahlili</h1>
                 <section class="analysis-panel">
                     <aside class="analysis-sidebar">
-                        <div class="analysis-sidebar__head">
-                            <p class="card-label">Kanallar</p>
-                            <h2>Tahlil bo'limlari</h2>
-                            <p class="analysis-panel__lead">Telegram uslubida kanallarni tanlab, o'sha bo'limdagi muhokamani ko'ring.</p>
-                        </div>
                         <div class="analysis-channel-list" id="analysis-channel-list"></div>
                     </aside>
 
@@ -278,11 +272,13 @@
                         </div>
                     </div>
                 </article>
+                <div class="dashboard-admin-entry is-hidden" aria-hidden="true">
+                    <a class="sidebar__link sidebar__link--anchor sidebar__link--admin" href="admin.html" tabindex="-1">Admin panel</a>
+                </div>
             </section>
 
             <section class="dashboard-section is-active" data-section-panel="exams">
                 <h1>Imtihon Testlari</h1>
-                <p class="dashboard-subtext">Kerakli blokni bosing. Har bir blok alohida imtihon sifatida ochiladi.</p>
                 <div class="exam-cards" id="exam-cards"></div>
             </section>
         </main>

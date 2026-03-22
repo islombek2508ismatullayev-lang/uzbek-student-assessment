@@ -1,5 +1,6 @@
 const LAST_RESULT_STORAGE_KEY = "milliy-last-result";
 const RESULTS_BY_SUBJECT_STORAGE_KEY = "milliy-results-by-subject";
+const ACTIVE_SECTION_STORAGE_KEY = "milliy-dashboard-active-section";
 
 const elements = {
     resultsSubject: document.getElementById("results-subject"),
@@ -13,8 +14,11 @@ const elements = {
     statCorrect: document.getElementById("stat-correct"),
     statIncorrect: document.getElementById("stat-incorrect"),
     reviewBody: document.getElementById("results-review-body"),
-    reviewSubjectLink: document.getElementById("review-subject-link")
+    reviewSubjectLink: document.getElementById("review-subject-link"),
+    reviewFeedbackLink: document.getElementById("review-feedback-link")
 };
+
+let hasShownResultsScrollToast = false;
 
 bootResults();
 
@@ -38,6 +42,10 @@ function bootResults() {
     elements.resultsTitle.textContent = result.grade === "A+" || result.grade === "A" ? "Tabriklaymiz!" : "Imtihon yakunlandi";
     elements.resultsMessage.textContent = `${result.subjectLabel} bo'yicha yakuniy baho: ${result.grade}${getCertificatePercent(result) !== null ? ` | Sertifikat darajasi: ${getCertificatePercent(result)}%` : ""}`;
     elements.reviewSubjectLink.href = `dashboard.html`;
+    if (elements.reviewFeedbackLink) {
+        elements.reviewFeedbackLink.href = "dashboard.html";
+    }
+    bindReviewLinks();
     launchResultConfetti();
 
     elements.reviewBody.innerHTML = result.responses
@@ -55,6 +63,22 @@ function bootResults() {
         `;
         })
         .join("");
+
+    bindResultsScrollNotification();
+}
+
+function bindReviewLinks() {
+    if (elements.reviewSubjectLink) {
+        elements.reviewSubjectLink.addEventListener("click", () => {
+            window.localStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, "analysis");
+        });
+    }
+
+    if (elements.reviewFeedbackLink) {
+        elements.reviewFeedbackLink.addEventListener("click", () => {
+            window.localStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, "feedback");
+        });
+    }
 }
 
 function getResult(subjectId) {
@@ -337,4 +361,46 @@ function launchResultConfetti() {
     window.setTimeout(() => {
         container.remove();
     }, 4200);
+}
+
+function bindResultsScrollNotification() {
+    const handleScroll = () => {
+        if (hasShownResultsScrollToast) {
+            return;
+        }
+
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const pageBottom = document.documentElement.scrollHeight - 24;
+
+        if (scrollPosition < pageBottom) {
+            return;
+        }
+
+        hasShownResultsScrollToast = true;
+        showResultsToast("Testlarni Testlar tahlili panelida tahlil qiling va test haqida o'z fikrlaringizni Feedback panelida qoldiring.");
+        window.removeEventListener("scroll", handleScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+}
+
+function showResultsToast(message, durationMs = 4200) {
+    if (!message) {
+        return;
+    }
+
+    const toast = document.createElement("div");
+    toast.className = "dashboard-welcome-toast dashboard-welcome-toast--danger";
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    window.setTimeout(() => {
+        toast.classList.add("is-visible");
+    }, 30);
+
+    window.setTimeout(() => {
+        toast.classList.remove("is-visible");
+        window.setTimeout(() => toast.remove(), 300);
+    }, durationMs);
 }

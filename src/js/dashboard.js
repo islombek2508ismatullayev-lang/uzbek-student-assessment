@@ -56,43 +56,18 @@ const SUBJECTS = {
 
 const DISCUSSION_CHANNELS = [
     {
-        id: "mother-tongue",
-        label: "Ona tili tahlili",
-        description: "Grammatika, matn va ochiq savollar muhokamasi"
-    },
-    {
-        id: "math",
-        label: "Matematika tahlili",
-        description: "Masala yechimi va formulalar bo'yicha tahlil"
-    },
-    {
-        id: "chemistry",
-        label: "Kimyo tahlili",
-        description: "Reaksiya va hisoblash savollarini muhokama qiling"
-    },
-    {
-        id: "biology",
-        label: "Biologiya tahlili",
-        description: "Nazariya va rasmli savollar tahlili"
-    },
-    {
-        id: "history",
-        label: "Tarix tahlili",
-        description: "Sanalar, shaxslar va izohli savollar"
-    },
-    {
-        id: "physics",
-        label: "Fizika tahlili",
-        description: "Formula, grafik va masala yechimlari"
+        id: "general-tests",
+        label: "Testlar tahlili",
+        description: "Barcha fan testlari bo'yicha umumiy suhbat va tahlil"
     },
     {
         id: "universities",
-        label: "Universitetlar ro'yxati",
-        description: "Universitet va fan kombinatsiyalarini muhokama qiling"
+        label: "OTM universitetlar",
+        description: "Universitetlar, kirish ballari va yo'nalishlar bo'yicha ma'lumotlar"
     }
 ];
 
-const UNIVERSITY_INFO = [
+const LEGACY_UNIVERSITY_INFO = [
     {
         title: "🥇 Eng TOP universitetlar",
         subtitle: "Eng yuqori ball talab qiladigan OTMlar",
@@ -161,14 +136,64 @@ const UNIVERSITY_INFO = [
     }
 ];
 
+const UNIVERSITY_INFO = [
+    { id: 1, name: "Toshkent Davlat Yuridik Universiteti", grant: "170-186", contract: "150-180", aliases: ["Toshkent davlat yuridik universiteti"] },
+    { id: 2, name: "Toshkent Tibbiyot Akademiyasi", grant: "165-186", contract: "140-180" },
+    {
+        id: 3,
+        name: "TATU (Axborot texnologiyalari)",
+        grant: "150-180",
+        contract: "130-170",
+        aliases: [
+            "Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti",
+            "TATU (Axborot texnologiyalari universiteti)"
+        ]
+    },
+    { id: 4, name: "Jahon Iqtisodiyoti va Diplomatiya Univ.", grant: "160-185", contract: "140-175", aliases: ["Jahon Iqtisodiyoti va Diplomatiya Universiteti"] },
+    { id: 5, name: "Toshkent Moliya Instituti", grant: "150-175", contract: "130-165" },
+    { id: 6, name: "Toshkent Davlat Iqtisodiyot Univ.", grant: "140-170", contract: "120-160", aliases: ["Toshkent Davlat Iqtisodiyot Universiteti"] },
+    { id: 7, name: "O‘zbekiston Milliy Universiteti", grant: "130-165", contract: "110-150", aliases: ["O'zbekiston Milliy Universiteti"] },
+    { id: 8, name: "Samarqand Davlat Universiteti", grant: "120-155", contract: "100-140" },
+    { id: 9, name: "Buxoro Davlat Universiteti", grant: "110-145", contract: "90-130" },
+    { id: 10, name: "Andijon Davlat Universiteti", grant: "110-140", contract: "90-125" },
+    { id: 11, name: "Namangan Davlat Universiteti", grant: "100-135", contract: "85-120" },
+    { id: 12, name: "Farg‘ona Davlat Universiteti", grant: "100-135", contract: "85-120", aliases: ["Farg'ona Davlat Universiteti"] },
+    { id: 13, name: "Qarshi Davlat Universiteti", grant: "95-130", contract: "80-115" },
+    { id: 14, name: "Nukus Davlat Universiteti", grant: "90-125", contract: "75-110" },
+    { id: 15, name: "Urganch Davlat Universiteti", grant: "95-130", contract: "80-115" },
+    { id: 16, name: "Termiz Davlat Universiteti", grant: "90-120", contract: "75-110" },
+    { id: 17, name: "Toshkent Davlat Pedagogika Universiteti", grant: "100-140", contract: "85-125" },
+    { id: 18, name: "Nizomiy nomidagi TDPU", grant: "105-145", contract: "90-130", aliases: ["Nizomiy nomidagi Toshkent Davlat Pedagogika Universiteti"] },
+    { id: 19, name: "Toshkent Arxitektura Qurilish Univ.", grant: "120-150", contract: "100-135", aliases: ["Toshkent Arxitektura-Qurilish Universiteti"] },
+    { id: 20, name: "Toshkent Temiryo‘l Muhandislari Instituti", grant: "110-145", contract: "90-130" },
+    { id: 21, name: "Transport Universiteti", grant: "110-150", contract: "90-135", aliases: ["Toshkent Davlat Transport Universiteti"] },
+    { id: 22, name: "Qishloq xo‘jaligi universiteti", grant: "90-130", contract: "75-115", aliases: ["Toshkent Davlat Agrar Universiteti"] },
+    { id: 23, name: "Irrigatsiya va Melioratsiya Instituti", grant: "100-140", contract: "85-125" },
+    { id: 24, name: "Kimyo-Texnologiya Instituti", grant: "95-135", contract: "80-120" },
+    { id: 25, name: "Farmatsevtika Instituti", grant: "140-175", contract: "120-160" },
+    { id: 26, name: "Sport Universiteti", grant: "90-130", contract: "75-115", aliases: ["O'zbekiston Davlat Jismoniy Tarbiya va Sport Universiteti"] },
+    { id: 27, name: "San’at va Madaniyat Instituti", grant: "100-140", contract: "85-125", aliases: ["O'zbekiston Davlat San'at va Madaniyat Instituti"] },
+    { id: 28, name: "Xalqaro Islom Akademiyasi", grant: "110-150", contract: "90-135" },
+    {
+        id: 29,
+        name: "Westminster International University",
+        grant: "150-180",
+        contract: "140-170",
+        aliases: ["Westminster International University in Tashkent", "Westminster International University"]
+    },
+    { id: 30, name: "INHA University in Tashkent", grant: "140-175", contract: "130-165", aliases: ["Inha Universiteti (Toshkentda)"] }
+];
+
 const discussionState = {
-    activeChannelId: "mother-tongue",
+    activeChannelId: "general-tests",
     pendingAttachments: []
 };
 
 const elements = {
     sectionButtons: Array.from(document.querySelectorAll("[data-section]")),
     sectionPanels: Array.from(document.querySelectorAll("[data-section-panel]")),
+    dashboardUser: document.querySelector(".dashboard-user"),
+    notificationsWrap: document.querySelector(".dashboard-notifications"),
     notificationsToggle: document.getElementById("notifications-toggle"),
     notificationsPanel: document.getElementById("notifications-panel"),
     notificationsCount: document.getElementById("notifications-count"),
@@ -389,9 +414,23 @@ function showRegistrationSuccessToast() {
         return;
     }
 
+    showDashboardToast(payload.message);
+
+    window.setTimeout(() => {
+        if (getActiveSectionId() === "exams") {
+            showDashboardToast("Testlarni ishlash uchun pastga suring.");
+        }
+    }, 3200);
+}
+
+function showDashboardToast(message, durationMs = 3000) {
+    if (!message) {
+        return;
+    }
+
     const toast = document.createElement("div");
     toast.className = "dashboard-welcome-toast";
-    toast.textContent = payload.message;
+    toast.textContent = message;
     document.body.appendChild(toast);
 
     window.setTimeout(() => {
@@ -401,7 +440,7 @@ function showRegistrationSuccessToast() {
     window.setTimeout(() => {
         toast.classList.remove("is-visible");
         window.setTimeout(() => toast.remove(), 300);
-    }, 3000);
+    }, durationMs);
 }
 
 async function renderFeedbackPanel() {
@@ -684,6 +723,8 @@ function activateSection(sectionId) {
     const nextSectionId = elements.sectionPanels.some((panel) => panel.dataset.sectionPanel === sectionId)
         ? sectionId
         : "exams";
+    const shouldShowNotifications = ["profile", "dashboard", "feedback", "analysis"].includes(nextSectionId);
+    const shouldShowDashboardUser = nextSectionId !== "exams";
 
     elements.sectionButtons.forEach((button) => {
         button.classList.toggle("is-active", button.dataset.section === nextSectionId);
@@ -693,7 +734,32 @@ function activateSection(sectionId) {
         panel.classList.toggle("is-active", panel.dataset.sectionPanel === nextSectionId);
     });
 
+    if (elements.notificationsWrap) {
+        elements.notificationsWrap.classList.toggle("is-hidden", !shouldShowNotifications);
+    }
+
+    if (elements.dashboardUser) {
+        elements.dashboardUser.classList.toggle("is-hidden", !shouldShowDashboardUser);
+    }
+
+    if (!shouldShowNotifications) {
+        closeNotificationsPanel();
+    }
+
+    if (nextSectionId === "exams") {
+        showDashboardToast("Testlarni ishlash uchun pastga suring.");
+    }
+
+    if (nextSectionId === "profile") {
+        showDashboardToast("Orzuyingizdagi universitetni tanlang va u haqida Testlar tahlili bo'limidan ma'lumotlar oling.");
+    }
+
     saveActiveSection(nextSectionId);
+}
+
+function getActiveSectionId() {
+    const activePanel = elements.sectionPanels.find((panel) => panel.classList.contains("is-active"));
+    return activePanel?.dataset.sectionPanel || "exams";
 }
 
 function hydrateResultSummary() {
@@ -873,7 +939,7 @@ async function restoreStudentSessionFromServer() {
     }
 }
 
-function saveProfileGoals(event) {
+async function saveProfileGoals(event) {
     event.preventDefault();
 
     const student = getSavedStudent();
@@ -896,9 +962,33 @@ function saveProfileGoals(event) {
         dreamUniversity: customUniversity || selectedUniversity
     };
 
-    window.localStorage.setItem(STUDENT_STORAGE_KEY, JSON.stringify(updatedStudent));
-    renderStudent(updatedStudent);
-    setText(elements.profileGoalsStatus, "Saqlandi.");
+    try {
+        setText(elements.profileGoalsStatus, "Saqlanmoqda...");
+        const response = await fetch(buildApiUrl("/api/student/goals"), {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                studentId: student.id,
+                dreamScore: updatedStudent.dreamScore,
+                dreamUniversity: updatedStudent.dreamUniversity
+            })
+        });
+        const payload = await parseJsonResponse(response);
+
+        if (!response.ok || !payload?.student) {
+            throw new Error(payload?.message || "Dream maqsadlarni saqlab bo'lmadi.");
+        }
+
+        window.localStorage.setItem(STUDENT_STORAGE_KEY, JSON.stringify(payload.student));
+        renderStudent(payload.student);
+        setText(elements.profileGoalsStatus, "Saqlandi.");
+    } catch (error) {
+        window.localStorage.setItem(STUDENT_STORAGE_KEY, JSON.stringify(updatedStudent));
+        renderStudent(updatedStudent);
+        setText(elements.profileGoalsStatus, error.message || "Lokal saqlandi, serverga yozilmadi.");
+    }
 }
 
 async function saveFeedback(event) {
@@ -1262,7 +1352,7 @@ function renderDiscussionChannels() {
 
     elements.analysisChannelList.querySelectorAll("[data-analysis-channel]").forEach((button) => {
         button.addEventListener("click", () => {
-            discussionState.activeChannelId = button.getAttribute("data-analysis-channel") || "mother-tongue";
+            discussionState.activeChannelId = button.getAttribute("data-analysis-channel") || "general-tests";
             renderDiscussionChannels();
             renderDiscussionComposer();
             renderDiscussionFeed();
@@ -1296,38 +1386,78 @@ function renderUniversityBoard(isVisible) {
         return;
     }
 
+    const student = getSavedStudent();
+    const selectedUniversity = findUniversityInfo(student?.dreamUniversity);
+
     elements.analysisUniversityBoard.innerHTML = `
         <div class="analysis-university-board__head">
             <div>
-                <p class="card-label">OTM ma'lumotlari</p>
-                <h4>Universitetlar va taxminiy kirish ballari</h4>
+                <p class="card-label">OTM universitetlar</p>
+                <h4>Universitetlar va taxminiy kirish ballari jadvali</h4>
             </div>
-            <span class="analysis-university-board__note">Ballar yil va yo'nalishga qarab o'zgarishi mumkin</span>
+            <span class="analysis-university-board__note">Ballar taxminiy bo'lib, yil va yo'nalishga qarab o'zgarishi mumkin</span>
         </div>
-        <div class="analysis-university-groups">
-            ${UNIVERSITY_INFO.map((group) => `
-                <section class="analysis-university-group">
-                    <div class="analysis-university-group__head">
-                        <strong>${escapeHtml(group.title)}</strong>
-                        <p>${escapeHtml(group.subtitle || "")}</p>
+        ${selectedUniversity ? `
+            <section class="analysis-university-selected">
+                <div class="analysis-university-selected__head">
+                    <strong>Tanlangan universitet</strong>
+                    <span>${escapeHtml(student?.dreamUniversity || "")}</span>
+                </div>
+                <div class="analysis-university-selected__stats">
+                    <div class="analysis-university-selected__pill">
+                        <small>Grant</small>
+                        <strong>${escapeHtml(selectedUniversity.grant)}</strong>
                     </div>
-                    <div class="analysis-university-grid">
-                        ${group.items.map((item, index) => `
-                            <details class="analysis-university-card">
-                                <summary class="analysis-university-card__summary">
-                                    <strong>${index + 1}. ${escapeHtml(item.name)}</strong>
-                                </summary>
-                                <div class="analysis-university-card__details">
-                                    ${item.grant ? `<span>Grant: ${escapeHtml(item.grant)}</span>` : '<p>Grant ma\'lumoti kiritilmagan</p>'}
-                                    ${item.contract ? `<span>Kontrakt: ${escapeHtml(item.contract)}</span>` : '<p>Kontrakt ma\'lumoti kiritilmagan</p>'}
-                                </div>
-                            </details>
-                        `).join("")}
+                    <div class="analysis-university-selected__pill">
+                        <small>Kontrakt</small>
+                        <strong>${escapeHtml(selectedUniversity.contract)}</strong>
                     </div>
-                </section>
-            `).join("")}
+                </div>
+            </section>
+        ` : `
+            <section class="analysis-university-selected analysis-university-selected--muted">
+                <div class="analysis-university-selected__head">
+                    <strong>Tanlangan universitet</strong>
+                    <span>Profilim bo'limida OTM tanlang, ma'lumoti shu yerda chiqadi.</span>
+                </div>
+            </section>
+        `}
+        <div class="analysis-university-table-wrap">
+            <table class="analysis-university-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Universitet nomi</th>
+                        <th>Grant (taxmin)</th>
+                        <th>Kontrakt (taxmin)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${UNIVERSITY_INFO.map((item) => `
+                        <tr${selectedUniversity?.id === item.id ? ' class="is-highlighted"' : ""}>
+                            <td>${item.id}</td>
+                            <td>${escapeHtml(item.name)}</td>
+                            <td>${escapeHtml(item.grant)}</td>
+                            <td>${escapeHtml(item.contract)}</td>
+                        </tr>
+                    `).join("")}
+                </tbody>
+            </table>
         </div>
     `;
+}
+
+function findUniversityInfo(universityName) {
+    const target = normalizeUniversityName(universityName);
+
+    if (!target) {
+        return null;
+    }
+
+    return UNIVERSITY_INFO.find((item) => {
+        const candidates = [item.name, ...(item.aliases || [])];
+        return candidates.some((candidate) => normalizeUniversityName(candidate) === target);
+    }) || null;
 }
 
 async function renderDiscussionFeed() {
@@ -2153,6 +2283,17 @@ function normalizeText(value) {
     return String(value || "")
         .trim()
         .toLocaleLowerCase("uz-UZ");
+}
+
+function normalizeUniversityName(value) {
+    return normalizeText(value)
+        .replaceAll("o‘", "o'")
+        .replaceAll("g‘", "g'")
+        .replaceAll("ʻ", "'")
+        .replaceAll("’", "'")
+        .replaceAll("`", "'")
+        .replace(/\s+/g, " ")
+        .trim();
 }
 
 function getInitials(fullName) {

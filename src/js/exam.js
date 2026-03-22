@@ -122,7 +122,6 @@ const elements = {
     examPassageBody: document.getElementById("exam-passage-body"),
     examPassageContent: document.getElementById("exam-passage-content"),
     togglePassageButton: document.getElementById("toggle-passage"),
-    examQuestionIndex: document.getElementById("exam-question-index"),
     examQuestionLabel: document.getElementById("exam-question-label"),
     examQuestionStatus: document.getElementById("exam-question-status"),
     markReviewButton: document.getElementById("mark-review"),
@@ -172,7 +171,7 @@ elements.openFinishModalButton.addEventListener("click", openFinishModal);
 elements.cancelFinishButton.addEventListener("click", closeFinishModal);
 elements.confirmFinishButton.addEventListener("click", finishExam);
 elements.markReviewButton.addEventListener("click", toggleReviewFlag);
-elements.openQuestionMapButton.addEventListener("click", openQuestionMap);
+elements.openQuestionMapButton.addEventListener("click", toggleQuestionMap);
 elements.closeQuestionMapButton.addEventListener("click", closeQuestionMap);
 elements.togglePassageButton.addEventListener("click", togglePassageVisibility);
 elements.toggleQuestionTextButton.addEventListener("click", toggleQuestionTextVisibility);
@@ -234,7 +233,7 @@ function bootExam() {
 
             state.isReady = true;
             elements.beginExamButton.disabled = false;
-            elements.examStartDescription.textContent = "Savollar yuklandi, imtihonni boshlashingiz mumkin.";
+            elements.examStartDescription.textContent = "";
         })
         .catch((error) => {
             console.error(error);
@@ -270,9 +269,9 @@ function updateQuestion() {
         return;
     }
 
-    elements.examQuestionIndex.textContent = `${state.currentIndex + 1}-savol / ${state.questions.length}`;
     elements.examQuestionLabel.textContent = `${state.currentIndex + 1}-savol`;
     elements.markReviewButton.textContent = response.flagged ? "Review belgilangan" : "Ko'rib chiqish uchun belgilash";
+    elements.markReviewButton.classList.toggle("is-active", Boolean(response.flagged));
     elements.examQuestionStatus.textContent = hasAnswer(response.selectedAnswer) ? "Javob kiritilgan" : "Javob tanlanmagan";
     elements.footerProgressText.textContent = `Savol ${state.currentIndex + 1} / ${state.questions.length}`;
     elements.previousQuestionButton.disabled = state.currentIndex === 0;
@@ -600,10 +599,23 @@ function openQuestionMap() {
 
     renderQuestionMap();
     elements.questionMapModal.classList.remove("is-hidden");
+    elements.openQuestionMapButton.textContent = "Berkitish";
+    elements.openQuestionMapButton.classList.add("is-active");
 }
 
 function closeQuestionMap() {
     elements.questionMapModal.classList.add("is-hidden");
+    elements.openQuestionMapButton.textContent = "Savollar";
+    elements.openQuestionMapButton.classList.remove("is-active");
+}
+
+function toggleQuestionMap() {
+    if (elements.questionMapModal.classList.contains("is-hidden")) {
+        openQuestionMap();
+        return;
+    }
+
+    closeQuestionMap();
 }
 
 function renderQuestionMap() {
@@ -958,6 +970,10 @@ function formatOptionLabel(option, index) {
 }
 
 function getOpenAnswerRule(subjectId) {
+    if (subjectId === "mother-tongue") {
+        return "Ochiq savollarda bir va undan ortiq so'zlar javob bo'la olishi mumkin. Ona tili testida essay qismi mavjud emas, website essay natijasisiz Rasch model asosida testingizga natija beradi.";
+    }
+
     if (subjectId === "history") {
         return "Ochiq testlarda so'zlar soni ikkitadan yoki undan ortiq so'zdan iborat bo'lishi mumkin.";
     }

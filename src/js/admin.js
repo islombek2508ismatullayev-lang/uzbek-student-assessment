@@ -66,6 +66,8 @@ const elements = {
     detailStudentTestsCount: document.getElementById("detail-student-tests-count"),
     detailStudentBestResult: document.getElementById("detail-student-best-result"),
     detailStudentCreatedAt: document.getElementById("detail-student-created-at"),
+    detailStudentDreamUniversity: document.getElementById("detail-student-dream-university"),
+    detailStudentDreamScore: document.getElementById("detail-student-dream-score"),
     studentResultsBody: document.getElementById("student-results-body"),
     visitsTableBody: document.getElementById("visits-table-body"),
     adminFeedbackList: document.getElementById("admin-feedback-list"),
@@ -876,6 +878,8 @@ function renderStudentDetail(student) {
         elements.detailStudentTestsCount.textContent = "0";
         elements.detailStudentBestResult.textContent = "-";
         elements.detailStudentCreatedAt.textContent = "-";
+        elements.detailStudentDreamUniversity.textContent = "-";
+        elements.detailStudentDreamScore.textContent = "-";
         elements.studentResultsBody.innerHTML = `
             <tr>
                 <td colspan="6">Student tanlangandan keyin natijalar shu yerda chiqadi.</td>
@@ -902,6 +906,8 @@ function renderStudentDetail(student) {
         ? `${student.bestResult.subjectLabel}: ${student.bestResult.grade} (${student.bestResult.percent}%)`
         : "Hali ishlamagan";
     elements.detailStudentCreatedAt.textContent = formatDate(student.createdAt);
+    elements.detailStudentDreamUniversity.textContent = student.dreamUniversity || "-";
+    elements.detailStudentDreamScore.textContent = student.dreamScore ? `${student.dreamScore} ball` : "-";
 
     if (!student.results?.length) {
         elements.studentResultsBody.innerHTML = `
