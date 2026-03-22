@@ -1,0 +1,25 @@
+{
+  "name": "uzbek-student-assessment",
+  "version": "1.0.0",
+  "description": "A user-friendly Uzbek student assessment website with a guided math quiz and student access form.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js",
+    "build": "echo \"Static project: no build step required.\""
+  },
+  "author": "Islombek",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "education",
+    "assessment",
+    "uzbek",
+    "students"
+  ]
+}

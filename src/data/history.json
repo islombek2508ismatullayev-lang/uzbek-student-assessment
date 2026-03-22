@@ -1,0 +1,580 @@
+{
+  "questions": [
+    {
+      "question": "O'rta asrlarda Germaniya shimolidagi shaharlarning yuksalishi qaysi voqea ortida yuz berganligini aniqlang.",
+      "options": [
+        "Dengizdagi savdoda Daniya qiroli bilan ittifoq tuzganligi",
+        "Nemis knyazlari, salibchi ritsarlarning Boltiq bo'yidagi istilolari",
+        "XIV asrning 70-yillarida Daniya qiroliga zarba berilganligi",
+        "Fridrix II ning Italiyadagi muvaffaqiyati"
+      ],
+      "answer": "Nemis knyazlari, salibchi ritsarlarning Boltiq bo'yidagi istilolari",
+      "points": 1.3
+    },
+    {
+      "question": "Yuliy Sezarning mil. avv. 49-yilda Rimda hokimiyatni egallashida hal qiluvchi ahamiyatga ega bo'lgan jihatni aniqlang.",
+      "options": [
+        "Galliya urushlaridagi zafarli g'alabalari",
+        "Raqibi Pompeyning qo'shinlari Ispaniyada ekanligi",
+        "Asosiy raqiblaridan biri Mark Krass halok bo'lishi",
+        "Rim aholisining qo'llab-quvvatlashi"
+      ],
+      "answer": "Rim aholisining qo'llab-quvvatlashi",
+      "points": 2.2
+    },
+    {
+      "question": "O'rta asrlarda Xitoyda ixtiyorida kuchli qo'shindan tashqari sodiq amaldorlari ham mavjud bo'lgan sulolani aniqlang.",
+      "options": [
+        "Tan sulolasi",
+        "Suy sulolasi",
+        "Min sulolasi",
+        "Sun sulolasi"
+      ],
+      "answer": "Suy sulolasi",
+      "points": 1.3
+    },
+    {
+      "question": "Quyidagi tarixiy voqealar (ma'lumotlar) to'g'ri xronologik ketma-ketlikda ko'rsatilgan javobni toping. 1) Meksikada hosil bo'lmadi; 1909 2) Lotin Amerikasida siyosiy jihatdan mustaqil bo'lgan davlatlarning tashkil topish jarayoni deyarli tugallandi; 1870 3) AQSH Panamada Kolumbiyaga qarshi isyon tashkil etdi; 1903 4) Buenos-Ayresda o'tkazilgan IV Panamerika konferensiyasi bo'lib o'tdi; 1910 5) AQSH-Ispaniya tinchlik shartnomasi imzolandi; 1898 6) Meksikada demokratik ruhdagi konstitutsiya qabul qilindi; 1917",
+      "options": [
+        "2, 5, 1, 3, 4, 6",
+        "2, 5, 6, 1, 4, 3",
+        "2, 5, 3, 1, 4, 6",
+        "1, 3, 2, 4, 6, 5"
+      ],
+      "answer": "2, 5, 3, 1, 4, 6",
+      "points": 3.2
+    },
+    {
+      "question": "Quyida berilgan atamalar va ularning izohi to'g'ri moslashtirilgan javobni toping.",
+      "passageLabel": "Atamalar",
+      "passageTitle": "Atamalar va Izohlar",
+      "passageText": "Quyidagi atamalar va izohlarni o'qing.\n\nI) Proteksionizm\nII) Unifikatsiya\nIII) Shok terapiyasi\nIV) Populizm\n\na) Xristian dinining asosiy mazhablaridan biri\nb) Saralangan fuqarolarning ehtiyojlariga emas, xalq ommasi ehtiyojlariga qaratilgan siyosiy pozitsiya yoki nutq shakli\nc) Bitta tizim yoki shaklga keltirish\nd) An'anaviy qadriyatlar, urf-odatlar, ijtimoiy va diniy tartiblar tarafdori bo'lgan siyosiy oqim\ne) Ichki bozorni ma'lum cheklovlar orqali chet el raqobatidan himoya qilishga qaratilgan siyosat\nf) Iqtisodiy nazariya, shuningdek, shu nazariyaga asoslangan keskin iqtisodiy islohotlar",
+      "options": [
+        "I-e, II-d, III-f, IV-b",
+        "I-a, II-c, III-f, IV-b",
+        "I-e, II-c, III-f, IV-b",
+        "I-b, II-f, III-d, IV-c"
+      ],
+      "answer": "I-e, II-c, III-f, IV-b",
+      "points": 3.2
+    },
+    {
+      "question": "Quyida berilgan atamalar va ularning izohi to'g'ri moslashtirilgan javobni toping.",
+      "passageLabel": "Atamalar",
+      "passageTitle": "Atamalar va Izohlar",
+      "passageText": "Quyidagi atamalar va izohlarni o'qing.\n\nI) Bakalavr\nII) Aeronavigatsiya\nIII) Skrining\nIV) Baynalmilal\n\na) Maxsus usullar yordamida kasallikni erta va tez aniqlash uchun aholini ommaviy tekshirishdan o'tkazish\nb) Xalqaro, umuminsoniy, umumxalqiy mazmunlarida qo'llaniladi\nc) Oliy ta'lim dasturining birinchi bosqichini tugallagan talabalarning ilmiy darajasi\nd) Uchish apparatlarini tegishli asbob va vositalar yordamida belgilangan yo'ldan olib borish haqidagi fan\ne) Diniy ishonch, e'tiqod; shu bilan birga mazhab mazmuniga ega tushuncha\nf) Xristian cherkovlari uchun ruhoniylar tayyorlaydigan o'quv yurti",
+      "options": [
+        "I-c, II-d, III-a, IV-b",
+        "I-c, II-d, III-f, IV-b",
+        "I-c, II-d, III-a, IV-e",
+        "I-f, II-d, III-a, IV-b"
+      ],
+      "answer": "I-c, II-d, III-a, IV-b",
+      "points": 3.2
+    },
+    {
+      "question": "Tarixiy shaxsni aniqlang. Bu shaxs o'z hukmronligida mamlakat bo'ylab saroylar, me'moriy inshootlar va bog'lar barpo etildi. Ilm-fan, san'at va dehqonchilik rivojlandi. Yo'llarni ta'mirlash, karvonsaroylar qurish hamda dengiz yo'li orqali Yevropa mamlakatlari bilan savdo-sotiq ishlari olib borishga katta e'tibor qaratildi.",
+      "options": [
+        "Amir Abduraxmon",
+        "Mao Szedun",
+        "Abbos I",
+        "Akbarshox"
+      ],
+      "answer": "Akbarshox",
+      "points": 2.2
+    },
+    {
+      "question": "Tarixiy shaxsni aniqlang. Bu shaxs 1942-yili yaratgan va fashizmga qarshi kurashga bag'ishlangan \"Qahramonlik simfoniyasi\" uchun davlat mukofotiga sazovor bo'ldi. Kompozitor mukofot pulini samolyot va tank kolonnalarini qurish fondiga topshirdi.",
+      "options": [
+        "Mutavakkil Burxonov",
+        "Muxtor Ashrafiy",
+        "Abror Hidoyatov",
+        "Olim Xo'jayev"
+      ],
+      "answer": "Muxtor Ashrafiy",
+      "points": 2.2
+    },
+    {
+      "question": "Tarixiy davlatni aniqlang. XVIII asr boshlariga kelib, imperiya parchalana boshladi. Armiya o'zining avvalgi qudratini yo'qotdi, mahalliy hukmdorlarning mustaqilligi oshdi. Hukmdorlarning hokimiyati tobora zaiflashib bordi. Mamlakat feodal tarqoqliqqa qaytib, yevropaliklarning kirib kelishi uchun qulay sharoit yaratildi.",
+      "options": [
+        "Xitoy",
+        "Hindiston",
+        "Turkiya",
+        "Eron"
+      ],
+      "answer": "Hindiston",
+      "points": 2.2
+    },
+    {
+      "question": "Quyida berilgan ma'lumotlar qaysi tarixiy davlat haqida ekanligini aniqlang. Bozor islohotlari natijasida barqaror iqtisodiy o'sish ta'minlandi, XX asrning so'nggi yillarida bu ko'rsatkich yiliga 9% ni tashkil qildi. Hozir oziq-ovqat eksporti bo'yicha Osiyo mamlakatlari ichida birinchi, sholi eksporti bo'yicha dunyoda ikkinchi o'rinni egallab turibdi.",
+      "options": [
+        "Indoneziya",
+        "Vyetnam",
+        "Birma",
+        "Laos"
+      ],
+      "answer": "Vyetnam",
+      "points": 2.2
+    },
+    {
+      "question": "Quyida berilgan ma'lumotlar qaysi tarixiy davlat haqida ekanligini aniqlang. Bu davlat poytaxtida XIX asr oxiri - XX asr boshlarida ishchilarning ommaviy namoyishi o'tkazildi. Namoyishchilar demokratik erkinliklar berilishini talab qildilar. Hukumat bunga javoban, Avstriya ishchilar harakatining rahbarlarini davlatga xiyonatda aybladi. Sud ularni uzoq muddatga ozodlikdan mahrum etdi.",
+      "options": [
+        "Avstriya",
+        "Germaniya",
+        "Bolgariya",
+        "Italiya"
+      ],
+      "answer": "Avstriya",
+      "points": 2.2
+    },
+    {
+      "question": "Shayboniylar hukmronligi davrida xonlikda barcha yerlar davlat mulki edi. Yerni tasarruf etish xonning ixtiyorida bo'lgan. Bu davrda bevosita xonning o'ziga tegishli yerlar mulki xos deb atalib, bu yerdan olingan daromadlar nimalar uchun sarflangan?",
+      "options": [
+        "qo'shin xarajatlari uchun",
+        "davlatning ziyolilari, olimlari shayxlari ehtiyojlari uchun berilgan",
+        "xonning xarajatlariga hamda vaqflarga xayr-ehson uchun",
+        "yangi binolar qurish, suv inshootlari, ko'priklar, bozorlar qurish va ta'mirlash uchun"
+      ],
+      "answer": "xonning xarajatlariga hamda vaqflarga xayr-ehson uchun",
+      "points": 3.2
+    },
+    {
+      "question": "XX asr 20-yillarining ikkinchi yarmi va 30-yillar boshida O'zbekiston SSRda g'aylab topilgan siyosiy ishlaridan \"o'n sakkizlar\" guruhi tarkibiga kiritilgan shaxslarni aniqlang. 1) Muxtorjon Saidjonov; 2) Usmonxo'ja Po'latxo'jayev; 3) Abdulla Rahimboyev; 4) Inomjon Xidiraliyev; 5) Abdurahim Hojiboyev; 6) Shamstuddin Badriddinov.",
+      "options": [
+        "1, 3, 4",
+        "1, 4, 5",
+        "1, 4, 6",
+        "2, 4, 6"
+      ],
+      "answer": "1, 4, 5",
+      "points": 3.2
+    },
+    {
+      "question": "Quyidagilardan O'zbekiston Respublikasida 1991-yil 5-sentabrda imzolangan hujjatni aniqlang.",
+      "options": [
+        "\"Konstitutsiya ishlab chiqish zarurligi to'g'risida\"gi qaror",
+        "Lenin nomidagi maydonni Mustaqillik maydoni deb nomlash to'g'risidagi qaror",
+        "Ichki ishlar vazirligi O'zbekiston SSR tasarrufiga bo'ysundirish to'g'risidagi qaror",
+        "\"O'zbekiston Respublikasi Mudofaa ishlari Vazirligi tuzish to'g'risida\"gi Prezident farmoni"
+      ],
+      "answer": "Lenin nomidagi maydonni Mustaqillik maydoni deb nomlash to'g'risidagi qaror",
+      "points": 1.3
+    },
+    {
+      "question": "Quyidagilardan mustaqil O'zbekiston tarixiga oid to'g'ri berilgan ma'lumotlarni aniqlang. Toshkentda birinchi bo'lib AQSHning elchixonasi ochilgan (1) va O'zbekistonning AQSHdagi elchixonasi ochilgan (2). a) 1992-yil b) 1994-yil c) 1996-yil d) 2006-yil",
+      "options": [
+        "1-a, 2-c",
+        "1-b, 2-c",
+        "1-b, 2-d",
+        "1-a, 2-d"
+      ],
+      "answer": "1-a, 2-c",
+      "points": 2.2
+    },
+    {
+      "question": "Quyidagi ma'lumotlar to'g'ri xronologik ketma-ketlikda berilgan javobni aniqlang. 1) Buxoro xoni Ubaydullaxon poytaxtni Samarqanddan Buxoroga ko'chirtirdi; 2) Ibrohimbiy Samarqandni egallab kuyovi Rajab sultonni taxtga o'tqazdi; 3) Boqi Muhammadxon Eron safaviylariga zarba berib, Balxni qayta egalladi; 4) Xiva xoni Arab Muhammadxonning hukmronligi yakunlandi; 5) Buxoro xoni Abdulazizxonning hukmronlik davri boshlandi; 6) Orolbo'yi o'zbeklari va qoraqalpoqlar Xiva xonligi hokimiyatini tan oldi",
+      "options": [
+        "3, 1, 4, 5, 2, 6",
+        "1, 3, 4, 5, 2, 6",
+        "4, 1, 3, 2, 6, 5",
+        "1, 4, 3, 5, 6, 2"
+      ],
+      "answer": "1, 3, 4, 5, 2, 6",
+      "points": 2.2
+    },
+    {
+      "question": "Xaritada bo'yalgan yerda berilgan davlat (hudud) tarixiga oid bo'lmagan ma'lumotlarni toping.",
+      "image": "https://img.freepik.com/premium-photo/map-germany-highligted-with-red-europe-map_698953-12957.jpg",
+      "imageSize": "small",
+      "imageAlt": "Yevropa xaritasida Germaniya qizil rang bilan ajratilgan xarita",
+      "passageLabel": "Ma'lumotlar",
+      "passageTitle": "17-savol uchun ma'lumotlar",
+      "passageText": "1) 1933-yili Adolf Gitler hokimiyatga keldi\n2) 1910-yili Pensiya to'g'risida qonun qabul qilindi\n3) 1875-yilda birinchi marta sotsialistik partiya tashkil etildi\n4) 1881-yilda Shimoliy Afrikada joylashgan Tunisni bosib oldi\n5) XIX asr 70-yillarida \"Madaniyat uchun kurash\" siyosati yuritilgan\n6) 1792-yilda birinchi Respublika davri boshlandi\n7) XX asr boshlarida mamlakatda pensiya yoshi 65 yosh edi",
+      "options": [
+        "1, 2, 5, 6, 7",
+        "1, 4, 5, 4, 7",
+        "2, 4, 6, 7",
+        "2, 4, 6"
+      ],
+      "answer": "2, 4, 6",
+      "points": 2.2
+    },
+    {
+      "question": "Tarixiy voqea va uning natijasi o'zaro mos berilgan qatorlarni aniqlang.",
+      "passageLabel": "Jadval",
+      "passageTitle": "18-savol uchun voqea va natijalar",
+      "passageText": "1) \"Sinxay inqilobi\" - Xitoyda XVII asrdan boshlab hukm surgan manjurlar hokimiyatini ag'darib tashladi\n2) 1884-yilda Fransiyaning Vyetnamni bosib oldi - Yaponiya Markaziy Vyetnam ustidan rasmiy hukmronligidan voz kechdi\n3) 1917-yilning fevralidan boshlab Germaniya Buyuk Britaniyaga qarshi cheklanmagan suvosti urushi e'lon qildi - AQSH Birinchi Jahon urushga qo'shildi\n4) Buyuk Britaniyada ikkinchi parlament islohoti - Erkak aholining 50 foizi saylov huquqiga ega bo'ldi\n5) Somma jangi - Germaniyaning yashin tezligida g'alaba qozonish rejasi barbod bo'ldi\n6) Bismark maktabni cherkovdan ajratdi - 100 mingdan ortiq polyak bolalari maktabga borishdan bosh tortdi\n7) Frankfurt sulh shartnomasi - Germaniya o'z qo'shinlarini Fransiyadan olib chiqib ketdi",
+      "options": [
+        "2, 3, 4",
+        "3, 5, 7",
+        "1, 3, 4",
+        "1, 3, 7"
+      ],
+      "answer": "1, 3, 4",
+      "points": 3.2
+    },
+    {
+      "question": "Jadvalda harflar bilan belgilangan kataklarga quyida berilgan ma'lumotlardan moslarini qo'yib to'g'ri javobni toping.",
+      "passageLabel": "Jadval",
+      "passageTitle": "19-savol uchun jadval va ma'lumotlar",
+      "passageText": "Jadval:\nAsr | O'zbekiston tarixidagi voqea | Jahon tarixidagi voqea\na | Hasanbek Rumlu yashab, ijod qildi | b\nc | d | Madeyra oroli kashf etildi\nXIX | e | f\ng | Tohiriylar davlatiga asos solindi | h\ni | j | Germanlarda mulkiy tengsizlik kuchayadi\nXVIII | k | l\n\nMa'lumotlar:\n1) Meksikada \"Burjua inqilobi\" bo'lib o'tdi\n2) Mil.avv IV asr\n3) Samarqandda Xorazmshohga qarshi isyon ko'tarilishi\n4) G'ijduvonda madrasa ochildi\n5) XV asr\n6) XIII asr\n7) Eyfel minorasi qurildi\n8) Milodiy IV asr\n9) Magnavr oliy maktabi tashkil etildi\n10) Farg'ona vodiysiga jung'orlar hujum qildi\n11) Dukchi eshon qo'zg'oloni\n12) Aqshda yagona ichki bozor vujudga kela boshladi\n13) XVII asr\n14) IX asr\n15) Napoleon boshchiligidagi fransuzlar Misrni tashlab chiqishga majbur bo'ldi\n16) Lotin Amerikasi mamlakatlarida iqtisodiyotning sezilarli o'sishi kuzatildi\n17) Qo'qon xonligida \"Po'latxon\" qo'zg'olonining sodir bo'lishi\n18) Xitoyda Suy sulolasi hukmronligining boshlanishi\n19) Xivada A-Meta sindikati tashkil qilindi\n20) Amerikaga Afrikadan ko'plab qora tanli qullar olib kelindi\n21) Kat shahri qayta tiklandi",
+      "options": [
+        "a-13, b-20, c-5, d-4, e-17, f-7, g-14, h-9, i-8, j-21, k-10, l-12",
+        "a-12, b-15, c-6, d-4, e-19, f-21, g-17, h-16, i-2, j-7, k-11, l-13",
+        "a-12, b-20, c-6, d-4, e-19, f-15, g-14, h-16, i-2, j-7, k-11, l-13",
+        "a-12, b-20, c-5, d-4, e-13, f-15, g-14, h-21, i-8, j-7, k-11, l-19"
+      ],
+      "answer": "a-13, b-20, c-5, d-4, e-17, f-7, g-14, h-9, i-8, j-21, k-10, l-12",
+      "points": 3.2
+    },
+    {
+      "question": "Quyidagi ma'lumotlarni tahlil qilib, Eyler-Venn diagrammasiga mos keladigan javobni aniqlang.",
+      "passageLabel": "Diagramma",
+      "passageTitle": "20-savol uchun Eyler-Venn diagrammasi",
+      "passageText": "Diagrammadagi chap doira Ismoil Obidovga, o'ng doira Munavvarqori Abdurashidxonovga tegishli.\n\nBelgilanishlar:\nI - faqat Ismoil Obidovga xos\nII - faqat Munavvarqori Abdurashidxonovga xos\nIII - ikkalasiga umumiy\n\nMa'lumotlar:\n1) Ilk o'zbek milliy gazetasi asoschisi\n2) 1904-yildan boshlab o'lkadagi ijtimoiy-siyosiy, ma'rifiy harakatlarning faol ishtirokchisi\n3) \"To'y\" asari muallifi\n4) 1906-yilda gazeta chop etishni boshladi",
+      "options": [
+        "I - 1, 3; II - 2; III - 4",
+        "I - 1, 5; II - 2; III - 4",
+        "I - 1; II - 2, 3; III - 4",
+        "I - 1; II - 2; III - 4"
+      ],
+      "answer": "I - 1; II - 2; III - 4",
+      "points": 3.2
+    },
+    {
+      "question": "Fransiyada 1871-yilda tuzilgan Tyer boshchiligidagi hukumatga nisbatan parijliklarda ishonchsizlik paydo bo'lishiga olib kelgan omillar to'g'ri berilgan javobni aniqlang. 1) hukumat qarorgohi etib Versal shahri tanlanganligi; 2) soliqlar miqdorining oshirib yuborilganligi; 3) qamaldan so'ng aholining qarzlari bo'yicha to'lovlarni to'lashga majbur bo'la boshlaganligi; 4) Frankfurt shahrida imzolangan Prussiya bilan yarash shartnomasi.",
+      "options": [
+        "1,3",
+        "1,4",
+        "1,2",
+        "2,3"
+      ],
+      "answer": "1,3",
+      "points": 1.3
+    },
+    {
+      "question": "XIX asr oxirida Rossiya hozirgi turkmanlar yashaydigan hududlarni ham bo'ysundirdi. Quyida keltirilgan omillardan qaysilari turkmanlarning Rossiya yengilishiga sabab bo'lgan? 1) Turkman qabilalari o'rtasidagi o'zaro kelishmovchiliklar; 2) zamonaviy qurollar bilan ta'minlanmaganliklari; 3) Birlasha olmaganliklari; 4) O'z vaqtida chora ko'rmaganliklari.",
+      "options": [
+        "1, 3",
+        "1, 2",
+        "2, 3",
+        "3, 4"
+      ],
+      "answer": "1, 3",
+      "points": 2.2
+    },
+    {
+      "question": "Quyidagilardan Toshkent shahri bilan bog'liq bo'lmagan javobni aniqlang.",
+      "options": [
+        "1917-yil 12-15-noyabr kunlari \"turli musulmon guruhlarining birlashgan kengashi\" bo'lib o'tdi",
+        "Turkiston o'lkasini boshqarish uchun 9 kishidan iborat Turkiston komiteti tuzilgan",
+        "Butunturkiston musulmonlarining favqulodda IV qurultoyi bo'lib o'tgan",
+        "1917-yil sentabrda Turkiston va Qozog'iston musulmonlari qurultoyi o'tkazilgan"
+      ],
+      "answer": "Butunturkiston musulmonlarining favqulodda IV qurultoyi bo'lib o'tgan",
+      "points": 2.2
+    },
+    {
+      "question": "XVI asrda Buxoro xonligida mavjud bo'lgan harbiy soliqni aniqlang.",
+      "options": [
+        "Zobitona",
+        "Madadi lashkar",
+        "Qalqon puli",
+        "Jul"
+      ],
+      "answer": "Madadi lashkar",
+      "points": 1.3
+    },
+    {
+      "question": "XVII asrda qaysi davlat parlamentning ittifoqchisi sifatida Angliyaga bostirib kiradi?",
+      "options": [
+        "Irlandiya",
+        "Shotlandiya",
+        "Prussiya",
+        "Fransiya"
+      ],
+      "answer": "Shotlandiya",
+      "points": 1.3
+    },
+    {
+      "question": "Quyidagilardan X asrda parchalangan (a) va vujudga kelgan (b) davlatlar berilgan javobni aniqlang. 1) Koryo davlati 2) Tohiriylar davlati 3) Aksum davlati 4) Parxe davlati",
+      "options": [
+        "a - 1, b - 2",
+        "a - 2, b - 1",
+        "a - 4, b - 1",
+        "a - 3, b - 2"
+      ],
+      "answer": "a - 4, b - 1",
+      "points": 2.2
+    },
+    {
+      "question": "Quyidagilardan qadimgi Rim tarixiga oid bo'lgan atamalar to'g'ri izohlangan qatorni aniqlang.",
+      "passageLabel": "Atamalar",
+      "passageTitle": "27-savol uchun atamalar va izohlar",
+      "passageText": "1) Yepiskop - xristian jamoalariga peshvolik qilgan ruhoniylar\n2) Parfeon - Rimdagi barcha xudolar ibodatxonasi\n3) Apostollar - havoriylar Iso Masih izdoshlar\n4) grammatika - chiroyli so'zlash san'ati\n5) Varvarlar - Rimliklarga nisbatan madaniy rivojlanish jihatidan quyi pog'onada turuvchi qabilalar",
+      "options": [
+        "1,2,5",
+        "1,3,5",
+        "1,4,5",
+        "1,3,4,5"
+      ],
+      "answer": "1,3,5",
+      "points": 2.2
+    },
+    {
+      "question": "O'rta Osiyo davlatlarida Buzrukxo'ja nomi bilan ataluvchi madrasa qaysi sulola davrida qurilgan?",
+      "options": [
+        "Mang'itlar",
+        "Ashtarxoniylar",
+        "Minglar",
+        "Shayboniylar"
+      ],
+      "answer": "Minglar",
+      "points": 1.3
+    },
+    {
+      "question": "Arab xalifaligi davrida qurilgan \"Qaroviyum\" ilm dargohi faoliyat ko'rsatgan hudud(davlat) nomi to'g'ri berilgan javobni aniqlang.",
+      "options": [
+        "Iroq",
+        "Misr",
+        "Tunis",
+        "Marokash"
+      ],
+      "answer": "Marokash",
+      "points": 1.3
+    },
+    {
+      "question": "To'g'ri ma'lumot berilgan javobni aniqlang.",
+      "options": [
+        "1994-yili Xorazmda davlat qo'g'irchoq teatrlari ish boshladi",
+        "2000-yil O'zbek davlat akademik drama teatriga Prezident farmoni bilan \"Milliy teatr\" maqomi berildi",
+        "2008-yili Boysun madaniy muhiti YuNESKO tomonidan yuritiladigan insoniyatning nomoddiy madaniy merosi ro'yhatiga kiritildi",
+        "2004-yili Toshkent davlat konservatoriyasi O'zbekiston davlat konservatoriyasiga aylantirildi"
+      ],
+      "answer": "2008-yili Boysun madaniy muhiti YuNESKO tomonidan yuritiladigan insoniyatning nomoddiy madaniy merosi ro'yhatiga kiritildi",
+      "points": 2.2
+    },
+    {
+      "question": "Mualliflar va ularning asarlari to'g'ri moslashtirilgan javobni aniqlang.",
+      "passageLabel": "Moslashtirish",
+      "passageTitle": "31-savol uchun mualliflar va asarlar",
+      "passageText": "Mualliflar:\n1) Hofiz Tanish Buxoriy\n2) Sulton Ali\n3) Muhammad Hakimxon\n4) Shodmon Vohidov\n5) Azamat Ziyo\n\nAsarlar:\na) \"O'zbek davlatchiligi tarixi\"\nb) \"Muzakkiri ahbob\"\nc) \"O'zbek xalqining kelib chiqish tarixi\"\nd) \"Abdullanoma\"\ne) \"Muqaddimayi dastur al-iloj\"\nf) \"Muntaxabi Jome' va tavorixi shohi\"\ng) \"Qo'qon xonligi tarixi\"\nh) \"Muntaxab at-tavorix\"",
+      "options": [
+        "1 - d, 2 - e, 3 - h, 4 - g, 5 - a",
+        "1 - b, 2 - f, 3 - d, 4 - a, 5 - g",
+        "1 - d, 2 - f, 3 - h, 4 - c, 5 - a",
+        "1 - h, 2 - e, 3 - f, 4 - g, 5 - c"
+      ],
+      "answer": "1 - d, 2 - e, 3 - h, 4 - g, 5 - a",
+      "points": 2.2
+    },
+    {
+      "question": "XVI asr 40-yillarida qo'sh hokimiyatchilik tufayli Buxoroda (a) va Samarqandda (b) kimlarning hokimiyati o'rnatildi?",
+      "options": [
+        "a-Abdullaxon II; b-Abu Said",
+        "a-Iskandarxon; b-Abdulla Navro'z Ahmadxon",
+        "a-Abdulazizxon; b-Abdullatif",
+        "a-Pirmuhammad; b-Suyunchxo'jaxon"
+      ],
+      "answer": "a-Abdulazizxon; b-Abdullatif",
+      "points": 1.3
+    },
+    {
+      "question": "Berilgan voqealardan qaysi biri keyinroq sodir bo'lgan?",
+      "passageLabel": "Variantlar",
+      "passageTitle": "33-35-savollar uchun A-F variantlari",
+      "passageText": "A) Liviya Italiya mustamlakasiga aylandi - 1912\nB) Buyuk Britaniyada ko'mir qazuvchilarning 6 haftalik ish tashlashi bo'lib o'tdi - 1911\nC) Germaniya sanoat ishlab chiqarish bo'yicha AQSH dan keyingi ikkinchi o'ringa chiqib oldi - 1913\nD) Buyuk Britaniya San-Stefano shartnomasini tan olmay Berlin kongresi chaqirilishiga erishdi - 1878\nE) \"Kuchukqaynarji\" shartnomasi imzolandi - 1774\nF) Xuan Karlos I Portugaliyada taxtga o'tirdi - 1986",
+      "options": ["A", "B", "C", "D", "E", "F"],
+      "answer": "F",
+      "points": 2.2
+    },
+    {
+      "question": "Qaysi voqea natijasida Buyuk Britaniya Kipr orolini qo'lga kiritdi?",
+      "passageLabel": "Variantlar",
+      "passageTitle": "33-35-savollar uchun A-F variantlari",
+      "passageText": "A) Liviya Italiya mustamlakasiga aylandi - 1912\nB) Buyuk Britaniyada ko'mir qazuvchilarning 6 haftalik ish tashlashi bo'lib o'tdi - 1911\nC) Germaniya sanoat ishlab chiqarish bo'yicha AQSH dan keyingi ikkinchi o'ringa chiqib oldi - 1913\nD) Buyuk Britaniya San-Stefano shartnomasini tan olmay Berlin kongresi chaqirilishiga erishdi - 1878\nE) \"Kuchukqaynarji\" shartnomasi imzolandi - 1774\nF) Xuan Karlos I Portugaliyada taxtga o'tirdi - 1986",
+      "options": ["A", "B", "C", "D", "E", "F"],
+      "answer": "D",
+      "points": 2.2
+    },
+    {
+      "question": "Qaysi voqea natijasida Rossiya Qora dengizga chiqish huquqiga ega bo'ldi?",
+      "passageLabel": "Variantlar",
+      "passageTitle": "33-35-savollar uchun A-F variantlari",
+      "passageText": "A) Liviya Italiya mustamlakasiga aylandi - 1912\nB) Buyuk Britaniyada ko'mir qazuvchilarning 6 haftalik ish tashlashi bo'lib o'tdi - 1911\nC) Germaniya sanoat ishlab chiqarish bo'yicha AQSH dan keyingi ikkinchi o'ringa chiqib oldi - 1913\nD) Buyuk Britaniya San-Stefano shartnomasini tan olmay Berlin kongresi chaqirilishiga erishdi - 1878\nE) \"Kuchukqaynarji\" shartnomasi imzolandi - 1774\nF) Xuan Karlos I Portugaliyada taxtga o'tirdi - 1986",
+      "options": ["A", "B", "C", "D", "E", "F"],
+      "answer": "E",
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "Xitoyda Tan sulolasi davrida barcha yerlar davlatniki deb e'lon qilinadi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Nechanchi yilda qabul qilingan qonunga ko'ra Xitoyda, har bir xo'jalik uy-hovlisidan tashqari 80 mugacha yerni ijaraga olishi mumkinligini aniqlang va yozing.",
+        "b) 1 mu necha sotixga teng ekanligini yozing."
+      ],
+      "answer": [
+        ["624-yil", "624 yil", "624"],
+        ["6 sotixga", "6 sotix", "6"]
+      ],
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "1889-yilda Yaponiyada Konstitutsiya qabul qilindi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Konstitutsiyaga muvofiq mamlakatda ikki palatali parlament tashkil etiladi. Ushbu parlamentning yuqori palatasi nomini yozing.",
+        "b) Ushbu konstitutsiyasi qaysi davlat konstitutsiyasi namunasi asosida qabul qilinganini yozing."
+      ],
+      "answer": [
+        ["Perlar", "Perlar palatasi", "Perlar palatasi nomi", "Perlar palatasi deb atalgan"],
+        ["Prussiya"]
+      ],
+      "points": 3.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "Amerikacha gullab-yashnashning va ilg'or kapitalistik mamlakatlar iqtisodiyotining bo'sh tomoni ham bo'lib, u doimiy yuz beradigan inqirozlarda namoyon bo'ladi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) XX asrda yuz bergan qaysi iqtisodiy inqiroz XIX asr oxiri - XX asr boshlari uchun xos bo'lgan tarixiy evolyutsiyasini yakunladi?",
+        "b) 1980-yillardagi jahon iqtisodiy inqirozi qaysi davlat uchun katta sinov bo'ldi. Inqiroz yengib o'tilgan bo'lsa-da, ishsizlik, tashqi qarz keskin oshdi, tashqi dunyoga, birinchi navbatda, AQSHga qaramlik ham ortdi?"
+      ],
+      "answer": [
+        ["1929-1932", "1929 - 1932", "1929–1932", "1929—1932"],
+        ["Meksika"]
+      ],
+      "points": 3.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "Ikkinchi Jahon urushidan so'ng bir qator davlatlarda boshqa davlatlardan farq qiluvchi siyosatlar amalga oshirilgan. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Ikkinchi Jahon urushidan so'ng \"Yuzta gul\" siyosati qaysi davlatda o'tkazilganligini aniqlang va yozing.",
+        "b) Ikkinchi Jahon urushidan yakunlangach \"Uch yil matonatli mehnat - uch ming yil baxt saodat\" shiori qaysi davlatda ekanligini aniqlang va yozing."
+      ],
+      "answer": [
+        ["Xitoy"],
+        ["Xitoy"]
+      ],
+      "points": 3.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "XIX asr boshlarida shoh Mahmud Afg'onistonda hokimiyatni ikkinchi marta egalladi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Mahmudning hokimiyatni qayta egallashiga yordam ko'rsatgan Xiva xonini aniqlang va yozing.",
+        "b) Shoh Mahmud qaysi sulola vakili ekanligini aniqlang va yozing."
+      ],
+      "answer": [
+        ["Muhammad Rahimxon I", "Muhammad Rahimxon 1"],
+        ["abdali (durroniy)", "abdali", "durroniy", "abdali durroniy"]
+      ],
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "Fashizmga qarshi kurashda Italyan-German qo'shinlari tomonidan zabt etilgan hududlardagi milliy-vatanparvar kuchlari muhim rol o'ynadi. Nuqtalar o'rniga mos keluvchi javoblarni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) general (a) ........ boshchiligidagi «Ozod Fransiya» Qarshilik harakati",
+        "b) (b) ........ boshchiligidagi Yugoslaviyaning ozodlik harakati"
+      ],
+      "answer": [
+        ["de Goll", "deGoll", "Sharl de Goll", "Charles de Gaulle"],
+        ["I.B.Tito", "I. B. Tito", "Tito", "Iosip Broz Tito"]
+      ],
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "1842-yilda Xiva shahri tashqi dushmanlardan himoyalanish maqsadida devor bilan o'rab olindi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Ushbu devor qaysi Xiva xoni tashabbusi bilan qurilganini aniqlang va yozing.",
+        "b) Ushbu tashqi qal'a (Dishan qal'a) nechta darvozadan iborat ekanligini yozing."
+      ],
+      "answer": [
+        ["Olloqulixon", "Olloqqulixon"],
+        ["10 ta", "10ta", "10"]
+      ],
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "XX asr boshida Turkistonda nasrda ijod qilish xalq uchun eng ommabop va tushunarli adabiyot shakli edi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) 1910-yilda kim ilk nasriy asarlarini e'lon qilganligini aniqlang va yozing.",
+        "b) Jadid teatrlarida 1911-1917-yillarda nechta pyesa namoyish etildi?"
+      ],
+      "answer": [
+        ["Abdulla Qodiriy", "Abdulla Qodiriy"],
+        ["25 ta", "25ta", "25"]
+      ],
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "1976-yili Amerika Qo'shma Shtatlari o'z mustaqilligining 200 yilligini katta tantanalar bilan nishonladi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Shu yili o'tkazilgan prezidentlik saylovlarida demokratik partiyadan kim g'alaba qozondi?",
+        "b) Uning prezidentlik davrini, ayniqsa, olib borgan tashqi siyosatini muvaffaqiyatli deb bo'lmaydi. Qo'shma Shtatlar siyosati va obro'yiga berilgan juda katta zarbalardan biri 1979-yilgi inqilobi bo'ldi?"
+      ],
+      "answer": [
+        ["Jimmi Karter", "Jimmy Carter", "Karter"],
+        ["Eron"]
+      ],
+      "points": 2.2
+    },
+    {
+      "type": "closed-pair",
+      "question": "Chingizxon Movarounnahr yurish boshlagach, Xorazmshoh yakkalanib qolib, ko'plab ishonchli amirlari xiyonat yo'lini tutdi. Quyidagi ikki javobni yozing.",
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "contextItems": [
+        "a) Undan qaysi ikkita viloyat hokimlari ham yuz o'girdi?",
+        "b) Hech qayerda uni iliq kutib olishmadi. Oxiri Kaspiy dengizidagi qaysi orolda vafot etadi?"
+      ],
+      "answer": [
+        ["Qunduz va Badaxshon", "Qunduz, Badaxshon", "Qunduz hamda Badaxshon"],
+        ["Ashura", "Ashuro", "Ashura oroli"]
+      ],
+      "points": 2.2
+    }
+  ]
+}

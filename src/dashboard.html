@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boshqaruv Paneli | Milliy Sertifikat Platformasi</title>
+    <meta name="description" content="Profil, dashboard va imtihon testlari bo'limlarini o'z ichiga olgan milliy sertifikat platformasi.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#10214f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <div class="auth-logo">
+                    <span class="auth-logo__mark">MS</span>
+                    <div>
+                        <strong>Islombek Ismatullayev</strong>
+                        <span>Website admini</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar__nav">
+                <button class="sidebar__link is-active" type="button" data-section="exams">Imtihon Testlari</button>
+                <button class="sidebar__link" type="button" data-section="dashboard">Asosiy panel</button>
+                <button class="sidebar__link" type="button" data-section="profile">Profilim</button>
+                <button class="sidebar__link" type="button" data-section="feedback">Feedback panel</button>
+                <button class="sidebar__link" type="button" data-section="analysis">Testlar tahlili</button>
+                <a class="sidebar__link sidebar__link--anchor sidebar__link--admin" href="admin.html">Admin panel</a>
+                <a class="sidebar__link sidebar__link--anchor sidebar__link--logout" href="index.html">Chiqish</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-topbar">
+                <div class="dashboard-notifications">
+                    <button class="dashboard-notifications__button" id="notifications-toggle" type="button" aria-expanded="false">
+                        <span>Bildirishnomalar</span>
+                        <span class="dashboard-notifications__count is-hidden" id="notifications-count">0</span>
+                    </button>
+                    <div class="dashboard-notifications__panel is-hidden" id="notifications-panel">
+                        <div class="dashboard-notifications__head">
+                            <strong>Bildirishnomalar</strong>
+                            <button class="dashboard-notifications__mark-all" id="notifications-mark-all" type="button">Barchasini o'qildi</button>
+                        </div>
+                        <div class="dashboard-notifications__list" id="notifications-list">
+                            <p class="dashboard-notifications__empty">Hali bildirishnoma yo'q.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-user">
+                    <span class="dashboard-user__avatar" id="dashboard-avatar">MS</span>
+                    <div>
+                        <strong id="dashboard-user-name">Foydalanuvchi</strong>
+                        <span id="dashboard-user-role">Website foydalanuvchisi</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="dashboard-section" data-section-panel="profile">
+                <h1>Profil</h1>
+                <section class="profile-header-card">
+                    <div class="profile-header-card__main">
+                        <div class="profile-card__avatar" id="profile-header-avatar">MS</div>
+                        <div>
+                            <p class="card-label">Faol profil</p>
+                            <h2 id="profile-header-name">Foydalanuvchi ismi</h2>
+                            <p id="profile-header-email">email@gmail.com</p>
+                            <p id="profile-header-phone">+998 00 000 00 00</p>
+                            <div class="profile-header-card__actions">
+                                <label class="button-link button-link--inline profile-photo-button" id="profile-photo-trigger" for="profile-photo-input">Profil rasmi yuklash</label>
+                                <input class="visually-hidden" id="profile-photo-input" type="file" accept="image/*">
+                                <p class="profile-photo-status" id="profile-photo-status"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-header-card__stats">
+                        <div class="profile-mini-stat">
+                            <span>Status</span>
+                            <strong>Faol</strong>
+                        </div>
+                        <div class="profile-mini-stat">
+                            <span>Eng yaxshi qilgan natijam</span>
+                            <strong id="profile-best-grade">-</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="profile-grid-panels">
+                    <article class="profile-side-card profile-admin-card">
+                        <p class="card-label">Admin ma'lumoti</p>
+                        <h2>Islombek Ismatullayev</h2>
+                        <p>Website admini va testlar boshqaruvchisi.</p>
+                        <div class="profile-admin-card__list">
+                            <p><strong>Telefon:</strong> <a href="tel:+998972052508">+998 97 205 25 08</a></p>
+                            <p><strong>Telegram:</strong> <a href="https://t.me/Islombek_Ismatullayev" data-telegram-link="Islombek_Ismatullayev" target="_blank" rel="noopener noreferrer">@Islombek_Ismatullayev</a></p>
+                            <p><strong>Gmail:</strong> <a href="mailto:islombek2508ismatullayev@gmail.com">islombek2508ismatullayev@gmail.com</a></p>
+                        </div>
+                    </article>
+
+                    <article class="profile-side-card profile-goals-card">
+                        <p class="card-label">Dream score</p>
+                        <h2>Maqsadlarim</h2>
+                        <p>DTM ball va orzuyingizdagi O'zbekiston universitetini shu yerda saqlashingiz mumkin.</p>
+                        <div class="profile-goals-summary">
+                            <p><strong>Dream score (DTM):</strong> <span id="profile-dream-score">-</span></p>
+                            <p><strong>Dream universitet:</strong> <span id="profile-dream-university">-</span></p>
+                        </div>
+                        <form class="profile-goals-form" id="profile-goals-form">
+                            <label class="field">
+                                <span>Dream score (DTM)</span>
+                                <input id="profile-goal-score" type="number" min="100" max="189" step="1" placeholder="100 dan 189 gacha">
+                            </label>
+                            <label class="field">
+                                <span>Dream universitet</span>
+                                <select id="profile-goal-university">
+                                    <option value="">Universitetni tanlang</option>
+                                    <option value="New Uzbekistan University">New Uzbekistan University</option>
+                                    <option value="Westminster International University in Tashkent">Westminster International University in Tashkent</option>
+                                    <option value="O'zbekiston Milliy Universiteti">O'zbekiston Milliy Universiteti</option>
+                                    <option value="Samarqand Davlat Universiteti">Samarqand Davlat Universiteti</option>
+                                    <option value="Buxoro Davlat Universiteti">Buxoro Davlat Universiteti</option>
+                                    <option value="Andijon Davlat Universiteti">Andijon Davlat Universiteti</option>
+                                    <option value="Farg'ona Davlat Universiteti">Farg'ona Davlat Universiteti</option>
+                                    <option value="Namangan Davlat Universiteti">Namangan Davlat Universiteti</option>
+                                    <option value="Qarshi Davlat Universiteti">Qarshi Davlat Universiteti</option>
+                                    <option value="Termiz Davlat Universiteti">Termiz Davlat Universiteti</option>
+                                    <option value="Nukus Davlat Universiteti">Nukus Davlat Universiteti</option>
+                                    <option value="Nizomiy nomidagi Toshkent Davlat Pedagogika Universiteti">Nizomiy nomidagi Toshkent Davlat Pedagogika Universiteti</option>
+                                    <option value="Qo'qon Davlat Pedagogika Instituti">Qo'qon Davlat Pedagogika Instituti</option>
+                                    <option value="Chirchiq Davlat Pedagogika Universiteti">Chirchiq Davlat Pedagogika Universiteti</option>
+                                    <option value="Toshkent Davlat Iqtisodiyot Universiteti">Toshkent Davlat Iqtisodiyot Universiteti</option>
+                                    <option value="Samarqand Iqtisodiyot va Servis Instituti">Samarqand Iqtisodiyot va Servis Instituti</option>
+                                    <option value="Toshkent Moliya Instituti">Toshkent Moliya Instituti</option>
+                                    <option value="Toshkent Davlat Texnika Universiteti">Toshkent Davlat Texnika Universiteti</option>
+                                    <option value="Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti">Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti</option>
+                                    <option value="Turin Politexnika Universiteti (Toshkentda)">Turin Politexnika Universiteti (Toshkentda)</option>
+                                    <option value="Inha Universiteti (Toshkentda)">Inha Universiteti (Toshkentda)</option>
+                                    <option value="Toshkent Tibbiyot Akademiyasi">Toshkent Tibbiyot Akademiyasi</option>
+                                    <option value="Samarqand Davlat Tibbiyot Universiteti">Samarqand Davlat Tibbiyot Universiteti</option>
+                                    <option value="Buxoro Davlat Tibbiyot Instituti">Buxoro Davlat Tibbiyot Instituti</option>
+                                    <option value="Andijon Davlat Tibbiyot Instituti">Andijon Davlat Tibbiyot Instituti</option>
+                                    <option value="Toshkent Davlat Yuridik Universiteti">Toshkent Davlat Yuridik Universiteti</option>
+                                    <option value="Jahon Iqtisodiyoti va Diplomatiya Universiteti">Jahon Iqtisodiyoti va Diplomatiya Universiteti</option>
+                                    <option value="Toshkent Davlat Agrar Universiteti">Toshkent Davlat Agrar Universiteti</option>
+                                    <option value="Samarqand Veterinariya Meditsinasi Instituti">Samarqand Veterinariya Meditsinasi Instituti</option>
+                                    <option value="O'zbekiston Davlat San'at va Madaniyat Instituti">O'zbekiston Davlat San'at va Madaniyat Instituti</option>
+                                    <option value="O'zbekiston Davlat Jismoniy Tarbiya va Sport Universiteti">O'zbekiston Davlat Jismoniy Tarbiya va Sport Universiteti</option>
+                                    <option value="Toshkent Davlat Transport Universiteti">Toshkent Davlat Transport Universiteti</option>
+                                    <option value="Toshkent Arxitektura-Qurilish Universiteti">Toshkent Arxitektura-Qurilish Universiteti</option>
+                                    <option value="O'zbekiston Jurnalistika va Ommaviy Kommunikatsiyalar Universiteti">O'zbekiston Jurnalistika va Ommaviy Kommunikatsiyalar Universiteti</option>
+                                </select>
+                            </label>
+                            <label class="field field--full">
+                                <span>Yoki universitet nomini yozing</span>
+                                <input id="profile-goal-university-custom" type="text" placeholder="Universitet nomini kiriting">
+                            </label>
+                            <div class="field field--actions profile-goals-form__actions">
+                                <button class="button" type="submit">Saqlash</button>
+                                <p class="profile-goals-status" id="profile-goals-status"></p>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </section>
+
+            <section class="dashboard-section" data-section-panel="feedback">
+                <h1>Feedback panel</h1>
+                <section class="feedback-panel">
+                    <div class="feedback-panel__head">
+                        <div>
+                            <p class="card-label">Feedback</p>
+                            <h2>Bizning website uchun feedback qoldiring</h2>
+                        </div>
+                    </div>
+                    <form class="feedback-form" id="feedback-form">
+                        <label class="field field--full">
+                            <span>Feedback matni</span>
+                            <textarea id="feedback-input" placeholder="Website haqida fikringizni yozing..."></textarea>
+                        </label>
+                        <div class="field field--actions feedback-form__actions">
+                            <button class="button" type="submit">Feedback qoldirish</button>
+                            <p class="feedback-form__status" id="feedback-status"></p>
+                        </div>
+                    </form>
+                    <div class="feedback-list" id="feedback-list"></div>
+                </section>
+            </section>
+
+            <section class="dashboard-section" data-section-panel="analysis">
+                <h1>Testlar tahlili</h1>
+                <section class="analysis-panel">
+                    <aside class="analysis-sidebar">
+                        <div class="analysis-sidebar__head">
+                            <p class="card-label">Kanallar</p>
+                            <h2>Tahlil bo'limlari</h2>
+                            <p class="analysis-panel__lead">Telegram uslubida kanallarni tanlab, o'sha bo'limdagi muhokamani ko'ring.</p>
+                        </div>
+                        <div class="analysis-channel-list" id="analysis-channel-list"></div>
+                    </aside>
+
+                    <div class="analysis-content" id="analysis-content">
+                        <div class="analysis-university-board is-hidden" id="analysis-university-board"></div>
+
+                        <div class="analysis-feed" id="analysis-feed"></div>
+
+                        <form class="analysis-form" id="analysis-form">
+                            <div class="analysis-form__head">
+                                <p class="card-label">Yangi post</p>
+                                <p class="analysis-form__status" id="analysis-status"></p>
+                            </div>
+
+                            <div class="analysis-emoji-tray is-hidden" id="analysis-emoji-tray">
+                                <button class="analysis-emoji-chip" type="button" data-analysis-emoji="😀">😀</button>
+                                <button class="analysis-emoji-chip" type="button" data-analysis-emoji="👍">👍</button>
+                                <button class="analysis-emoji-chip" type="button" data-analysis-emoji="🔥">🔥</button>
+                                <button class="analysis-emoji-chip" type="button" data-analysis-emoji="👏">👏</button>
+                                <button class="analysis-emoji-chip" type="button" data-analysis-emoji="🎯">🎯</button>
+                                <button class="analysis-emoji-chip" type="button" data-analysis-emoji="🤔">🤔</button>
+                            </div>
+
+                            <div class="analysis-composer">
+                                <button class="analysis-composer__icon" id="analysis-emoji-toggle" type="button" aria-label="Emoji qo'shish">☺</button>
+                                <textarea id="analysis-input" placeholder="Message"></textarea>
+                                <label class="analysis-composer__icon analysis-composer__attach" for="analysis-image-input" aria-label="Rasm qo'shish">+</label>
+                                <input id="analysis-image-input" type="file" accept="image/*" hidden>
+                                <label class="analysis-composer__icon analysis-composer__attach" for="analysis-audio-input" aria-label="Audio qo'shish">Mic</label>
+                                <input id="analysis-audio-input" type="file" accept="audio/*" hidden>
+                                <button class="analysis-composer__send" type="submit" aria-label="Post yuborish">↑</button>
+                            </div>
+
+                            <div class="analysis-media-preview" id="analysis-media-preview"></div>
+                            <button class="analysis-clear-inline" id="analysis-clear-media" type="button">Media tozalash</button>
+                        </form>
+                    </div>
+                </section>
+            </section>
+
+            <section class="dashboard-section" data-section-panel="dashboard">
+                <h1>Asosiy panel</h1>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <span>Fanlar</span>
+                        <strong class="stat-card__subjects">Ona tili, Matematika, Kimyo, Biologiya, Tarix, Fizika</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span>Yakunlangan testlar</span>
+                        <strong id="completed-tests-count">0</strong>
+                        <p class="stat-card__detail" id="completed-tests-list">Hali test tugallanmagan.</p>
+                    </article>
+                    <article class="stat-card">
+                        <span>Eng yuqori daraja</span>
+                        <strong id="best-grade">-</strong>
+                    </article>
+                </div>
+                <article class="dashboard-note dashboard-note--contact">
+                    <p class="dashboard-note__eyebrow">Yordam kerakmi?</p>
+                    <h2>Muammo va savollaringiz bo'lsa, murojaat qiling</h2>
+                    <p class="dashboard-note__lead">Website yoki test bo'yicha savol, xatolik yoki texnik muammo yuz bersa, quyidagi aloqa manzillari orqali bog'lanishingiz mumkin.</p>
+                    <div class="dashboard-note__contact-list">
+                        <div class="dashboard-note__contact-item">
+                            <span class="dashboard-note__contact-label">Telefon</span>
+                            <a class="dashboard-note__contact-link" href="tel:+998972052508">+998 97 205 25 08</a>
+                        </div>
+                        <div class="dashboard-note__contact-item">
+                            <span class="dashboard-note__contact-label">Telegram</span>
+                            <a class="dashboard-note__contact-link" href="https://t.me/Islombek_Ismatullayev" data-telegram-link="Islombek_Ismatullayev" target="_blank" rel="noopener noreferrer">@Islombek_Ismatullayev</a>
+                        </div>
+                        <div class="dashboard-note__contact-item">
+                            <span class="dashboard-note__contact-label">Gmail</span>
+                            <a class="dashboard-note__contact-link" href="mailto:islombek2508ismatullayev@gmail.com">islombek2508ismatullayev@gmail.com</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="dashboard-section is-active" data-section-panel="exams">
+                <h1>Imtihon Testlari</h1>
+                <p class="dashboard-subtext">Kerakli blokni bosing. Har bir blok alohida imtihon sifatida ochiladi.</p>
+                <div class="exam-cards" id="exam-cards"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/platform.js"></script>
+    <script src="js/dashboard.js?v=20260320-feedback-fix-2"></script>
+</body>
+</html>

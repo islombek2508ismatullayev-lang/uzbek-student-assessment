@@ -1,0 +1,450 @@
+{
+  "questions": [
+    {
+      "question": "Qaysi javobda biogeotsenoz nazariyasi (1), immunitetning fagotsitar nazariyasi (2) va o'simliklarning mineral oziqlanishi nazariyasi (3) yaratgan olimlar to'g'ri ko'rsatilgan?",
+      "options": [
+        "1 - V.N. Sukachev; 2 - I.M. Sechenov; 3 - Y.F. Libix",
+        "1 - V.I. Vernadskiy; 2 - I.I. Mechnikov; 3 - V.V. Dokuchayev",
+        "1 - V.N. Sukachev; 2 - I.I. Mechnikov; 3 - Y.F. Libix",
+        "1 - V.I. Vernadskiy; 2 - I.M. Sechenov; 3 - V.V. Dokuchayev"
+      ],
+      "answer": "1 - V.N. Sukachev; 2 - I.I. Mechnikov; 3 - Y.F. Libix"
+    },
+    {
+      "question": "Kartoshka va galampir o'simliklariga uchun umumiy ma'lumotlar berilgan javobni aniqlang.",
+      "options": [
+        "ildizi - o'qildiz tizimli, gulqo'rg'oni murakkab, uzun kun o'simligi",
+        "urug'kurtaklari tuguncha devori bilan o'ralgan, qisqa kun o'simligi",
+        "gulkosachasi bir-biri bilan qo'shilgan beshta gulkosachabargdan tashkil topgan",
+        "changchilari 5 ta erkin, kelib chiqish markazi Markaziy Amerika"
+      ],
+      "answer": "gulkosachasi bir-biri bilan qo'shilgan beshta gulkosachabargdan tashkil topgan"
+    },
+    {
+      "question": "Urug'kurtaklari tuguncha devori bilan o'ralgan manzarali o'simliklarni aniqlang. 1) gledichiya; 2) xrizantema; 3) Oshanin piyozi; 4) beshyaproqli partenotsissus; 5) Sharq sauri; 6) tuxumak; 7) qum piyoz; 8) tuxumak; 9) Virgin archasi; 10) nor piyoz",
+      "options": [
+        "2, 3, 6",
+        "1, 4, 8",
+        "2, 5, 10",
+        "1, 6, 9"
+      ],
+      "answer": "1, 4, 8"
+    },
+    {
+      "question": "Ilonboshning qon aylanish sistemasiga xos bo'lgan to'g'ri ma'lumot keltirilgan javobni aniqlang.",
+      "options": [
+        "jabra arteriyasi va qorin aortasida venoz qon oqadi",
+        "qorin aortasidagi arterial qon orqa aortaga o'tadi",
+        "qorin aortasidagi qon yurak bo'lmachasiga quyiladi",
+        "qorin aortasi yurak qorinchasiga qon olib boradi"
+      ],
+      "answer": "qorin aortasidagi arterial qon orqa aortaga o'tadi"
+    },
+    {
+      "question": "Qisqa kun o'simliklarini ostki gulkosachabargli (a) va tutash gultojbargli (b) xillarga ajrating.",
+      "options": [
+        "a- g'o'za; b- kartoshkagul",
+        "a- g'o'za; b- qoqio't",
+        "a- gulxayri; b- kartoshkagul",
+        "a- kanop; b- qoqio't"
+      ],
+      "answer": "a- kanop; b- qoqio't"
+    },
+    {
+      "question": "\"Mo'ylovlar - o'pka - uch juft oyoq - bosh miya\". Yuqoridagi ketma-ketlikka mos organlarga ega bo'lgan bo'g'imoyoqli organizmlarni mos ravishda aniqlang.",
+      "options": [
+        "kulrang satir, suv shillig'i, chirildoq, kalmar",
+        "dafniya, falanga, podalariy, chumoli",
+        "suluv ninachi, biy, suvarak, jigar qurti",
+        "yonsuzar, sariq chayon, tovusko'z, ari"
+      ],
+      "answer": "suluv ninachi, biy, suvarak, jigar qurti"
+    },
+    {
+      "question": "Qaysi javobda asalarilar oilasi haqidagi to'g'ri ma'lumot ko'rsatilgan?",
+      "options": [
+        "ishchi arilarning yuqorigi labi va jag'lari o'zgarib naysimon xartum hosil qilgan",
+        "ishchi va erkaklarning qorin bo'limida nishtari bo'lmaydi",
+        "ishchi arilarning somatik hujayrasida 32 ta xromosomalar mavjud",
+        "urug'lanmagan tuxum hujayralardan urg'ochi arilar rivojlanadi"
+      ],
+      "answer": "ishchi arilarning somatik hujayrasida 32 ta xromosomalar mavjud"
+    },
+    {
+      "question": "Kedrning meristema hujayrasi mitoz bo'linishining metafaza davridagi DNKlar soni 48 tani tashkil etsa, uning endospermidagi xromosomalar soni to'g'ri berilgan javobni aniqlang.",
+      "options": [
+        "12 ta",
+        "24 ta",
+        "36 ta",
+        "48 ta"
+      ],
+      "answer": "36 ta"
+    },
+    {
+      "question": "Toshbaqalar terisi orqa va qorin tomondan suyak hamda muguzdan iborat mustahkam kosa - qalqon bilan qoplangan. Yuragi uch kamerali, sovuqqonli hayvon. Metamorfozsiz rivojlanadi. Ushbu matnda turning qaysi mezonlari aks etgan?",
+      "options": [
+        "morfologik, genetik",
+        "morfologik, fiziologik",
+        "morfologik, ekologik",
+        "geografik, morfologik"
+      ],
+      "answer": "morfologik, fiziologik"
+    },
+    {
+      "question": "Kelib chiqishi bir xil (a) va kelib chiqishi har xil (b) organlarni juftlang. 1) yantoqning tikani va liftokning g'ajagi; 2) kaktus tikani va no'xat gajaklari; 3) kartoshka tugunagi va turpning ildizmevasi; 4) malina va maymunjonning tikani.",
+      "options": [
+        "a - 1; b - 3",
+        "a - 4; b - 3",
+        "a - 2; b - 1",
+        "a - 3; b - 1"
+      ],
+      "answer": "a - 2; b - 1"
+    },
+    {
+      "question": "Xromosoma uchun mos keluvchi ma'lumotlarni ko'rsating. 1) zog'ora baliqda 52 juft 2) drozofila pashshasida 8 juft 3) qalampirda 24 juft 4) zog'ora baliqda 104 ta 5) shimpanzeda 24 ta 6) suvarakda 48 ta",
+      "options": [
+        "1, 3, 4, 6",
+        "2, 5",
+        "1, 3, 5, 6",
+        "1, 4, 6"
+      ],
+      "answer": "1, 4, 6"
+    },
+    {
+      "question": "Odamlardagi obrazli xotira (a) va harakat xotirasi (b) ga xos bo'lgan ma'lumotlar to'g'ri ko'rsatilgan javobni aniqlang.",
+      "options": [
+        "a - hissiy qo'zg'alishda ajralib chiqadigan gormonlar bilan bog'liq; b - bosh miya yarimsharlari chakka va ensa qismlaridagi eshitish va ko'rish markazlarida qoladigan izlar bilan bog'liq",
+        "a - bosh miya yarimsharlari po'stlog'ining tepa qismi bilan bog'liq; b - odamlar qiyofasi, tabiat ko'rinishlari, musiqa ohangi va narsalar hidini eslab qolishga yordam beradi",
+        "a - odamlar qiyofasi, tabiat ko'rinishlari, musiqa ohangi va narsalar hidini eslab qolishga yordam beradi; b - bosh miya yarimsharlari po'stlog'ining peshana qismi bilan bog'liq",
+        "a - bosh miya yarimsharlari chakka va ensa qismlaridagi eshitish va ko'rish markazlarida qoladigan izlar bilan bog'liq; b - hissiy qo'zg'alishda ajralib chiqadigan gormonlar bilan bog'liq"
+      ],
+      "answer": "a - odamlar qiyofasi, tabiat ko'rinishlari, musiqa ohangi va narsalar hidini eslab qolishga yordam beradi; b - bosh miya yarimsharlari po'stlog'ining peshana qismi bilan bog'liq"
+    },
+    {
+      "question": "Postembrional rivojlanish davri metamorfoz yo'li bilan amalga oshuvchi umurtqasiz organizmlarni aniqlang. 1) sariq falanga; 2) butli o'rgimchak; 3) exinokokk; 4) nereida; 5) yomg'ir chuvalchangi; 6) odam askaridasi; 7) sariq chayon; 8) chuchuk suv gidrasi",
+      "options": [
+        "4, 5",
+        "1, 7",
+        "2, 8",
+        "3, 6"
+      ],
+      "answer": "3, 6"
+    },
+    {
+      "question": "Sog'lom katta yoshdagi odam umurtqa pog'onasining 11 va 12 umurtqalari uchun umumiy bo'lgan xususiyatlar quyidagilar orasidan nechta ekanligini aniqlang. 1) umurtqa pog'onasi lordozini hosil qilishda qatnashadi; 2) umurtqa pog'onasi kifozini hosil qilishda qatnashadi; 3) bel umurtqasi hisoblanadi; 4) ko'krak umurtqasi hisoblanadi; 5) dumg'aza umurtqasi hisoblanadi; 6) 7 juft chin qovurg'alar birikadi; 7) 3 juft soxta qovurg'alar birikadi; 8) 2 juft yetim qovurg'alar birikadi; 9) ektodermadan rivojlanadi; 10) mezodermadan rivojlanadi; 11) endodermadan rivojlanadi; 12) uzun g'ovak suyak hisoblanadi; 13) kalta g'ovak suyak hisoblanadi.",
+      "options": [
+        "2 ta",
+        "3 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "answer": "4 ta"
+    },
+    {
+      "question": "Odam organizmidagi nefronlarning qaysi qismi buyrakning po'stloq qismida joylashmagan?",
+      "options": [
+        "birlamchi ilonizi naychalar",
+        "Shumlyanskiy-Baumen kapsulasi",
+        "ikkilamchi ilonizi naychalar",
+        "Genle halqasi"
+      ],
+      "answer": "Genle halqasi"
+    },
+    {
+      "question": "Ildiz bachkisidan ko'payadigan, kserofit (a) va yog'ochligi yumshoq, gigrofit (b) o'simliklarni tanlang.",
+      "options": [
+        "a - yantoq; b - jiyda",
+        "a - na'matak; b - tol",
+        "a - olvoli; b - yulg'un",
+        "a - qoraqat; b - jiyda"
+      ],
+      "answer": "a - na'matak; b - tol"
+    },
+    {
+      "question": "Quyidagi zotlar ichidan ikki bo'lmali yurak va ikki bo'lmali oshqozon (a) va ikki bo'lmali yurak va to'rt bo'lmali oshqozonga (b) ega bo'lganlarini tanlang. 1) ko'k qoya kaptar; 2) gereford; 3) pekin; 4) shvits; 5) shortgorn; 6) lekgorn; 7) moskva; 8) vladimir; 9) axaltaka; 10) nyugempshir; 11) bankiv; 12) qisqichbaqa; 13) yevropa turi",
+      "options": [
+        "a-1, 3, 6, 7; b-2, 4, 5, 13",
+        "a-2, 4, 5, 13; b-1, 3, 6, 7",
+        "a-3, 6, 7; b-2, 4, 5",
+        "a-3, 7, 10, 12; b-4, 5"
+      ],
+      "answer": "a-3, 6, 7; b-2, 4, 5"
+    },
+    {
+      "question": "Yon bargchali bargga ega bo'lgan o'simliklar ikkinchi nomi to'g'ri ko'rsatilgan javobni aniqlang. 1) qizilmiya - shirinmiya; 2) garmdori - qalampir; 3) ra'no - na'matak; 4) piyozli arpa - javdar; 5) gledichiya - oq akatsiya; 6) matur - mador piyoz; 7) tuxumak - yapon saforasi; 8) qora jusan - turon shuvog'i; 9) meksika g'o'zasi - oddiy g'o'za",
+      "options": [
+        "1, 3, 5",
+        "2, 3, 7",
+        "2, 4, 8",
+        "1, 7, 9"
+      ],
+      "answer": "1, 7, 9"
+    },
+    {
+      "question": "Parenximada joylashgan uchi berk bir qavatli epiteliy to'qimalardan iborat tarmoqlangan naychalardan boshlanadi. Naychalar yirik naychaga kelib tutashadi. Tana bo'shlig'ini to'ldirib turgan suyuqlikdagi ortiqcha suv va zaharli moddalar diffuziya jarayoni orqali yirik naylarga yig'iladi va tashqariga chiqarib yuboriladi. Ushbu ta'rifga mos keluvchi ayiruv sistemasini ko'rsating.",
+      "options": [
+        "metanefridiy",
+        "protonefridiy",
+        "qisqaruvchi vakuola",
+        "birlamchi buyrak"
+      ],
+      "answer": "protonefridiy"
+    },
+    {
+      "question": "Quyida berilgan ma'lumotlarga mos keluvchi o'simliklar to'g'ri berilgan javobni aniqlang. a) gultojbarglari beshta qo'shilgan; b) gultojbarglari beshta qo'shilmagan.",
+      "options": [
+        "a - malina, qora jusan; b - jag'-jag', qora ituzum",
+        "a - timnoqgul, bodring; b - rediska, jag'-jag', kartoshka",
+        "a - qoqio't, baqlajon; b - bodring, qulupnay",
+        "a - kartoshka, qashqargul; b - baobab, meksika g'o'zasi"
+      ],
+      "answer": "a - kartoshka, qashqargul; b - baobab, meksika g'o'zasi"
+    },
+    {
+      "question": "Ra'nodoshlar oilasi oddiy (1) va murakkab (2) barglini belgilang: a) olma; b) qulupnay; v) na'matak; g) atirgul; d) nok; e) yeryong'oq",
+      "options": [
+        "1-a, d; 2-b, v, g, e",
+        "1-a, d, e; 2-b, v, g",
+        "1-b, v, g; 2-a, d",
+        "1-a, d; 2-b, v, g"
+      ],
+      "answer": "1-a, d; 2-b, v, g"
+    },
+    {
+      "question": "Bir qavat membranali, ferment saqlovchi (a) va membranasiz, ferment sintezlovchi (b) organoidlarni aniqlang.",
+      "options": [
+        "a - lizosoma; b - endoplazmatik to'r",
+        "a - golji majmuasi; b - endoplazmatik to'r",
+        "a - lizosoma; b - ribosoma",
+        "a - mitoxondriya; b - ribosoma"
+      ],
+      "answer": "a - lizosoma; b - ribosoma"
+    },
+    {
+      "question": "Mezozoy erasida, yagona quruqlik - Pangeya ikki bo'lakka ajralgan davrda ... .",
+      "options": [
+        "arxeopteriks paydo bo'lgan",
+        "yo'ldoshli sutemizuvchilar paydo bo'lgan",
+        "kordaitlar paydo bo'lgan",
+        "hozirgi kaltakesaklarning ajdodi paydo bo'lgan"
+      ],
+      "answer": "arxeopteriks paydo bo'lgan"
+    },
+    {
+      "question": "Odam va boshqa umurtqali hayvonlar gemoglobin zanjiridagi aminokislotalar tarkibidagi farqlar (a) va anafazada xromosomalarning ikki qutbga tarqalmasligi natijasida yuzaga keladigan o'zgarish (b) qaysi hodisaga misol bo'ladi?",
+      "options": [
+        "a - mikroevolutsiya; b - makroevolutsiya",
+        "a - makroevolutsiya; b - makroevolutsiya",
+        "a - makroevolutsiya; b - mikroevolutsiya",
+        "a - mikroevolutsiya; b - mikroevolutsiya"
+      ],
+      "answer": "a - makroevolutsiya; b - mikroevolutsiya"
+    },
+    {
+      "question": "Cho'l va adirlarda (1), Yevropaning janubida (2), Uzoq Sharq suv havzalarida (3), tropik dengizlarda (4) uchraydigan toshbaqalarni belgilang. a) O'rta Osiyo toshbaqasi; b) botqoq toshbaqasi; c) terili toshbaqa; d) dengiz toshbaqasi",
+      "options": [
+        "1-a, 2-b, 3-c, 4-d",
+        "1-a, 2-d, 3-c, 4-b",
+        "1-a, 2-b, 3-d, 4-c",
+        "1-a, 2-e, 3-b, 4-d"
+      ],
+      "answer": "1-a, 2-b, 3-c, 4-d"
+    },
+    {
+      "question": "Suv ilon uchun xos xususiyatlarni aniqlang. 1) zahar bezlari bo'lmaydi 2) qovurg'alari mavjud 3) tulaganda terisi yaxlit ko'chib tushadi 4) yurak qorinchasida yarim to'sig'i bo'ladi 5) o'ljasini bo'g'ib o'ldiradi 6) yuqori jag'ida zaxar bezlari mavjud 7) urug'lanishi tashqi 8) havoda tarqalgan tovushlar eshitmaydi",
+      "options": [
+        "2 3 8",
+        "4 5 6",
+        "1 3 7",
+        "5 6 7"
+      ],
+      "answer": "2 3 8"
+    },
+    {
+      "question": "O'simlik (a), hayvon (b) odamda (c), bakteriyalarda (d) parazitlik qiluvchi hayotning hujayrasiz shakllarini juftlang.",
+      "options": [
+        "a - tamaki mozaikasi; b - quturish; c - OITS; d - gepatit",
+        "a - vertitsil; b - bakteriofag; c - OITS; d - gepatit",
+        "a - tamaki mozaikasi; b - quturish; c - grip; d - bakteriofag",
+        "a - nematoda; b - quturish; c - OITS; d - bakteriofag"
+      ],
+      "answer": "a - tamaki mozaikasi; b - quturish; c - grip; d - bakteriofag"
+    },
+    {
+      "question": "Uch bargchali murakkab bargga ega bo'lgan vatani O'rta yer dengizi (a) va Markaziy Amerika (b) bo'lgan o'simliklarni ko'rsating.",
+      "options": [
+        "a - loviya; b - mosh",
+        "a - beda; b - loviya",
+        "a - beda; b - no'xat",
+        "a - mosh; b - beda"
+      ],
+      "answer": "a - beda; b - loviya"
+    },
+    {
+      "question": "Arktik adaptiv tip uchun xos xususiyatlarni aniqlang. 1) sovuq iqlim sharoitida yashaydi 2) issiq va nam oqim sharoitida yashaydi 3) atmosfera bosimi past 4) quyosh radiatsiyasi juda kuchli 5) C vitamin istemol qiladi 6) hayvon oqsili nisbatan kam 7) sovuq sharoitda shakllanadi 8) jazirama quruq sharoitda yashaydi",
+      "options": [
+        "3, 7",
+        "1, 5",
+        "2, 6",
+        "4, 8"
+      ],
+      "answer": "3, 7"
+    },
+    {
+      "question": "Termitlar va bir hujayrali xivchinlilar (a) hamda qalpoqchali zamburug'lar va yuksak o'simliklar (b) ning o'zaro munosabat turi qanday ramziy belgilar bilan ifodalanishi to'g'ri ko'rsatilgan javobni aniqlang. 1) (++); 2) (+0) ; 3) (0- ) ; 4) (+-).",
+      "options": [
+        "a - 2; b - 1",
+        "a - 1; b - 4",
+        "a - 3; b - 2",
+        "a - 1; b - 1"
+      ],
+      "answer": "a - 1; b - 1"
+    },
+    {
+      "question": "Kvakshaning chap kovak venasida (a), chap uyqu arteriyasida (b), chap aorta yoyida (c) va yurak qorinchasida (d) qanday qon harakatlanishini moslab ko'rsating. 1) arterial; 2) aralash; 3) venoz.",
+      "options": [
+        "a - 3; b - 1; c - 2; d - 2",
+        "a - 3; b - 1; c - 2; d - 3",
+        "a - 1; b - 1; c - 2; d - 3",
+        "a - 2; b - 3; c - 1; d - 2"
+      ],
+      "answer": "a - 3; b - 1; c - 2; d - 2"
+    },
+    {
+      "question": "Moddalar almashinuvi bosqichlari va ularga xos jarayonlar o'rtasidagi muvofiqlikni aniqlang. 1) fotosintezning yorug'lik bosqichi; 2) energiya almashinuvining tayyorgarlik bosqichi; 3) translyatsiya; a) ATF sintezi; b) t-RNKning aminokislota bilan bog'lanishi; c) polimerlarning monomerlarga parchalanishi; d) DNK sintezi",
+      "options": [
+        "1 - a; 2 - c; 3 - b",
+        "1 - c; 2 - a; 3 - b",
+        "1 - a; 2 - c; 3 - d",
+        "1 - d; 2 - a; 3 - b"
+      ],
+      "answer": "1 - a; 2 - c; 3 - b"
+    },
+    {
+      "question": "33. O'simlikda assimilatsiya hosil bo'lgan va dissimilatsiyada parchalangan glyukoza nisbati 18:1 ga teng. O'simlikda shu payt jami 3368 mol ATF sintezlangan bo'lsa (fotosintezda sintezlangan jami ATFlar glyukoza sintezi uchun sarf bo'lgan), shu payt o'simlikda anaerob sharoitda sintezlangan jami ATFlar sonini toping.",
+      "options": [
+        "3260",
+        "3600",
+        "4640",
+        "3280",
+        "4320",
+        "1800"
+      ],
+      "answer": "1800"
+    },
+    {
+      "question": "34. O'simlikda assimilatsiya hosil bo'lgan va dissimilatsiyada parchalangan glyukoza nisbati 18:1 ga teng. O'simlikda shu payt jami 3368 mol ATF sintezlangan bo'lsa (fotosintezda sintezlangan jami ATFlar glyukoza sintezi uchun sarf bo'lgan), aerob sharoitda ATFda to'plangan energiya miqdorini toping (kJ).",
+      "options": [
+        "3260",
+        "3600",
+        "4640",
+        "3280",
+        "4320",
+        "1800"
+      ],
+      "answer": "3260"
+    },
+    {
+      "question": "35. O'simlikda assimilatsiya hosil bo'lgan va dissimilatsiyada parchalangan glyukoza nisbati 18:1 ga teng. O'simlikda shu payt jami 3368 mol ATF sintezlangan bo'lsa (fotosintezda sintezlangan jami ATFlar glyukoza sintezi uchun sarf bo'lgan), dissimilatsiyada jami necha g glyukoza parchalangan?",
+      "options": [
+        "3260",
+        "3600",
+        "4640",
+        "3280",
+        "4320",
+        "1800"
+      ],
+      "answer": "3600"
+    },
+    {
+      "type": "closed",
+      "question": "36. Yapon saforasining gametogenez jarayonida mikrosporotsit hujayralarining 50 foizidan mikrosporalar hosil bo'ldi. Hosil bo'lgan mikrosporalarning 50 foizidan chang donachalari, generativ hujayralarning 50 foizidan spermiyalar hosil bo'ldi. Spermiyalarning barchasi qo'sh urug'lanish jarayonida qatnashdi. Qo'sh urug'lanish jarayonidan so'ng hosil bo'lgan endospermlardagi xromosomalar soni 210000 tani tashkil etdi. Agar mikrosporalarni hosil qilishda qatnashmagan mikrosporotsit hujayralar soni 5000 tani tashkil etsa, yapon saforasining bitta murtak xaltachasidagi xromosomalar sonini aniqlang.",
+      "placeholder": "Javobni yozing",
+      "answer": ["7"]
+    },
+    {
+      "type": "closed",
+      "question": "37. Shimpanzeda 4 ta ovogoniylar ketma ket 3 marta mitoz so'ngra har bir hosil bo'lgan ovogoniylar meyoz bo'lindi, hosil bo'lgan tuxum hujayralarning 12.5% qismi Y sperma bilan urug'landi, qolgani nobudgan bo'lsa, hosil bo'lgan zigotalarning har biri 3 marta meridional bo'lingandan keyin jinsiy xromosonadagi X xromosomalar sonini toping.",
+      "placeholder": "Javobni yozing",
+      "answer": ["32"]
+    },
+    {
+      "type": "closed",
+      "question": "38. Translyatsiya jarayonida hosil bo'lgan oqsildagi aminokislotalar soni, shu oqsil sinteziga javobgar bo'lgan DNK qo'sh zanjiridagi adeninlar sonidan 2,4 marta kam. Agar DNKdagi vodorod bog'lar soni 3960 tani tashkil etsa, shu DNKdagi guaninlar sonini aniqlang. (terminator tripletlari hisobga olinmasin)",
+      "placeholder": "Javobni yozing",
+      "answer": ["360"]
+    },
+    {
+      "type": "closed",
+      "question": "39. Maxsus sharoitda ikkita DNK molekulasining birinchisidan Eco RI, ikkinchisidan Bam HI restriktazalari yordamida jami 15 ta yangi DNK bo'laklari olindi. Agar barcha DNK bo'laklari tarkibidagi vodorod bog'lari yig'indisi dastlabki ikki DNK molekulasi tarkibidagi vodorod bog'lari yig'indisidan 116 taga farq qilsa, birinchi DNKda nechta vodorod bog' uzilgan?",
+      "placeholder": "Javobni yozing",
+      "answer": ["12"]
+    },
+    {
+      "type": "closed",
+      "question": "40. Glukoza to'liqsiz va to'liq parchalaganda 6480 kJ ATF molekulalarida bog'langan energiya hosil bo'ldi. Shu jarayonda ajralib chiqqan CO2 miqdori glukoza parchalanishidan hosil bo'lgan suv miqdoridan 7,75 marta kam bo'lsa, to'liq parchalangan glukozani hosil qilish uchun qancha miqdorda ATFda bog'langan energiya talab qilinadi?",
+      "placeholder": "Javobni yozing",
+      "answer": ["1440"]
+    },
+    {
+      "type": "closed-multi",
+      "question": "41. Odamlarda nafas olish sistemasi o'rganilganda ikki xil patologiya o'rganildi. Birinchi xil patologiya o'rganilganda genotipda faqat dominant A geni borligi aniqlandi. Genotipda faqat dominant B gen bo'lsa ikkinchi xil patologiya yuzaga chiqaradi. Bu genlarning retsessiv allellari yig'indisi ham anomalitik bo'ladi va astma kuzatiladi. Ushbu kasalliklarni yuzaga chiqaruvchi genlar bo'yicha genotipda ikki xil dominant gen saqlasa sog'lom bo'ladi. R geni pakanalik, uning retsessiv esa bo'yning uzun bo'lishini, D geni ko'zning yumaloq bo'lishini uning retsessiv alleli esa ko'zning qisiq bo'lishini ta'minlaydi. Ushbu genlar har xil autosomalarda joylashgan bo'lib to'liq dominantlik asosida yuzaga chiqadi. Faqat ikkinchi xil patologiyaga ega, pakana, ko'zning shakli yumaloq bo'lgan ayol bilan ikki xil patologiya bo'yicha ham sog'lom pakana bo'yli (gomozigota), ko'zning shakli yumaloq erkak turmush qurdi. F1 da olingan 640 ta avlod orasida ikki xil patologiya bo'yicha kasal pakana bo'yli (har xil gameta hosil qiladi) ko'zining shakli qisiq farzandlar ham uchradi (nazariy ma'lumotlar asosida savollarga javob bering).",
+      "contextItems": [
+        "a) F1 avloddagi birinchi xil patologiyaga ega farzandlarning nechta nechtasi bo'yi pakana ko'zining shakli qisiq bo'ladi",
+        "b) F1 avloddagi farzandlarning nechtasi sog'lom, pakana, ko'zining shakli yumaloq bo'ladi",
+        "c) F1 avloddagi kasal farzandlarning necha foizi ikki xil anomaliyaga ega bo'ladi"
+      ],
+      "fields": [
+        { "label": "a) Javob", "placeholder": "a) javobni kiriting" },
+        { "label": "b) Javob", "placeholder": "b) javobni kiriting" },
+        { "label": "c) Javob", "placeholder": "c) javobni kiriting" }
+      ],
+      "answer": [
+        ["20 ta", "20ta", "20"],
+        ["180 ta", "180ta", "180"],
+        ["12.5%", "12,5%", "12.5", "12,5"]
+      ]
+    },
+    {
+      "type": "closed-multi",
+      "question": "42. Odamlarda rang ajratolmaslik (daltonizm) va gemofiliya genlari jinsiy xromosomada joylashgan bo'lib, to'liq birikkan holda irsiylanadi. Braxidaktiliya kasalligining barmoqlar kamroq qisqarishidan tortib ko'proq qisqarishigacha bo'lgan shakllari bor. Barmoqlarning qisqaligi dominant tipda irsiylanadi. Ushbu mutatsiyaga uchragan odamlar shajarasini o'rganish tufayli bu belgi fenotipda asosiy (B) genidan tashqari modifikator genlar ishtirokida namoyon bo'lishi aniqlandi. Modifikator retsessiv genlar (n) gomozigota holatda bo'lsa, barmoqlarning keskin qisqarishiga olib keladi. Modifikator genlarning dominant alleli (N) gomozigota holatda barmoqlarning kamroq qisqarishiga olib keladi, geterozigota holatda esa o'rtacha qisqarishiga sababchi bo'ladi. Mutatsiya tufayli (BB) genotipga ega farzandlar embrionlikda nobud bo'lgan. Turmush qurgan erkak normal ko'rish qobiliyatiga ega bo'lib, barmoqlari o'rtacha qisqargan (uning onasi gemofiliya bo'yicha sog'lom, otasi kasal bo'lgan), ayol daltonizm va gemofiliya kasalligi bo'yicha sog'lom (dominant genlarni birini otasidan, ikkinchisini onasidan olgan), barmoqlari shaklini belgilovchi genlar retsessiv gomozigotali bo'lsa;",
+      "contextItems": [
+        "a) gemofiliya kasalligi bilan kasallangan o'g'il farzandlarning necha % i barmoqlari o'rtacha qisqargan?",
+        "b) qizlarning necha % i daltonizm bilan kasallangan?",
+        "c) farzandlarning qancha % embrionlik davrida nobud bo'ladi?",
+        "d) qiz farzandlarning qanchasi genotipik onasiga o'xshash bo'ladi?"
+      ],
+      "fields": [
+        { "label": "a) Javob", "placeholder": "a) javobni kiriting" },
+        { "label": "b) Javob", "placeholder": "b) javobni kiriting" },
+        { "label": "c) Javob", "placeholder": "c) javobni kiriting" },
+        { "label": "d) Javob", "placeholder": "d) javobni kiriting" }
+      ],
+      "answer": [
+        ["25%", "25 %", "25"],
+        ["0%", "0 %", "0"],
+        ["25%", "25 %", "25"],
+        ["50%", "50 %", "50"]
+      ]
+    },
+    {
+      "type": "closed-multi",
+      "question": "43. Sholi o'simligida megasporatsitlarning 40 % idan megaspora hosil bo'ldi. Megaspora hosil qilmagan megasporatsitlar soni 9000 tani tashkil etdi. Hosil bo'lgan megasporalarning 60 % idan murtak xaltalari rivojlandi. Murtak xaltalarining 75%i normal spermiyalar bilan urug'landi. Megasporatsit bo'linishi jarayonida xromosomalarning qutblarga tarqalishi buzilganligi sababli 4n to'plamli markaziy hujayralar ham hosil bo'lgan. Buning natijasida hosil bo'lgan endospermlarning 30%i 5n to'plamli, qolgan qismi esa normal xromosoma to'plamli bo'lgan. Hosil bo'lgan endospermlardagi jami xromosomalar yig'indisi 116640 taga teng bo'ldi.",
+      "contextItems": [
+        "a) dastlabki megasporatsitlardagi xromosomalar sonini aniqlang.",
+        "b) 3n endosperm hosil qilgan murtak xaltadagi xromosomalar sonini aniqlang.",
+        "c) urug'lanishda qatnashgan spermiyalardagi xromosomalar yig'indisini aniqlang"
+      ],
+      "fields": [
+        { "label": "a) Javob", "placeholder": "a) javobni kiriting" },
+        { "label": "b) Javob", "placeholder": "b) javobni kiriting" },
+        { "label": "c) Javob", "placeholder": "c) javobni kiriting" }
+      ],
+      "answer": [
+        ["6"],
+        ["9"],
+        ["64800"]
+      ]
+    }
+  ]
+}

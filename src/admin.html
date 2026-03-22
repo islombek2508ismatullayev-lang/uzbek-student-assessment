@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Studentlar va Testlar</title>
+    <meta name="description" content="Ro'yxatdan o'tgan studentlar ro'yxati va test savollarini boshqarish sahifasi.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#10214f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="platform-page">
+    <div class="admin-auth-shell" id="admin-auth-shell">
+        <section class="auth-card admin-login-card" aria-labelledby="admin-login-title">
+            <h1 id="admin-login-title">Admin kirish</h1>
+            <p class="access-note">Studentlar va testlarni boshqarish uchun admin login bilan kiring.</p>
+
+            <form class="login-form" id="admin-login-form" novalidate>
+                <label class="field">
+                    <span>Login</span>
+                    <input type="text" id="admin-username" name="username" placeholder="admin" autocomplete="username" required>
+                </label>
+
+                <label class="field">
+                    <span>Parol</span>
+                    <input type="password" id="admin-password" name="password" placeholder="Parol" autocomplete="current-password" required>
+                </label>
+
+                <p class="form-message" id="admin-login-message" aria-live="polite"></p>
+                <button class="button auth-submit" id="admin-login-button" type="submit">Kirish</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="page-shell is-hidden" id="admin-app">
+        <header class="hero platform-hero">
+            <div class="admin-hero">
+                <div class="hero__intro">
+                    <p class="eyebrow">Admin Panel</p>
+                    <h1>Studentlar va testlar boshqaruvi</h1>
+                    <p class="hero__text">
+                        Studentlar profili, online holati, test natijalari va savollar boshqaruvi shu yerda jamlangan.
+                    </p>
+                </div>
+                <div class="admin-hero__actions">
+                    <button class="button" id="admin-logout" type="button">Chiqish</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="admin-main">
+            <section class="admin-stats-grid">
+                <article class="profile-mini-stat admin-stat-card">
+                    <span>Jami student</span>
+                    <strong id="students-count">0</strong>
+                </article>
+                <article class="profile-mini-stat admin-stat-card">
+                    <span>Jami kirish</span>
+                    <strong id="visits-count">0</strong>
+                </article>
+                <article class="profile-mini-stat admin-stat-card">
+                    <span>Noyob tashrifchi</span>
+                    <strong id="unique-visitors-count">0</strong>
+                </article>
+                <article class="profile-mini-stat admin-stat-card">
+                    <span>Holat</span>
+                    <strong id="students-status">Yuklanmoqda...</strong>
+                </article>
+                <article class="profile-mini-stat admin-stat-card">
+                    <span>Faol fan</span>
+                    <strong id="active-subject-label">Ona tili</strong>
+                </article>
+                <article class="profile-mini-stat admin-stat-card">
+                    <span>Jami savol</span>
+                    <strong id="questions-count">0</strong>
+                </article>
+            </section>
+
+            <section class="quiz-card admin-section-card">
+                <div class="admin-toolbar">
+                    <h2>Websitega kirgan foydalanuvchilar</h2>
+                    <button class="button" id="refresh-students" type="button">Yangilash</button>
+                </div>
+                <p class="quiz-helper" id="admin-message">Ro'yxatdan o'tgan foydalanuvchilar ro'yxati shu yerda ko'rinadi. Ism-familyani bossangiz batafsil ma'lumot ochiladi.</p>
+                <div class="students-table-wrap">
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Profil</th>
+                                <th>To'liq ism-familya</th>
+                                <th>Online</th>
+                                <th>Oxirgi faollik</th>
+                                <th>Kirgan soni</th>
+                                <th>Eng yaxshi natija</th>
+                            </tr>
+                        </thead>
+                        <tbody id="students-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="quiz-card admin-section-card admin-student-detail" id="admin-student-detail">
+                <div class="admin-toolbar">
+                    <h2>Tanlangan foydalanuvchi</h2>
+                    <span class="quiz-helper" id="student-detail-status">Jadvaldan student tanlang.</span>
+                </div>
+                <div class="admin-student-detail__hero">
+                    <div class="admin-student-detail__identity">
+                        <div class="admin-student-detail__avatar" id="detail-student-avatar">MS</div>
+                        <div>
+                            <p class="card-label">Faol student</p>
+                            <h3 id="detail-student-name">Student tanlanmagan</h3>
+                            <p class="quiz-helper" id="detail-student-email">-</p>
+                            <p class="quiz-helper" id="detail-student-phone">-</p>
+                        </div>
+                    </div>
+                    <div class="admin-student-detail__stats">
+                        <div class="profile-mini-stat">
+                            <span>Online holati</span>
+                            <strong id="detail-student-online">-</strong>
+                        </div>
+                        <div class="profile-mini-stat">
+                            <span>Oxirgi faollik</span>
+                            <strong id="detail-student-last-seen">-</strong>
+                        </div>
+                        <div class="profile-mini-stat">
+                            <span>Websitega kirgan soni</span>
+                            <strong id="detail-student-visits-count">0</strong>
+                        </div>
+                        <div class="profile-mini-stat">
+                            <span>Birinchi kirgan vaqt</span>
+                            <strong id="detail-student-first-seen">-</strong>
+                        </div>
+                        <div class="profile-mini-stat">
+                            <span>Qaysi sahifada</span>
+                            <strong id="detail-student-page">-</strong>
+                        </div>
+                        <div class="profile-mini-stat">
+                            <span>Ishlagan testlar</span>
+                            <strong id="detail-student-tests-count">0</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-student-detail__info-grid">
+                    <article class="admin-student-detail__info-card">
+                        <span class="card-label">Aloqa ma'lumotlari</span>
+                        <p><strong>Gmail:</strong> <span id="detail-student-email-inline">-</span></p>
+                        <p><strong>Telefon:</strong> <span id="detail-student-phone-inline">-</span></p>
+                        <p><strong>IP manzil:</strong> <span id="detail-student-ip">-</span></p>
+                    </article>
+                    <article class="admin-student-detail__info-card">
+                        <span class="card-label">Natija xulosasi</span>
+                        <p><strong>Eng yaxshi natija:</strong> <span id="detail-student-best-result">-</span></p>
+                        <p><strong>Ro'yxatdan o'tgan vaqt:</strong> <span id="detail-student-created-at">-</span></p>
+                    </article>
+                </div>
+                <div class="students-table-wrap">
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>Fan</th>
+                                <th>Baho</th>
+                                <th>Ball</th>
+                                <th>Foiz</th>
+                                <th>To'g'ri / Jami</th>
+                                <th>Yakunlangan vaqt</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-results-body">
+                            <tr>
+                                <td colspan="6">Student tanlangandan keyin natijalar shu yerda chiqadi.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="quiz-card admin-section-card">
+                <div class="admin-toolbar">
+                    <h2>Shu yerdan test qo'shish va boshqarish</h2>
+                    <div class="admin-toolbar__actions">
+                        <button class="button button--secondary" id="refresh-tests" type="button">Savollarni yangilash</button>
+                        <button class="button button--secondary is-hidden" id="cancel-edit" type="button">Tahrirni bekor qilish</button>
+                    </div>
+                </div>
+
+                <div class="admin-import-card admin-import-card--primary">
+                    <div class="admin-toolbar">
+                        <h3>Eng oson usul</h3>
+                        <div class="admin-toolbar__actions">
+                            <button class="button button--secondary" id="load-bulk-editor" type="button">Joriy savollarni yuklash</button>
+                            <button class="button" id="save-bulk-editor" type="button">Hammasini saqlash</button>
+                        </div>
+                    </div>
+                    <p class="quiz-helper">1. Fanni tanlang. 2. `Joriy savollarni yuklash` ni bosing. 3. Pastdagi katta oynada savollarni o'zgartiring. 4. `Hammasini saqlash` ni bosing.</p>
+                    <p class="quiz-helper">Har qator formati: <code>question,optionA,optionB,optionC,optionD,answer</code></p>
+                    <textarea id="bulk-editor-input" rows="10" placeholder='question,optionA,optionB,optionC,optionD,answer&#10;"Savol 1","A","B","C","D","A"'></textarea>
+                </div>
+
+                <form class="test-manager-form" id="test-manager-form">
+                    <label class="field">
+                        <span>Fan</span>
+                        <select id="test-subject" name="subject">
+                            <option value="mother-tongue">Ona tili</option>
+                            <option value="math">Matematika</option>
+                            <option value="chemistry">Kimyo</option>
+                            <option value="biology">Biologiya</option>
+                            <option value="history">Tarix</option>
+                            <option value="physics">Fizika</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Savol turi</span>
+                        <select id="question-type" name="questionType">
+                            <option value="mcq">Yopiq test</option>
+                            <option value="closed">Ochiq test</option>
+                            <option value="closed-pair">2 qismli yozma</option>
+                            <option value="closed-multi">Ko'p qismli yozma</option>
+                        </select>
+                    </label>
+
+                    <label class="field field--full">
+                        <span>Savol matni</span>
+                        <textarea id="question-text-input" name="question" rows="3" placeholder="Savolni kiriting" required></textarea>
+                    </label>
+
+                    <label class="field question-mode question-mode--mcq">
+                        <span>Variant A</span>
+                        <input type="text" id="option-a" name="optionA" placeholder="1-variant" required>
+                    </label>
+
+                    <label class="field question-mode question-mode--mcq">
+                        <span>Variant B</span>
+                        <input type="text" id="option-b" name="optionB" placeholder="2-variant" required>
+                    </label>
+
+                    <label class="field question-mode question-mode--mcq">
+                        <span>Variant C</span>
+                        <input type="text" id="option-c" name="optionC" placeholder="3-variant" required>
+                    </label>
+
+                    <label class="field question-mode question-mode--mcq">
+                        <span>Variant D</span>
+                        <input type="text" id="option-d" name="optionD" placeholder="4-variant" required>
+                    </label>
+
+                    <label class="field question-mode question-mode--mcq">
+                        <span>To'g'ri javob</span>
+                        <select id="correct-answer" name="answer">
+                            <option value="A">Variant A</option>
+                            <option value="B">Variant B</option>
+                            <option value="C">Variant C</option>
+                            <option value="D">Variant D</option>
+                        </select>
+                    </label>
+
+                    <label class="field question-mode question-mode--closed field--full is-hidden" id="single-answer-field">
+                        <span>To'g'ri javob</span>
+                        <input type="text" id="single-answer-input" placeholder="Masalan: 1440 yoki 12.5%">
+                    </label>
+
+                    <label class="field question-mode question-mode--closed-pair question-mode--closed-multi field--full is-hidden" id="multi-answer-count-field">
+                        <span>Javob qismlari soni</span>
+                        <input type="number" id="multi-answer-count" min="2" max="8" step="1" value="3">
+                    </label>
+
+                    <label class="field question-mode question-mode--closed-pair question-mode--closed-multi field--full is-hidden" id="multi-answer-config-field">
+                        <span>Javob variantlari</span>
+                        <textarea id="multi-answer-config" rows="8" placeholder='Har qatorda bitta qism yoziladi.&#10;Masalan:&#10;a) Javob|20 ta;20ta;20&#10;b) Javob|180 ta;180ta;180&#10;c) Javob|12.5%;12,5%;12.5'></textarea>
+                    </label>
+
+                    <div class="field field--actions">
+                        <button class="button" id="save-question" type="submit">Savolni saqlash</button>
+                    </div>
+                </form>
+
+                <div class="admin-import-card">
+                    <div class="admin-toolbar">
+                        <h3>CSV import</h3>
+                        <button class="button button--secondary" id="import-csv" type="button">CSV import qilish</button>
+                    </div>
+                    <p class="quiz-helper">Excel faylingizni avval CSV ko'rinishida saqlang. Ustunlar tartibi: <code>question,optionA,optionB,optionC,optionD,answer</code></p>
+                    <textarea id="csv-import-input" rows="6" placeholder='question,optionA,optionB,optionC,optionD,answer&#10;"18 + 7 nechaga teng?","24","25","26","27","25"'></textarea>
+                </div>
+
+                <p class="quiz-helper" id="tests-message">Fan bo'yicha savollar yuklanmoqda...</p>
+
+                <div class="students-table-wrap">
+                    <table class="students-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Savol</th>
+                                <th>Variantlar</th>
+                                <th>To'g'ri javob</th>
+                                <th>Amallar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tests-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="quiz-card admin-section-card">
+                <div class="admin-toolbar">
+                    <h2>Bildirishnoma yuborish</h2>
+                </div>
+                <div class="admin-import-card admin-import-card--primary">
+                    <p class="quiz-helper">Bu forma orqali admin barcha ro'yxatdan o'tgan foydalanuvchilarga bir xil bildirishnoma yuborishi mumkin.</p>
+                    <form class="test-manager-form" id="broadcast-notification-form">
+                        <label class="field field--full">
+                            <span>Sarlavha</span>
+                            <input type="text" id="broadcast-title" name="title" placeholder="Masalan: Muhim e'lon" maxlength="120" required>
+                        </label>
+                        <label class="field field--full">
+                            <span>Xabar</span>
+                            <textarea id="broadcast-message" name="message" rows="4" placeholder="Barcha foydalanuvchilarga yuboriladigan xabarni yozing..." required></textarea>
+                        </label>
+                        <div class="field field--actions">
+                            <button class="button" id="broadcast-submit" type="submit">Barchaga yuborish</button>
+                            <p class="form-message" id="broadcast-status" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="quiz-card admin-section-card">
+                <div class="admin-toolbar">
+                    <h2>Feedback boshqaruvi</h2>
+                    <button class="button" id="refresh-feedbacks" type="button">Yangilash</button>
+                </div>
+                <p class="quiz-helper" id="feedbacks-message">Feedbacklar yuklanmoqda...</p>
+                <div class="feedback-list admin-feedback-list" id="admin-feedback-list"></div>
+            </section>
+
+            <section class="quiz-card admin-section-card">
+                <div class="admin-toolbar">
+                    <h2>Chat boshqaruvi</h2>
+                    <button class="button" id="refresh-discussions" type="button">Yangilash</button>
+                </div>
+                <p class="quiz-helper" id="discussions-message">Chat postlari yuklanmoqda...</p>
+                <div class="feedback-list admin-feedback-list" id="admin-discussion-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/platform.js"></script>
+    <script src="js/admin.js?v=20260321-admin-discussions"></script>
+</body>
+</html>

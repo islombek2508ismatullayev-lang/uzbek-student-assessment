@@ -1,0 +1,42 @@
+{
+  "totalVisits": 12,
+  "uniqueVisitors": {
+    "visitor_1774028041752_n3fe3ee7": {
+      "firstSeenAt": "2026-03-20T17:34:01.852Z",
+      "lastSeenAt": "2026-03-21T15:45:43.003Z",
+      "visitCount": 4,
+      "ipAddress": "::1"
+    },
+    "visitor_1774028833143_6mis21ci": {
+      "firstSeenAt": "2026-03-20T17:47:13.192Z",
+      "lastSeenAt": "2026-03-20T17:47:13.192Z",
+      "visitCount": 1,
+      "ipAddress": "::1"
+    },
+    "visitor_1774032276501_j1yo3qv1": {
+      "firstSeenAt": "2026-03-20T18:44:36.508Z",
+      "lastSeenAt": "2026-03-21T14:38:29.235Z",
+      "visitCount": 3,
+      "ipAddress": "::1"
+    },
+    "visitor_1774087026318_2tvpyrfq": {
+      "firstSeenAt": "2026-03-21T10:33:57.646Z",
+      "lastSeenAt": "2026-03-21T10:33:57.646Z",
+      "visitCount": 1,
+      "ipAddress": "::1"
+    },
+    "visitor_1774089274826_06934hyi": {
+      "firstSeenAt": "2026-03-21T10:34:34.890Z",
+      "lastSeenAt": "2026-03-21T15:46:49.008Z",
+      "visitCount": 2,
+      "ipAddress": "::1"
+    },
+    "visitor_1774108312750_lme4dgzo": {
+      "firstSeenAt": "2026-03-21T15:51:52.854Z",
+      "lastSeenAt": "2026-03-21T15:51:52.854Z",
+      "visitCount": 1,
+      "ipAddress": "::1"
+    }
+  },
+  "updatedAt": "2026-03-21T15:51:52.854Z"
+}

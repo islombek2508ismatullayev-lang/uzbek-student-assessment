@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260">
+  <rect width="640" height="260" fill="#ffffff"/>
+  <line x1="110" y1="70" x2="430" y2="180" stroke="#222222" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="82" x2="430" y2="192" stroke="#cfcfcf" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="82,92 110,70 118,110" fill="none" stroke="#222222" stroke-width="4"/>
+  <line x1="430" y1="180" x2="430" y2="92" stroke="#222222" stroke-width="4"/>
+  <polygon points="430,72 420,94 440,94" fill="#222222"/>
+  <path d="M395 178 A38 38 0 0 1 430 142" fill="none" stroke="#222222" stroke-width="3"/>
+  <text x="78" y="58" font-family="Times New Roman, serif" font-size="32" font-style="italic" fill="#222222">O</text>
+  <text x="438" y="195" font-family="Times New Roman, serif" font-size="32" font-style="italic" fill="#222222">A</text>
+  <text x="446" y="116" font-family="Times New Roman, serif" font-size="32" font-style="italic" fill="#222222">F</text>
+  <text x="385" y="165" font-family="Times New Roman, serif" font-size="30" font-style="italic" fill="#222222">α</text>
+</svg>

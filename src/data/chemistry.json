@@ -1,0 +1,286 @@
+{
+  "questions": [
+    {
+      "question": "Suvga nima qo'shilganda muzlash temperaturasi pasayadi. (p=kons)",
+      "options": ["sovuq suv", "Muz bo'lagi", "issiq suv", "osh tuzi"],
+      "answer": "osh tuzi"
+    },
+    {
+      "question": "Quyidagi berilgan birikmalarda bog'ning qutbliligi qanday o'zgaradi? NH3 → CH4 → H2O → HF a) ortadi; b) kamayadi",
+      "options": ["1-a; 2-b; 3-a", "1-b; 2-a; 3-a", "1-b; 2-b; 3-a", "1-b; 2-a; 3-b"],
+      "answer": "1-b; 2-a; 3-a"
+    },
+    {
+      "question": "Qaysi modda o't o'chirish ballonlarini zaryadlashda ishlatiladi?",
+      "options": ["Na2CO3", "KHCO3", "K2CO3", "NaHCO3"],
+      "answer": "NaHCO3"
+    },
+    {
+      "question": "Qaysi elementning qo'zg'almagan holatda toq elektronlari 3 ta?",
+      "options": ["mishyak", "temir", "Kaliy", "Xlor"],
+      "answer": "mishyak"
+    },
+    {
+      "question": "X aminokislota tetrapolimerlanganda massasi 18% ga kamayadi. X aminokislotani HBr bilan reaksiyasidan hosil bo'lgan organik moddaning molar massasini (g/mol) toping.",
+      "options": ["180", "156", "155", "175"],
+      "answer": "156"
+    },
+    {
+      "question": "Etan, propen, divinil aralashmasining molar massasi 39 g/mol bo'lsa, shunday aralashmaning 31.2 gramini yondirish uchun qancha (g) kislorod kerak?",
+      "options": ["54,4", "64,4", "108,8", "34,4"],
+      "answer": "108,8"
+    },
+    {
+      "question": "Qaysi elementning qo'zg'almagan holatda tashqi p-pog'onachasida 3 ta toq elektronlari mavjud?",
+      "options": ["mishyak", "temir", "alyuminiy", "xlor"],
+      "answer": "mishyak"
+    },
+    {
+      "question": "Kristall modda tuzulishi o'rganilganda oktaedir XO6 va tetraedir OX4 ekanligi aniqlandi shu modda formulasini toping.",
+      "options": ["Al2O3", "CrO3", "MnO2", "Fe3O4"],
+      "answer": "Fe3O4"
+    },
+    {
+      "question": "0,75 mol metoksietanga yuqori harorat ostida mo'l miqdorda konsentrlangan HJ ta'sir ettirildi. Reaksiya 80% unum bilan borgan bo'lsa, hosil bo'lgan metil yodid massasini (g) hisoblang.",
+      "options": ["223,5", "85,2", "93,6", "178,8"],
+      "answer": "85,2"
+    },
+    {
+      "question": "Quyidagi reaksiya uchun 8 mol SO2 va 4 mol O2 olindi. Reaksiyadan so'ng SO2 ning 20% i qoldi. (V = 1 litr) KM toping. SO2 + O2 = SO3",
+      "options": ["4", "20", "5", "16"],
+      "answer": "20"
+    },
+    {
+      "question": "0,4 foizli Ftorid kislota eritmasidagi H ionlarini molini toping. (diss=2%)",
+      "options": ["0.002 mol", "0.004 mol", "0.008 mol", "0.016 mol"],
+      "answer": "0.004 mol"
+    },
+    {
+      "question": "Natriy etilat olishda 6 g vodorod gazi ajralib chiqqan bo'lsa, dastlabki spirt tarkibida necha mol vodorod atomi bo'lgan?",
+      "options": ["36", "6", "18", "24"],
+      "answer": "36"
+    },
+    {
+      "question": "42,8 g temir va noma'lum II valentli metall O2 da yondirilganda massasi 12,8 g ga ortdi. Xuddi shu aralashma HCl kislota bilan ta'sirlashganda 0,7 mol gaz ajraladi. Metallni toping.",
+      "options": ["Zn", "Fe", "Cu", "Cr"],
+      "answer": "Zn"
+    },
+    {
+      "question": "Ham birikish ham oksidlanish reaksiyasini toping.",
+      "options": ["BaO+H2O=Ba(OH)2", "FeSO4+Zn=Fe+ZnSO4", "C+O2=CO2", "CaCO3=CaO2+CO2"],
+      "answer": "C+O2=CO2"
+    },
+    {
+      "question": "50 % li sulfat kislota eritmasi tok o'tkazmasligini ta'minlash uchun 5 A tok bilan 26,8 soat davomida elektroliz qilindi. Dastlabki eritmaning massasini (g) aniqlang.",
+      "options": ["180", "45", "135", "90"],
+      "answer": "90"
+    },
+    {
+      "question": "Quyidagi moddalardan nechtasi kumush ko'zgu reaksiyasiga kirishadi? 1) glukoza; 2) fruktoza; 3) maltoza; 4) trigalloza; 5) riboza; 6) chumoli kislota; 7) laktoza; 8) saxaroza.",
+      "options": ["4", "5", "3", "6"],
+      "answer": "3"
+    },
+    {
+      "question": "Quyidagi reaksiyaning tezligi 0,025 mol/l·sek ga teng. 4 minutdan keyin H2O miqdori 2,8 molni tashkil qildi. Suvning dastlabki miqdorini (mol) toping. V = 1 litr. CO + H2O = CO2 + H2",
+      "options": ["8,8", "9,9", "4", "6"],
+      "answer": "8,8"
+    },
+    {
+      "question": "Kristal modda tuzulishi o'rganilganda oktaedir XO6 va tetraedir OX4 ekanligi aniqlandi shu modda formulasini toping.",
+      "options": ["Al2O3", "CrO3", "MnO2", "Fe3O4"],
+      "answer": "Fe3O4"
+    },
+    {
+      "question": "Tarkibida 20% qo'shimcha saqlagan 32 g CaC2 suv bilan ishlov berilganda 6,72 l gaz (n.sh.) ajraldi. Reaksiya unumini (%) toping.",
+      "options": ["75", "25", "33,3", "26,5"],
+      "answer": "75"
+    },
+    {
+      "question": "Moddalar orasidan qaysi biri ionlarga yaxshi ajraladi?",
+      "options": ["NaBr", "FeS", "BaSO4", "H2O"],
+      "answer": "NaBr"
+    },
+    {
+      "question": "Ma'lum bir temperaturada to'yingan eritma 8 molyalli bo'lsa, eritmada erigan noma'lum moddani aniqlang. Noma'lum moddaning shu temperaturadagi eruvchanlik koeffitsienti 32 ga teng.",
+      "options": ["NaOH", "H2SO4", "KOH", "HNO3"],
+      "answer": "NaOH"
+    },
+    {
+      "question": "Tarkibida 20% qo'shimcha saqlagan CaC ning 32 gr mi H2O eritilganda 6.72 l gaz chiqdi. Reaksiya unumini toping.",
+      "options": ["75%", "25%", "33.3%", "26.5%"],
+      "answer": "75%"
+    },
+    {
+      "question": "NO2 + 2HJ →",
+      "options": ["NO + J2 + H2O", "NH3 + J2O", "N2 + J2 + H2O", "NH4J + H2O"],
+      "answer": "NO + J2 + H2O"
+    },
+    {
+      "question": "Na2SO4 dissotsilanishi natijasida ionlar soni 2,4 marta ortgan bo'lsa, dissotsilanish darajasini (%) aniqlang. (Suv zarrachalari va uning dissotsilanishi hisobga olinmasin)",
+      "options": ["70", "50", "80", "60"],
+      "answer": "70"
+    },
+    {
+      "question": "pH va pOH qiymatlari 1 : 2,5 nisbatda bo'lgan 600 ml eritmada nechta H+ ionlari bo'ladi? (NA=6·10^23 mol-1)",
+      "options": ["2,4·10^19", "6,0·10^18", "15·10^18", "3,66·10^19"],
+      "answer": "3,66·10^19"
+    },
+    {
+      "question": "I guruh ishqoriy metallning 43,6 gr birikmasiga CO2 qo'shilganda tuz va 19,2 gr gaz chiqdi. Birikmani toping. (birikma tarkibida 1 ta metall atomi bor)",
+      "options": ["K2O2", "KO2", "NaO2", "Na2O2"],
+      "answer": "NaO2"
+    },
+    {
+      "question": "55,2 g toluolga brom qo'shilganda 2:1 nisbatda 2,4-dibrom toluol va 2-brom toluol hosil bo'ldi. Hosil bo'lgan gazsimon aralashmani neytrallash uchun 20% li NaOH (p = 1,25 g/ml) eritmasidan necha ml kerak bo'ladi?",
+      "options": ["160", "80", "240", "120"],
+      "answer": "160"
+    },
+    {
+      "question": "Amfoter oksidga oid bo'lmagan moddalarni ko'rsating.",
+      "options": ["Cu2O, FeO", "Al2O3, PbO", "BeO, ZnO", "SnO2, MnO2"],
+      "answer": "Cu2O, FeO"
+    },
+    {
+      "question": "Metilamin va etilamindan iborat aralashma yondirilganda 5,6 litr (n.sh.) azot va 0,6 mol karbonat angidrid hosil bo'ldi. Boshlang'ich aralashmaning miqdoriy (mol) nisbatini aniqlang.",
+      "options": ["1:2", "2:3", "1:1", "4:1"],
+      "answer": "4:1"
+    },
+    {
+      "question": "Qaysi moddadan bir bosqichda etan olib bo'lmaydi?",
+      "options": ["propan kislota", "brometan", "etandiol", "etilen (C2H4)"],
+      "answer": "etandiol"
+    },
+    {
+      "question": "Kislotaning 1,5·10^23 ta molekulasining massasi 24,5 gr keladi, 1 mol miqdorida 48,16·10^23 ta atomga ega bo'ladi. Kislotani aniqlang?",
+      "options": ["Sulfat kislota", "Sulfid kislota", "Gipofosfat kislota", "Ortofosfat kislota"],
+      "answer": "Ortofosfat kislota"
+    },
+    {
+      "question": "Gravimetrik usulda tekshirilayotgan modda erimaydigan cho'kmaga aylantiriladi, filtrlanadi, yuviladi va quritiladi (yoki kuydiriladi). Ba2+ ushbu usul yordamida qaysi tuzlar bilan cho'ktirilganda hosil cho'kma tarkibida metall massa ulushi eng kam bo'ladi?",
+      "options": ["Na2CO3", "K2CrO4", "CuSO4", "Na2SO3"],
+      "answer": "K2CrO4"
+    },
+    {
+      "question": "30 gramm azot gazi va 3,75 gramm vodorod gazi reaksiyaga kirishildi va bu reaksiyadan X% unum bilan 17 gramm ammiak olindi. Olingan ammiak katalizator ishtirokida kislorod bilan reaksiyaga kirishildi. Bu reaksiyada unum 0,9X % ga teng bo'lsa, ushbu reaksiyadan necha gramm gaz ajralib chiqqan?",
+      "options": ["21,6", "0,75", "16", "1,75", "22,4", "14"],
+      "answer": "21,6"
+    },
+    {
+      "question": "30 gramm azot gazi va 3,75 gramm vodorod gazi reaksiyaga kirishildi va bu reaksiyadan X% unum bilan 17 gramm ammiak olindi. Olingan ammiak katalizator ishtirokida kislorod bilan reaksiyaga kirishildi. Bu reaksiyada unum 0,9X % ga teng bo'lsa, ortib qolgan vodorodning massasini hisoblang.",
+      "options": ["21,6", "0,75", "16", "1,75", "22,4", "14"],
+      "answer": "0,75"
+    },
+    {
+      "question": "30 gramm azot gazi va 3,75 gramm vodorod gazi reaksiyaga kirishildi va bu reaksiyadan X% unum bilan 17 gramm ammiak olindi. Olingan ammiak katalizator ishtirokida kislorod bilan reaksiyaga kirishildi. Bu reaksiyada unum 0,9X % ga teng bo'lsa, ortib qolgan azodning massasini hisoblang.",
+      "options": ["21,6", "0,75", "16", "1,75", "22,4", "14"],
+      "answer": "14"
+    },
+    {
+      "type": "closed",
+      "question": "Etil benzol va kumol kaliy permanganatning kislotali eritmasida eritildi. Bunda hosil bo'lgan MnSO4 teng miqdorda chiqishi uchun etil benzol va kumol qanday mol nisbatda aralashtirilishi kerak?",
+      "answer": [
+        "etilbenzol : kumol = 2 : 1",
+        "etil benzol : kumol = 2 : 1",
+        "etilbenzol:kumol=2:1",
+        "etilbenzol : kumol = 2:1",
+        "2:1",
+        "2 : 1"
+      ]
+    },
+    {
+      "type": "closed",
+      "question": "Temir (II)-nitrat eritmasiga suv qo'shilganda (p = 1g/ml) eritma massasi 2 marta, hajmi esa 2,25 marta ortdi. Hosil bo'lgan eritmada nitrat ionlarining molyar konsentratsiyasi 2 mol/l ga teng bo'ldi. Dastlabki eritmadagi Fe(NO3)2 massa ulushini (%) toping.",
+      "answer": [
+        "40.5%",
+        "40,5%",
+        "40.5",
+        "40,5"
+      ]
+    },
+    {
+      "type": "closed",
+      "question": "60 g Zn plastinka 120 g MgSO4 va AgNO3 eritmasiga tushirildi. MgSO4 ning ushbu eritmadagi massa ulushi 10%. Biroz vaqtdan keyin plastinka massasi X g ga yetganda chiqarib olindi. Olingan eritmaga 200 g 14% li KOH eritmasi qo'shilganda 14,71 g cho'kma va tarkibida faqat tuz saqlagan eritma hosil bo'ldi. X ni aniqlang.",
+      "answer": [
+        "73.6g",
+        "73,6g",
+        "73.6 g",
+        "73,6 g",
+        "73.6",
+        "73,6"
+      ]
+    },
+    {
+      "type": "closed",
+      "question": "Metan kreking qilinganda H2, CO, CO2, C2H2, CH4 va suv bug'lari hosil bo'ldi. nCO = H2O, nCO2 = nC2H2. Suv bug'lari kondetsatlangandan so'ng M = 14 g/mol ga teng bo'ldi. Metanning necha %i parchalangan? CO ning moli CO2 dan 3 marta katta.",
+      "answer": [
+        "100%",
+        "100"
+      ]
+    },
+    {
+      "type": "closed",
+      "question": "Ikki xil to'yingan bir atomli spirt (tarkibida kislorodning massa ulushi teng bo'lgan) iborat 0,015 mol aralashma havoda qizdirilgan mis bilan oksidlandi. Olingan aralashmaga kumush oksidining ammiakdagi eritmasi qo'shilganda 3,24 g cho'kma va 1,575 g ammoniyli tuzlar aralashmasi olindi. Dastlabki spirtlarning umumiy massasini (g) toping.",
+      "answer": [
+        "1.11g",
+        "1,11g",
+        "1.11 g",
+        "1,11 g",
+        "1.11",
+        "1,11"
+      ]
+    },
+    {
+      "type": "closed-multi",
+      "question": "CuO, FeO va aluminiydan iborat aralashmaga yetarli miqdorda NH3 qo'shilganda aralashma massasi 24 g ga kamaydi. Hosil bo'lgan metallar HCl eritmasiga qo'shildi. Erimay qolgan qattiq qoldiq konsentrlangan nitrat kislota bilan ta'sirlashdi. Oddiy gazning hajmi murakkab gaz hajmidan 2,5 marta ko'p. Dastlabki aralashmada Al ning massasi CuO ning massasidan 13 g ga kam ekani ma'lum bo'lsa, javoblarni toping.",
+      "fields": [
+        { "label": "a) Javob", "placeholder": "a) javobni kiriting" },
+        { "label": "b) Javob", "placeholder": "b) javobni kiriting" },
+        { "label": "c) Javob", "placeholder": "c) javobni kiriting" },
+        { "label": "d) Javob", "placeholder": "d) javobni kiriting" },
+        { "label": "e) Javob", "placeholder": "e) javobni kiriting" }
+      ],
+      "answer": [
+        ["49g", "49 g", "49"],
+        ["24g", "24 g", "24"],
+        ["20%", "20"],
+        ["150g", "150 g", "150"],
+        ["14 marta", "14"]
+      ]
+    },
+    {
+      "type": "closed-multi",
+      "question": "Quyidagi topshiriqlarga javob bering.",
+      "contextItems": [
+        "a) Oddiy gazsimon sarg'ish-yashil rangli va o'tkir hidli A modda kumushsimon oq, zichligi suvnkidan kichik bo'lgan B metall bilan ta'sirlashdi. Natijada alangan rangini binafsha rangga bo'yaydigan C modda hosil bo'ldi. Ushbu qattiq C moddaga konsentrlangan sulfat kislota ta'sir ettirilganda suvda yaxshi eriydigan rangsiz gaz ajraldi. A moddaning molyar massasini (g/mol) aniqlang.",
+        "b) O'tkir hidli rangsiz A gaz katalizator ishtirokida kislorod bilan oksidlanib o'zini uchuvchan suyuqlik sifatida namoyon qiluvchi B moddaga aylandi. B modda so'ndirilmagan ohak eritmasi bilan ta'sirlashib C tuzini hosil qildi. A moddaning molyar massasini (g/mol) aniqlang.",
+        "c) Ikkita oddiy moddadan hosil bo'lgan X modda ham xlor (mo'l miqdorda) bilan, ham vodorod xlorid bilan reaksiyaga kirishadi va har ikki holatda ham bir xil oq suvda eriydigan modda olinadi. X moddaning molyar massasini (g/mol) aniqlang."
+      ],
+      "fields": [
+        { "label": "a) Javob", "placeholder": "a) javobni kiriting" },
+        { "label": "b) Javob", "placeholder": "b) javobni kiriting" },
+        { "label": "c) Javob", "placeholder": "c) javobni kiriting" }
+      ],
+      "answer": [
+        ["71 g/mol", "71g/mol", "71"],
+        ["64 g/mol", "64g/mol", "64"],
+        ["17 g/mol", "17g/mol", "17"]
+      ]
+    },
+    {
+      "type": "closed-multi",
+      "question": "A, B, C moddalar har xil sinf vakillari. Ular tarkibidagi metallmaslar ketma-ket keladigan davrlarda joylashgan. Tarkibidagi metall bir xil davr va bitta guruhda joylashgan. A va D bitta sinfga mansub. Ular turli sinflarga mansub bo'lib kislota, asos va tuz xossalarini namoyon qiladi. Moddalar o'zaro reaksiyaga kirishadi va ayrim hollarda cho'kma hosil qiladi. Quyidagi formulalarni aniqlang.",
+      "fields": [
+        { "label": "A javob", "placeholder": "A formulani kiriting" },
+        { "label": "B javob", "placeholder": "B formulani kiriting" },
+        { "label": "C javob", "placeholder": "C formulani kiriting" },
+        { "label": "D javob", "placeholder": "D formulani kiriting" }
+      ],
+      "answer": [
+        ["HCl"],
+        ["Hg(OH)2", "Hg(OH)₂"],
+        ["Na2S", "Na₂S"],
+        ["HgCl2", "HgCl₂"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natijalar | Milliy Sertifikat Platformasi</title>
+    <meta name="description" content="Milliy sertifikat imtihonlari uchun C dan A+ gacha baholashga ega natija sahifasi.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#10214f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="results-page">
+    <main class="results-shell">
+        <section class="results-hero">
+            <div class="results-hero__badge">Natija</div>
+            <h1 id="results-title">Tabriklaymiz!</h1>
+            <p id="results-message">Imtihon yakunlandi. Natijangiz quyida ko'rsatiladi.</p>
+
+            <div class="results-score-card">
+                <h2 id="results-subject">Imtihon natijasi</h2>
+                <p class="results-grade" id="results-grade">A+</p>
+                <p class="results-points" id="results-points">Ball: 0</p>
+                <p class="results-percent" id="results-total-points">Maksimal ball: 0</p>
+                <p class="results-percent" id="results-percent">Foiz: 0%</p>
+            </div>
+        </section>
+
+        <section class="results-stats-grid">
+            <article class="result-stat">
+                <span>Jami savollar</span>
+                <strong id="stat-total">0</strong>
+            </article>
+            <article class="result-stat">
+                <span>To'g'ri javoblar</span>
+                <strong id="stat-correct">0</strong>
+            </article>
+            <article class="result-stat">
+                <span>Noto'g'ri javoblar</span>
+                <strong id="stat-incorrect">0</strong>
+            </article>
+        </section>
+
+        <section class="results-review">
+            <div class="admin-toolbar">
+                <h2>Javoblar tahlili</h2>
+                <div class="admin-actions">
+                    <a class="button-link" href="dashboard.html">Bosh panel</a>
+                    <a class="button-link" id="review-subject-link" href="dashboard.html">Testlar ro'yxati</a>
+                </div>
+            </div>
+            <div class="students-table-wrap">
+                <table class="students-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Savol</th>
+                            <th>To'g'ri javob</th>
+                            <th>Sizning javobingiz</th>
+                            <th>Holat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-review-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/platform.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>

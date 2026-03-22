@@ -1,0 +1,532 @@
+{
+  "questions": [
+    {
+      "question": "Jismning harakat tenglamasi x = -10 + 12t - 2t<sup>2</sup> [m] qonuniyat bo'yicha o'zgarmoqda. Uning to'xtaguncha bosib o'tadigan masofasini (m) aniqlang.",
+      "options": [
+        "12",
+        "18",
+        "4",
+        "8"
+      ],
+      "answer": "18"
+    },
+    {
+      "question": "Jism boshlang'ich tezliksiz 5 s davomida 7,5 m masofa bosdi. Keyin 12 s davomida o'zgarmas tezlik bilan harakat qildi. So'ngra 6 s da esa tekis sekinlashib to'xtadi. Jismning oxirgi 12 s ichidagi o'rtacha tezligini (m/s) aniqlang.",
+      "options": [
+        "1,25",
+        "2,5",
+        "2,25",
+        "3,5"
+      ],
+      "answer": "2,25"
+    },
+    {
+      "question": "Qiya tekislik bo'ylab ishqalanishsiz sirpanib tushayotgan jismning tekislik oxiridagi tezligi &radic;v bo'lsa, u qiya tekislik uzunligining 2/3 qismini o'tgandagi tezligi qanday?",
+      "options": [
+        "&radic;6v/3",
+        "&radic;2v/2",
+        "&radic;v/3",
+        "&radic;v/2"
+      ],
+      "answer": "&radic;6v/3"
+    },
+    {
+      "question": "To'la sirtining yuzasi 96 cm<sup>2</sup> bo'lgan kubning massasi 160 g ga teng. Kub tayyorlangan moddaning zichligini aniqlang.",
+      "options": [
+        "1500",
+        "800",
+        "1800",
+        "2500"
+      ],
+      "answer": "2500"
+    },
+    {
+      "question": "Bir kuch m<sub>1</sub> massali jismga 2 m/s<sup>2</sup> tezlanish, m<sub>2</sub> massali jismga 6 m/s<sup>2</sup> tezlanish bera oladi. Shu kuch m<sub>1</sub> - m<sub>2</sub> massali jismga qanday tezlanish bera oladi?",
+      "options": [
+        "2",
+        "3",
+        "8",
+        "4"
+      ],
+      "answer": "3"
+    },
+    {
+      "question": "Massasi 2,5 kg bo'lgan jism qiyalik burchagi 30&deg; bo'lgan va qiya tekislikka parallel 12 N kuch bilan ushlab turilibdi. Jism va sirt orasidagi ishqalanish kuchini (N) toping.",
+      "options": [
+        "0,3",
+        "0,4",
+        "0,5",
+        "0,6"
+      ],
+      "answer": "0,5"
+    },
+    {
+      "question": "m massali OA sterjen rasmda ko'rsatilgandek muvozanatda turibdi. Bunda: m = 2 kg, OA = 1,5 m va sin &alpha; = 0,8. F kuchning O nuqtaga nisbatan kuch momentini (N &middot; m) aniqlang.",
+      "image": "assets/physics-q7-diagram.svg",
+      "imageAlt": "O va A nuqtalari bilan ko'rsatilgan sterjen, A nuqtada yuqoriga yo'nalgan F kuchi va alpha burchagi chizmasi",
+      "imageSize": "small",
+      "options": [
+        "9,6",
+        "12",
+        "10",
+        "15"
+      ],
+      "answer": "12"
+    },
+    {
+      "question": "Ko'l sirtidan 40 m chuqurlikdagi umumiy bosimni (kPa) aniqlang. p<sub>0</sub> = 10<sup>5</sup> Pa",
+      "options": [
+        "500",
+        "400",
+        "40",
+        "50"
+      ],
+      "answer": "500"
+    },
+    {
+      "question": "x = A cos &omega;t qonuniyati bilan garmonik tebranayotgan jismning tezligi ifodasini ko'rsating.",
+      "options": [
+        "&minus;A&omega; sin &omega;t",
+        "A&omega; sin &omega;t",
+        "&minus;A&omega; cos &omega;t",
+        "A&omega; cos &omega;t"
+      ],
+      "answer": "&minus;A&omega; sin &omega;t"
+    },
+    {
+      "question": "Parrak uchining burchak tezligi vaqtga quyidagicha bog'langan: &omega; = &pi;(15 - 2t) bo'lsa, parrak 5 s da necha marta aylanadi?",
+      "options": [
+        "25",
+        "12,5",
+        "20",
+        "30"
+      ],
+      "answer": "25"
+    },
+    {
+      "question": "Neft saqlanayotgan katta idishda aylanish natijasida girdob hosil bo'ldi. Girdob markazidagi sath bilan chekkadagi sath orasidagi balandlik farqi 0,45 m ni tashkil etdi. Aylanish oqibatida hosil bo'lgan neft oqimining chetki nuqtadagi tezligini toping. Havoning qarshiligi va ichki ishqalanish hisobga olinmasin.",
+      "options": [
+        "2",
+        "5",
+        "4",
+        "3"
+      ],
+      "answer": "3"
+    },
+    {
+      "question": "R va 2R radiusli silindrlar rasmdagidek joylashgan. 2R radiusli silindr qo'zg'almas va R radiusli silindr uni atrofida sirpanishsiz aylanadi. Kichik silindr kattasi atrofida 2 marta aylanishi uchun o'zi necha marta aylanadi.",
+      "image": "assets/physics-q12-diagram.svg",
+      "imageAlt": "1 va 2 deb belgilangan, biri kichik biri katta bo'lgan ikki aylana ko'rinishidagi silindrlar chizmasi",
+      "imageSize": "tiny",
+      "options": [
+        "4",
+        "6",
+        "2",
+        "1"
+      ],
+      "answer": "6"
+    },
+    {
+      "question": "5 mol CO2 gazidagi kislorod atomlari sonini aniqlang.",
+      "options": [
+        "6 &middot; 10<sup>24</sup>",
+        "3 &middot; 10<sup>24</sup>",
+        "1,5 &middot; 10<sup>24</sup>",
+        "6 &middot; 10<sup>23</sup>"
+      ],
+      "answer": "6 &middot; 10<sup>24</sup>"
+    },
+    {
+      "question": "12 mol bir atomli ideal gazning temperaturasi 60 K ga ortdi. Uning ichki energiyasi qanday (kJ) o'zgargan?",
+      "options": [
+        "5,98",
+        "8,975",
+        "15",
+        "3,9"
+      ],
+      "answer": "8,975"
+    },
+    {
+      "question": "20 g geliy gazi temperaturasi o'zgarmas bosim sharoitida 20 °C ga orttirildi. Gazning bajargan ishini (J) aniqlang.",
+      "options": [
+        "831",
+        "3324",
+        "1246,5",
+        "2077,5"
+      ],
+      "answer": "831"
+    },
+    {
+      "question": "0 °C haroratli katta muz ustiga mis bo'lagi qo'yildi. Mis muzga to'liq botishi uchun u qanday boshlang'ich haroratda (°C) bo'lishi kerak?",
+      "options": [
+        "78",
+        "88",
+        "92",
+        "98"
+      ],
+      "answer": "88"
+    },
+    {
+      "question": "Radiusi 5r va 3r bo'lgan sharlarning zaryadlari mos ravishda -20q va +4q ga teng. Dastlab, sharlar tekkizilmasdan oldingi F1 kuch bilan ta'sirlashmoqda. Ular bir-biriga tekkizilib qaytib olingandan keyin F2 kuch bilan ta'sirlashadi. F1/F2 nisbatni aniqlang. Sharlar orasidagi masofa ularning radiuslaridan juda katta deb oling.",
+      "options": [
+        "3/4",
+        "4/3",
+        "5/3",
+        "3/5"
+      ],
+      "answer": "4/3"
+    },
+    {
+      "question": "Turg'un to'lqinning tugunlari orasidagi masofa 0.5 m bo'lsa, to'lqin uzunligi qanday bo'ladi? (m)",
+      "options": [
+        "0.25",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": "2"
+    },
+    {
+      "question": "q zaryadga ega sharning radiusi 4 marta orttirilsa, uning elektr maydon energiyasi qanday o'zgaradi?",
+      "options": [
+        "2 marta kamayadi",
+        "16 marta kamayadi",
+        "4 marta ortadi",
+        "4 marta kamayadi"
+      ],
+      "answer": "4 marta kamayadi"
+    },
+    {
+      "question": "Elektron va pozitron qo'shilganda 2 ta gamma kvanti nurlanadi. Annigilyatsiyada zarralar tezligi kichik bo'lsa, hosil bo'lgan gamma kvantlarni impulslarini toping? (rasmga qarang)",
+      "options": [
+        "2hc/m_e",
+        "hc/m_e",
+        "hc/2m_e",
+        "m_ec"
+      ],
+      "answer": "m_ec"
+    },
+    {
+      "question": "Al<sup>+3</sup> ioni elektroliz jarayonida 5 &middot; 96500 C ga teng zaryad oqib o'tdi. Ajralib chiqqan moddaning miqdorini (mol) aniqlang.",
+      "options": [
+        "3/5",
+        "5/3",
+        "3/2",
+        "2/3"
+      ],
+      "answer": "5/3"
+    },
+    {
+      "question": "5 mol bir atomli ideal gazning temperaturasi adiabatik 200 K ga ortsa ichki energiya qanday o'zgaradi (kJ)?",
+      "options": [
+        "8.31",
+        "12.5",
+        "1000",
+        "16,62"
+      ],
+      "answer": "12.5"
+    },
+    {
+      "question": "Induksiyasi 0,25 T bo'lgan bir jinsli magnit maydonga 20 cm<sup>2</sup> yuzali ramka joylashtirildi. Agar ramkadan 0,6 A tok oqayotgan bo'lsa, ramkani aylantiruvchi maksimal kuch momentini (N &middot; m) aniqlang.",
+      "options": [
+        "2 &middot; 10<sup>-4</sup>",
+        "4 &middot; 10<sup>-4</sup>",
+        "1,5 &middot; 10<sup>-4</sup>",
+        "3 &middot; 10<sup>-4</sup>"
+      ],
+      "answer": "3 &middot; 10<sup>-4</sup>"
+    },
+    {
+      "question": "Yopiq zanjirdan tok o'tishi natijasida elektromagnit maydon hosil bo'ldi. t = 5 min da bu maydon qancha masofani (km) bosib o'tadi?",
+      "options": [
+        "9 &middot; 10<sup>7</sup>",
+        "9 &middot; 10<sup>8</sup>",
+        "3 &middot; 10<sup>7</sup>",
+        "3 &middot; 10<sup>8</sup>"
+      ],
+      "answer": "9 &middot; 10<sup>7</sup>"
+    },
+    {
+      "question": "Lazer nuri ikkiga bo'lindi. Ular bir xil qalinlikdagi suvda shishadan o'tib ekranga tushadi. Ularning qaysi biri ekranga tezroq yetib boradi?",
+      "options": [
+        "suvda",
+        "shishada",
+        "ikkalasida bir xil",
+        "muhitga bog'liq emas"
+      ],
+      "answer": "suvda"
+    },
+    {
+      "question": "O'quvchi 50° burchak ostida ko'rinadigan jismga 10 marta kattalashtiradigan lupa orqali qaraganda burchak necha gradus bo'lib ko'rinadi?",
+      "options": [
+        "50°",
+        "5°",
+        "10°",
+        "100°"
+      ],
+      "answer": "50°"
+    },
+    {
+      "question": "A nuqta rasmda ko'rsatilgandek vertikal 8 m/s tezlik bilan, MN yassi ko'zgu esa gorizontal 3 m/s tezlik bilan chapga tomon harakatlanmoqda. A nuqtaning ko'zgudagi tasvirining yerga nisbatan tezligini (m/s) toping.",
+      "image": "assets/physics-q27-diagram.svg",
+      "imageAlt": "A nuqtasi yuqoriga 8 m/s tezlik bilan harakatlanmoqda, MN vertikal ko'zgu esa chapga 3 m/s tezlik bilan siljimoqda",
+      "imageSize": "small",
+      "options": [
+        "8",
+        "√52",
+        "10",
+        "√73"
+      ],
+      "answer": "10"
+    },
+    {
+      "question": "Ignaning massasi 0,8 g, uchining yuzasi 0,2 mm<sup>2</sup> deb hisoblab, vertikal tik qo'yilgan ignaning asosga bosimini (kPa) toping.",
+      "options": [
+        "50",
+        "35",
+        "40",
+        "45"
+      ],
+      "answer": "40"
+    },
+    {
+      "question": "Muhitda 2 zarra bir-biriga tomon 0,7c va 0,4c tezlikda harakat qilmoqda. Ularning nisbiy tezligi qanday bo'ladi? c &mdash; yorug'likning vakuumdagi tezligi.",
+      "options": [
+        "0,86c",
+        "c",
+        "1,1c",
+        "0,3c"
+      ],
+      "answer": "0,86c"
+    },
+    {
+      "question": "Tinchlikdagi zichligi 12,8 g/cm<sup>3</sup> bo'lgan jism 0,6c tezlik bilan harakat qilmoqda. Uning harakatdagi zichligini aniqlang.",
+      "options": [
+        "12,8",
+        "16",
+        "21,3",
+        "20"
+      ],
+      "answer": "12,8"
+    },
+    {
+      "question": "Elektron va pozitron juftligi annigilyatsiyalanganda 2 ta gamma kvantini hosil qiladi. Dastlab, zarralarning boshlang'ich tezliklari juda kichik bo'lgan bo'lsa, hosil bo'lgan har bir gamma kvantning energiyasini aniqlang. m<sub>e</sub> &mdash; elektron va pozitronning massasi.",
+      "options": [
+        "m<sub>e</sub>c<sup>2</sup>",
+        "2m<sub>e</sub>c<sup>2</sup>",
+        "m<sub>e</sub>c<sup>2</sup>/2",
+        "m<sub>e</sub>c"
+      ],
+      "answer": "m<sub>e</sub>c<sup>2</sup>"
+    },
+    {
+      "question": "Geliy yadrosining bog'lanish energiyasi 27 MeV ga teng. Uning solishtirma bog'lanish energiyasi qanchaga (MeV/nuklon) teng?",
+      "options": [
+        "13,5",
+        "6,25",
+        "6,75",
+        "27"
+      ],
+      "answer": "6,75"
+    },
+    {
+      "question": "Topshiriqlar (33-35) va javob variantlari (A-F) ni o'zaro moslashtiring. 33-savol uchun mos javobni belgilang. Elektron va pozitron r radiusli aylana atrofida harakatlanib pozitroniy hosil bo'ldi. Elektronning massasi m<sub>e</sub>, zaryadi e ga teng. 33. Pozitroniyning kinetik energiyasini toping.",
+      "options": [
+        "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/2r",
+        "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/4r",
+        "+ke<sup>2</sup>/4r",
+        "+ke<sup>2</sup>/2r",
+        "&minus;ke<sup>2</sup>/2r",
+        "&minus;ke<sup>2</sup>/4r"
+      ],
+      "answer": "+ke<sup>2</sup>/4r"
+    },
+    {
+      "question": "Topshiriqlar (33-35) va javob variantlari (A-F) ni o'zaro moslashtiring. 34-savol uchun mos javobni belgilang. Elektron va pozitron r radiusli aylana atrofida harakatlanib pozitroniy hosil bo'ldi. Elektronning massasi m<sub>e</sub>, zaryadi e ga teng. 34. Pozitroniyning to'la energiyasini toping.",
+      "options": [
+        "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/2r",
+        "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/4r",
+        "+ke<sup>2</sup>/4r",
+        "+ke<sup>2</sup>/2r",
+        "&minus;ke<sup>2</sup>/2r",
+        "&minus;ke<sup>2</sup>/4r"
+      ],
+      "answer": "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/4r"
+    },
+    {
+      "question": "Topshiriqlar (33-35) va javob variantlari (A-F) ni o'zaro moslashtiring. 35-savol uchun mos javobni belgilang. Elektron va pozitron r radiusli aylana atrofida harakatlanib pozitroniy hosil bo'ldi. Elektronning massasi m<sub>e</sub>, zaryadi e ga teng. 35. Pozitroniyning potensial energiyasini toping.",
+      "options": [
+        "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/2r",
+        "2m<sub>e</sub>c<sup>2</sup> &minus; ke<sup>2</sup>/4r",
+        "+ke<sup>2</sup>/4r",
+        "+ke<sup>2</sup>/2r",
+        "&minus;ke<sup>2</sup>/2r",
+        "&minus;ke<sup>2</sup>/4r"
+      ],
+      "answer": "&minus;ke<sup>2</sup>/2r"
+    },
+    {
+      "type": "closed-pair",
+      "question": "Balandligi 3 m, uzunligi esa 5 m bo'lgan qiya tekislikdan jism sirpanib tushishni boshladi. Uning qiyalik oxiridagi tezligi 6 m/s ga teng.",
+      "contextItems": [
+        "a) Qiya tekislikning foydali ish koeffitsiyentini (%) toping.",
+        "b) Jism va qiyalik orasidagi ishqalanish koeffitsiyentini toping."
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["71.4", "71,4"],
+        ["0.3", "0,3"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Gorizontga qiyalatib otilgan, 800 g massali jismning maksimal ko'tarilish balandligi 80 cm ga, uchish uzoqligi 2,4 m.",
+      "contextItems": [
+        "a) Jismning boshlang'ich tezligini (m/s) toping.",
+        "b) Jismning maksimal balandlikdagi kinetik energiyasini (J) aniqlang."
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["5", "5.0", "5,0"],
+        ["3.6", "3,6"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Tennis raketkasiga koptok 12 m/s tezlik bilan urilib 16 m/s tezlikda qaytadi. Bunda koptokning kinetik energiyasi o'zgarishi 14 J ga teng bo'ldi.",
+      "contextItems": [
+        "a) Koptokning massasini (kg) toping.",
+        "b) Koptok impulsining o'zgarishini (kg &middot; m/s) toping."
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["0.25", "0,25"],
+        ["7", "7.0", "7,0"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Og'zi ochiq idish ichidagi gaz 200 K haroratdan 400 K haroratgacha qizdirildi. So'ngra idish germetik berkitilib harorati 320 K gacha sovitildi.",
+      "contextItems": [
+        "a) Birinchi holatda gaz bosimi qanday o'zgargan?",
+        "b) Ikkinchi holatda gaz bosimi qanday o'zgargan?"
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["o'zgarmaydi", "ozgarmaydi", "o‘zgarmaydi"],
+        ["1.25 marta kamayadi", "1,25 marta kamayadi"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Ichida 40 kPa bosim va 12 &middot; 10<sup>30</sup> ta molekulasi bor idish 25 kPa bosimli va 5 &middot; 10<sup>30</sup> ta molekulasi bor idish kran orqali tutashtirilgan. T = const.",
+      "contextItems": [
+        "a) Kran ochib yubosilsa, idishda qanday bosim (kPa) qaror topadi?",
+        "b) Kran ochilgandan so'ng birinchi idishdagi bosim qanchaga (kPa) kamayadi?"
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["34", "34.0", "34,0"],
+        ["6 kPa ga kamayadi", "6kPa ga kamayadi", "6 kpa ga kamayadi"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Ikki parallel cheksiz o'tkazgich orasidagi masofa 4 cm, ulardan bir yo'nalishda oqadigan toklar esa mos ravishda 4 A va 3 A ga teng.",
+      "contextItems": [
+        "a) Ikkala o'tkazgichning 5 m uzunligi qanday kuch bilan (&micro;N) ta'sirlashadi?",
+        "b) Birinchisidan 1 cm, ikkinchisidan esa 5 cm uzoqlikda joylashgan nuqtadagi natijaviy induksiyani (&micro;T) aniqlang."
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["300", "300.0", "300,0"],
+        ["92", "92.0", "92,0"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Radiolokatordan chiqayotgan elektromagnit to'lqin uzunligi 12 cm ga teng. U har sekundda 5000 ta impuls chiqaradi. Impuls davomiyligi 2 &micro;s.",
+      "contextItems": [
+        "a) Radiolokatordan chiqayotgan elektromagnit to'lqinning tebranish davrini (ns) toping.",
+        "b) Elektromagnit to'lqin yetib borishi mumkin bo'lgan eng uzoq masofani (km) toping."
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["0.4", "0,4"],
+        ["30", "30.0", "30,0"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Ikki kosmik kema bir tomonga mos ravishda 0,8c va 0,6c tezlikda harakatlanmoqda.",
+      "contextItems": [
+        "a) Ularning nisbiy tezligini klassik usulda toping.",
+        "b) Ularning nisbiy tezligini to'g'ri (relyativistik) usulda toping."
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["0,2c", "0.2c"],
+        ["5c/13", "5c / 13"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Tinchlikdagi energiyasi E bo'lgan jismning tezligi 0,6c dan 0,8c gacha ortdi.",
+      "contextItems": [
+        "a) Jismning impuls o'zgarishini aniqlang.",
+        "b) Jismning kinetik energiyasi qanday o'zgaradi?"
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["7E/12c", "7E / 12c"],
+        ["5E/12", "5E / 12"]
+      ]
+    },
+    {
+      "type": "closed-pair",
+      "question": "Rasmda ko'rsatilgan 50 kg massali yashikni turg'izib qo'yish uchun kamida qancha ish bajarish kerak? (J) g = 10 m/s<sup>2</sup>.",
+      "image": "assets/physics-q45-diagram.svg",
+      "imageAlt": "O'lchamlari 30 sm, 40 sm va 40 sm bo'lgan to'rtburchak yashik chizmasi",
+      "imageSize": "small",
+      "contextItems": [
+        "a) Yashikni turg'izib qo'yish uchun kamida qancha ish bajarish kerak? (J)",
+        "b) Uning minimal potensial energiyasini toping. (J)"
+      ],
+      "placeholders": [
+        "a) javobni kiriting",
+        "b) javobni kiriting"
+      ],
+      "answer": [
+        ["50", "50.0", "50,0"],
+        ["150", "150.0", "150,0"]
+      ]
+    }
+  ]
+}

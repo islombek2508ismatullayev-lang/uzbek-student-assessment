@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10214f"/>
+      <stop offset="60%" stop-color="#1b356d"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="118" r="56" fill="#f4c84f" opacity="0.95"/>
+  <rect x="72" y="82" width="170" height="170" rx="40" fill="rgba(255,255,255,0.1)"/>
+  <text x="157" y="190" fill="#ffffff" font-size="96" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">MS</text>
+  <text x="72" y="344" fill="#ffffff" font-size="82" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Milliy Sertifikat</text>
+  <text x="72" y="430" fill="#dbeafe" font-size="42" font-family="Segoe UI, Arial, sans-serif">Ko'p fanli test, imtihon va natija platformasi</text>
+  <text x="72" y="498" fill="#dbeafe" font-size="34" font-family="Segoe UI, Arial, sans-serif">Google uchun tayyor website va keyingi mobil ilova uchun mustahkam baza</text>
+</svg>

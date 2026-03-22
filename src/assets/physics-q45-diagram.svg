@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+  <rect width="760" height="620" fill="#ffffff"/>
+
+  <line x1="70" y1="430" x2="330" y2="430" stroke="#111111" stroke-width="4"/>
+  <line x1="70" y1="430" x2="70" y2="575" stroke="#111111" stroke-width="4"/>
+  <line x1="330" y1="430" x2="330" y2="575" stroke="#111111" stroke-width="4"/>
+  <line x1="70" y1="575" x2="330" y2="575" stroke="#111111" stroke-width="4"/>
+
+  <line x1="330" y1="430" x2="510" y2="295" stroke="#111111" stroke-width="4"/>
+  <line x1="330" y1="575" x2="510" y2="440" stroke="#111111" stroke-width="4"/>
+  <line x1="510" y1="295" x2="510" y2="440" stroke="#111111" stroke-width="4"/>
+  <line x1="250" y1="295" x2="510" y2="295" stroke="#111111" stroke-width="4"/>
+  <line x1="70" y1="430" x2="250" y2="295" stroke="#111111" stroke-width="4"/>
+  <line x1="250" y1="295" x2="330" y2="430" stroke="#111111" stroke-width="4"/>
+
+  <text x="45" y="520" font-family="Times New Roman, serif" font-size="34" fill="#111111" transform="rotate(-90 45 520)">30 sm</text>
+  <text x="190" y="570" font-family="Times New Roman, serif" font-size="34" fill="#111111">40 sm</text>
+  <text x="410" y="510" font-family="Times New Roman, serif" font-size="34" fill="#111111" transform="rotate(-35 410 510)">40 sm</text>
+</svg>

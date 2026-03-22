@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirish | Milliy Sertifikat Platformasi</title>
+    <meta name="description" content="Milliy sertifikat platformasiga kirish va profil yaratish sahifasi.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#10214f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Milliy Sertifikat Platformasi">
+    <meta property="og:description" content="Milliy sertifikat imtihoniga tayyorgarlik uchun testlar, natijalar va fanlar bo'yicha mashqlar platformasi.">
+    <meta property="og:image" content="/assets/social-preview.svg">
+    <meta property="og:locale" content="uz_UZ">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Milliy Sertifikat Platformasi",
+            "description": "Milliy sertifikat imtihoniga tayyorgarlik uchun ko'p fanli test va natija platformasi.",
+            "inLanguage": "uz",
+            "url": "/"
+        }
+    </script>
+</head>
+<body class="auth-page">
+    <main class="auth-shell">
+        <section class="auth-brand">
+            <div class="auth-logo">
+                <span class="auth-logo__mark">MS</span>
+                <div>
+                    <strong>Milliy Sertifikat</strong>
+                    <span>Imtihoniga tayyorgarlik platformasi</span>
+                </div>
+            </div>
+            <p>Websiteda haqiqiy milliy sertifikat testlari bilan bilim darajangizni aniqlang </p>
+        </section>
+
+        <section class="auth-card" aria-labelledby="signin-title">
+            <h2 id="signin-title">Ro'yxatdan o'tish</h2>
+            <p class="access-note">Gmail, telefon va to'liq ism-familya bilan ro'yxatdan o'tasiz .</p>
+
+            <form class="login-form" id="student-access-form" novalidate>
+                <label class="field">
+                    <span>Gmail manzil</span>
+                    <input type="email" placeholder="studentname@gmail.com" id="email" name="email" autocomplete="email" inputmode="email" required>
+                </label>
+
+                <label class="field">
+                    <span>Telefon raqam</span>
+                    <input type="tel" placeholder="+998 90 123 45 67" id="phone" name="phone" autocomplete="tel" inputmode="tel" required>
+                </label>
+
+                <label class="field">
+                    <span>To'liq ism-familya</span>
+                    <input type="text" placeholder="Ism Familiya" id="full-name" name="fullName" autocomplete="name" required>
+                </label>
+
+                <p class="form-hint">Barcha maydonlar to'g'ri to'ldirilsa, profilingiz yaratiladi va bosh panel ochiladi.</p>
+                <p class="form-message" id="form-message" aria-live="polite"></p>
+                <button class="button auth-submit" id="enter-platform" type="submit">Kirish</button>
+            </form>
+            <p class="auth-footer">Agar yangi foydalanuvchi bo'lsangiz shu yerda ro'yxatdan o'ting </p>
+        </section>
+
+        <section class="landing-info" aria-label="Platforma haqida ma'lumot">
+            <article class="landing-panel">
+                <p class="landing-panel__eyebrow">Platforma haqida</p>
+                <h2>Google uchun ko'rinadigan va telefonda qulay ishlaydigan tayyor baza</h2>
+                <p>Bu platforma milliy sertifikatga tayyorlanayotgan o'quvchilar uchun mo'ljallangan. Foydalanuvchi ro'yxatdan o'tadi, kerakli fanini tanlaydi, timer bilan test ishlaydi va natijasini ko'radi.</p>
+            </article>
+
+            <div class="landing-grid">
+                <article class="landing-card">
+                    <h3>Fanlar</h3>
+                    <p>Ona tili, matematika, kimyo, biologiya, tarix va fizika bo'yicha alohida test bloklari mavjud.</p>
+                </article>
+                <article class="landing-card">
+                    <h3>Natijalar</h3>
+                    <p>Har bir test yakunida ball, foiz, baho va savollar bo'yicha tahlil ko'rsatiladi.</p>
+                </article>
+                <article class="landing-card">
+                    <h3>Mobil qulaylik</h3>
+                    <p>Platforma responsiv ishlaydi va keyinchalik Android mobil ilovaga aylantirish uchun tayyorlanmoqda.</p>
+                </article>
+            </div>
+
+            <article class="landing-panel landing-panel--compact">
+                <p class="landing-panel__eyebrow">Qanday ishlaydi</p>
+                <ol class="landing-steps">
+                    <li>Gmail, telefon va ism-familya bilan ro'yxatdan o'tasiz.</li>
+                    <li>Dashboard orqali kerakli fan va testni tanlaysiz.</li>
+                    <li>Imtihon rejimida savollarni ishlab, yakuniy natijani olasiz.</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/platform.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

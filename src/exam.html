@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtihon Rejimi | Milliy Sertifikat Platformasi</title>
+    <meta name="description" content="Timer bilan ishlaydigan va test davomida boshqa bo'limlarga o'tishga ruxsat bermaydigan imtihon rejimi.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#10214f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="exam-page">
+    <main class="exam-shell">
+        <header class="exam-topbar">
+            <div class="exam-topbar__identity">
+                <div class="exam-topbar__subject" id="exam-subject-title">Imtihon</div>
+                <div class="exam-topbar__student" id="exam-student-name">Foydalanuvchi</div>
+            </div>
+            <div class="exam-topbar__actions">
+                <div class="exam-topbar__timer" id="exam-timer">00:00</div>
+                <button class="exam-toolbar-button" id="open-question-map" type="button">Savollar</button>
+            </div>
+        </header>
+
+        <section class="exam-start-screen" id="exam-start-screen">
+            <div class="exam-start-card">
+                <p class="card-label">Boshlash</p>
+                <h1 id="exam-start-title">Bo'lim</h1>
+                <p id="exam-start-description">Tayyor bo'lsangiz, testni boshlang.</p>
+                <div class="exam-rules">
+                    <p><strong>Vaqt</strong></p>
+                    <p>Bu imtihon vaqt bilan cheklangan. Test boshlangandan so'ng vaqtni to'xtata olmaysiz va testdan chiqa olmaysiz.</p>
+                    <p><strong>Savollar tugmasi</strong></p>
+                    <p>Yuqoridagi <code>Savollar</code> tugmasi orqali joriy savolni, javob berilgan savollarni, javobsiz savollarni va ko'rib chiqish uchun belgilangan savollarni ko'rishingiz mumkin.</p>
+                    <p><strong>Ochiq savollar</strong></p>
+                    <p id="open-answer-rule">Butunli sonlarni kasrli ko'rinishda yozsangiz ham bo'ladi. Shuningdek, <code>g</code> va <code>%</code> belgilarini qo'shib yoki tushirib yozsangiz, formuladagi raqamlarni esa oddiy yoki pastki indeks ko'rinishida yozsangiz ham javob hisobga olinadi.</p>
+                </div>
+                <button class="button exam-start-button" id="begin-exam" type="button">Bo'limni boshlash</button>
+            </div>
+        </section>
+
+        <section class="exam-workspace is-hidden" id="exam-workspace">
+            <div class="exam-progress-strip">
+                <span class="exam-progress-strip__pill" id="exam-question-index">Savol 1</span>
+                <button class="exam-mark-button" id="mark-review" type="button">Ko'rib chiqish uchun belgilash</button>
+            </div>
+
+            <section class="exam-passage is-hidden" id="exam-passage">
+                <div class="exam-passage__head">
+                    <div>
+                        <p class="exam-passage__label" id="exam-passage-label">Matn</p>
+                        <h2 class="exam-passage__title" id="exam-passage-title">O'qish uchun matn</h2>
+                    </div>
+                    <button class="button button--secondary exam-passage__toggle" id="toggle-passage" type="button">Matnni berkitish</button>
+                </div>
+                <div class="exam-passage__body" id="exam-passage-body">
+                    <div class="exam-passage__content" id="exam-passage-content"></div>
+                </div>
+            </section>
+
+            <article class="exam-question-card">
+                <div class="exam-question-card__head">
+                    <span class="exam-question-card__eyebrow" id="exam-question-label">1-savol</span>
+                    <span class="exam-question-card__status" id="exam-question-status">Javob tanlanmagan</span>
+                </div>
+                <div class="exam-question-image is-hidden" id="exam-question-image-wrap">
+                    <img class="exam-question-image__img" id="exam-question-image" alt="">
+                </div>
+                <section class="exam-question-copy" id="exam-question-copy">
+                    <div class="exam-question-copy__head is-hidden" id="exam-question-copy-head">
+                        <span class="exam-question-copy__label">Savol matni</span>
+                        <button class="button button--secondary exam-question-copy__toggle" id="toggle-question-text" type="button">Savolni yoyish</button>
+                    </div>
+                    <div class="exam-question-copy__body" id="exam-question-copy-body">
+                        <p id="exam-question-text"></p>
+                    </div>
+                </section>
+                <div class="exam-question-context" id="exam-question-context"></div>
+                <div class="exam-options" id="exam-options"></div>
+            </article>
+
+            <footer class="exam-footer exam-footer--mobile">
+                <div class="exam-footer__meta" id="footer-progress-text">Savol 1 / 10</div>
+                <div class="exam-footer__actions">
+                    <button class="button button--secondary" id="previous-question" type="button">Ortga</button>
+                    <button class="button" id="next-question" type="button">Keyingi</button>
+                    <button class="button button--ghost-action" id="open-finish-modal" type="button">Yakunlash</button>
+                </div>
+            </footer>
+        </section>
+
+        <div class="modal-backdrop is-hidden" id="finish-modal">
+            <div class="modal-card">
+                <h2>Yakunlashni tasdiqlang</h2>
+                <p id="finish-modal-text">Bo'limni yakunlashni tasdiqlaysizmi?</p>
+                <div class="admin-actions">
+                    <button class="button button--secondary" id="cancel-finish" type="button">Bekor qilish</button>
+                    <button class="button" id="confirm-finish" type="button">Ha</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-backdrop is-hidden" id="question-map-modal">
+            <div class="modal-card modal-card--wide">
+                <div class="modal-card__head">
+                    <div>
+                        <h2 id="question-map-title">Savollar xaritasi</h2>
+                        <p class="modal-card__subtext">Joriy, javobsiz va review uchun belgilangan savollar shu yerda ko'rinadi.</p>
+                    </div>
+                    <button class="exam-toolbar-button exam-toolbar-button--dark" id="close-question-map" type="button">Yopish</button>
+                </div>
+                <div class="question-map-legend">
+                    <span><i class="dot dot--current"></i> Joriy</span>
+                    <span><i class="dot dot--answered"></i> Javob berilgan</span>
+                    <span><i class="dot dot--review"></i> Review</span>
+                    <span><i class="dot dot--empty"></i> Javobsiz</span>
+                </div>
+                <div class="question-map-grid" id="question-map-grid"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/platform.js"></script>
+    <script src="js/exam.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "notification_1774086184965_9k6ygu",
+    "studentEmail": "sayyorakarimova@gmail.com",
+    "type": "feedback-reply",
+    "title": "Feedbackingizga javob keldi",
+    "message": "Islombek Ismatullayev sizning feedbackingizga reply yozdi.",
+    "feedbackId": "feedback_1774085042141_1eaoy9",
+    "replyId": "reply_1774086184957_lgpqi8",
+    "isRead": false,
+    "createdAt": "2026-03-21T09:43:04.965Z"
+  },
+  {
+    "id": "notification_1774086468839_ztv8vu",
+    "studentEmail": "abdullaabdullayev@gmail.com",
+    "type": "feedback-reply",
+    "title": "Feedbackingizga javob keldi",
+    "message": "Islombek Ismatullayev sizning feedbackingizga reply yozdi.",
+    "feedbackId": "feedback_1774086379797_b5s3ly",
+    "replyId": "reply_1774086468740_jpdc09",
+    "isRead": true,
+    "createdAt": "2026-03-21T09:47:48.839Z"
+  },
+  {
+    "id": "notification_1774087167591_j5zbiq",
+    "studentEmail": "sayyorakarimova@gmail.com",
+    "type": "feedback-reply",
+    "title": "Feedbackingizga javob keldi",
+    "message": "Soliha Xasanova sizning feedbackingizga reply yozdi.",
+    "feedbackId": "feedback_1774085042141_1eaoy9",
+    "replyId": "reply_1774087167537_9gm0mb",
+    "isRead": false,
+    "createdAt": "2026-03-21T09:59:27.591Z"
+  }
+]
