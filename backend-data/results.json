@@ -626,5 +626,307 @@
         "flagged": false
       }
     ]
+  },
+  {
+    "id": "result_1774210572478_2g2uk7",
+    "studentId": "student_1774028048143_vzmlt9",
+    "studentEmail": "islombek2508ismatullayev@gmail.com",
+    "studentFullName": "islom ismatulla",
+    "subjectId": "mother-tongue",
+    "subjectLabel": "Ona tili",
+    "total": 44,
+    "correct": 12,
+    "incorrect": 32,
+    "percent": 27,
+    "grade": "Fail",
+    "points": "13/58",
+    "earnedPoints": 13,
+    "totalPoints": 58,
+    "completedAt": "2026-03-22T20:16:12.463Z",
+    "createdAt": "2026-03-22T20:16:12.478Z",
+    "responses": [
+      {
+        "question": "Imloviy jihatdan to'g'ri yozilgan so'zlar berilgan qatorni aniqlang?",
+        "correctAnswer": "ssenariy, kilovatt, melodrama",
+        "selectedAnswer": "selofan, industriya, maza",
+        "flagged": false
+      },
+      {
+        "question": "Imloviy qoidasiga muvofiq yozilgan so'zlar berilgan qatorni aniqlang.",
+        "correctAnswer": "Samarqand chinni zavodi, \"Turkiston\" saroyi, Madaniyat va sport ishlari vazirligi",
+        "selectedAnswer": "Samarqand chinni zavodi, \"Turkiston\" saroyi, Madaniyat va sport ishlari vazirligi",
+        "flagged": false
+      },
+      {
+        "question": "Raqamlab ko'rsatilgan so'zlarning nechtasi qalin so'zi bilan nutqda o'zaro ma'nodosh bo'la olmaydi?",
+        "correctAnswer": "bittasi",
+        "selectedAnswer": "bittasi",
+        "flagged": false
+      },
+      {
+        "question": "Berilgan so'zlar va ularning ma'nolari xato izohlangan javobni aniqlang.",
+        "correctAnswer": "Ta'bir - narsa, hodisa va shu kabilarni mohiyat, qonuniyat va boshqalar jihatlardan tekshirish, o'rganish ishi.",
+        "selectedAnswer": "Tafsir - biror gap, voqea-hodisa, matn va shu kabilarga berilgan mukammal izoh, sharh, tushuntirish.",
+        "flagged": false
+      },
+      {
+        "question": "Qaysi javobda qo'shimcha qo'llash bilan bog'liq uslubiy xatolik mavjud emas?",
+        "correctAnswer": "Birdan koridorning narigi chetida kimningdir tez yurib kelayotgani eshitildi.",
+        "selectedAnswer": "Tuproqni eng katta hikmati shundaki, unda har qanday urug' unadi, o'sadi, kamol topadi.",
+        "flagged": false
+      },
+      {
+        "question": "Qaysi javobda so'z qo'llash bilan bog'liq uslubiy xatolik mavjud?",
+        "correctAnswer": "Dunyo ko'zlariga ko'rinardi tor, Ko'zim o'ngidan o'tar hadsiz odamlar.",
+        "selectedAnswer": "U yerda bo'lgan har qanday odam ruhan yengil tortib, kayfiyati ko'tarilishi muqarrar.",
+        "flagged": false
+      },
+      {
+        "question": "Toshkentning har bir ko'chasi, har bir guzaridagi daraxtlar ham ko'p narsani eslaydi - og'ir yillarni, baxtli daqiqalarni, lekin eng muhimi, ular odamlarning sabr-toqatini va mehr-muhabbatini o'zida mujassam etib kelmoqda. Ushbu gapda qatnashgan qo'shimchalar haqidagi noto'g'ri hukmni aniqlang.",
+        "correctAnswer": "Sintaktik shakl yasovchilar fe'l, olmosh va ot turkumiga oid so'zlar tarkibida qo'llangan.",
+        "selectedAnswer": "O'timli fe'l tarkibida nisbat qo'shimchasi qo'llangan.",
+        "flagged": false
+      },
+      {
+        "question": "Qaysi gapda mavzu ma'nosini bildirgan vazifadosh ko'makchi qatnashgan gap berilgan?",
+        "correctAnswer": "Ayniqsa, uning odob va axloq haqida \"Turkiy Guliston\" asari bugungi kungacha o'z ahamiyatini yo'qotgan emas.",
+        "selectedAnswer": "Nigora yaxshi xulqi, chiroyli muomalasi bilan ham obro'ga erishishi mumkin edi-ku",
+        "flagged": false
+      },
+      {
+        "question": "Beri kel-chi, o'g'lim. Sen bilan anchadan beri gaplashmoqchi edim-u, vaqt topilmadi. Faqatgina hozir imkoni bo'ldi. Bugunoq muammolaringni hal qilamiz. Gapdagi yordamchilar haqida berilgan qaysi fikr noto'g'ri?",
+        "correctAnswer": "Vazifadosh ko'makchi bir o'rinda o'rin holi va bir o'rinda payt holini shakllantirgan.",
+        "selectedAnswer": "Ushbu gapda 2 ta ko'makchi, 4 ta yuklama, bitta bog'lovchi qatnashgan",
+        "flagged": false
+      },
+      {
+        "question": "Ular shovullab oqayotgan daryo bo'yida jimgina turishardi. O'ynoqi ko'klam yeli bu go'shaloq baxtiyor yoshlarning boshiga xushbo'y is taratib turgan olma gullarini yog'dirardi. Berilgan parcha haqida to'g'ri hukmni aniqlang.",
+        "correctAnswer": "Ushbu parchada egalar har xil so'z turkumlar bilan ifodalangan.",
+        "selectedAnswer": "Ushbu parchada aniqlovchilardan keyin umumlashtiruvchi bo'lak qatnashgan.",
+        "flagged": false
+      },
+      {
+        "question": "Gapdagi so'zlarning mazmun va grammatik jihatdan bog'lanishi to'g'ri ko'rsatilgan javobni aniqlang. Til milliy madaniyatning shakli sifatida tafakkurning mevalari va ma'naviy boyliklarini zamon va makonda abadiylashtiradi.",
+        "correctAnswer": "zamon va makon; tafakkurning mevalari",
+        "selectedAnswer": "mevalari va boyliklarini; til shakli",
+        "flagged": false
+      },
+      {
+        "question": "Ushbu parchada tinish belgilarning ketma-ket qo'llanilishiga oid to'g'ri mulohazani aniqlang. Esida bor // (1) otasi bilan mana shu o'rindiqqa o'tirsa // (2) mototsikl degani qattiq ovoz chiqarib yurib ketdi-yu // (3) nevara qo'rqqanidan otasini mahkam quchoqlab // (4) ko'zlarini yumib oldi.",
+        "correctAnswer": "1 - ikki nuqta, 2 - vergul, 3 - vergul, 4 - vergul",
+        "selectedAnswer": "1 - vergul, 2 - tire, 3 - vergul, 4 - vergul",
+        "flagged": false
+      },
+      {
+        "question": "\"Oltin Zanglamas\" asari voqealari to'g'ri keltirilgan javobni aniqlang.",
+        "correctAnswer": "Sodiq bo'htonlar bilan qamalgan bo'lsa-da, frontda ham jasorat bilan jang qildi.",
+        "selectedAnswer": "Dilorvxo'ja sho'ro hukumati oldida gunohini yuvish uchun astoydil jang qiladi.",
+        "flagged": false
+      },
+      {
+        "question": "Abdulla Qahhorning \"Ming bir jon\" hikoyasi mazmuniga mos to'g'ri shakllantirilgan javobni toping.",
+        "correctAnswer": "Ushbu hikoyada manman, faqat o'z manfaatini o'ylab yashaydigan kimsa tasviri uchraydi.",
+        "selectedAnswer": "Ushbu hikoyada dunyoda yashab qolish uchun harakat qilayotgan, umidsizlikka berilmay taqdirning barcha sinovlariga dosh berayotgan kishi hayoti qalamga olingan.",
+        "flagged": false
+      },
+      {
+        "question": "\"Tushda kechgan umrlar\" asari qahramoni Vasilyev Grigoriy Stepanovich haqida noto'g'ri ma'lumotni toping.",
+        "correctAnswer": "Qiziga aliment to'lashdan bosh tortgani uchun tergovga chaqirilib turardi.",
+        "selectedAnswer": "Yashash tarzi xuddi qavmi kabi ichkilikka ruju qo'ygan, tartibli qoidalar bilan yashaydi.",
+        "flagged": false
+      },
+      {
+        "question": "Jek Londonning \"Hayotga muhabbat\" asari haqidagi xato hukmni aniqlang.",
+        "correctAnswer": "Qo'rquv tuyg'usi inson uchun uni mahv etuvchi kuch sifatida tasvirlangan.",
+        "selectedAnswer": "Qo'rquv tuyg'usi inson uchun uni mahv etuvchi kuch sifatida tasvirlangan.",
+        "flagged": false
+      },
+      {
+        "question": "\"Qiyomat\" romani haqidagi noto'g'ri hukmni aniqlang.",
+        "correctAnswer": "Akbara va Toshchaynar juftligining 2-nasl Issiqko'lda cho'kib halok bo'ladi.",
+        "selectedAnswer": "Akbara va Toshchaynar juftligining 2-nasl Issiqko'lda cho'kib halok bo'ladi.",
+        "flagged": false
+      },
+      {
+        "question": "Matn mazmuniga xos ma'lumotni aniqlang.",
+        "correctAnswer": "Kapalakning ayrim turlarida yorqin ranglar himoya vazifasini bajaradi.",
+        "selectedAnswer": "Kapalakning tanasi turga qarab o'zgaradi.",
+        "flagged": false
+      },
+      {
+        "question": "Matn mazmuniga mos shakllantirilmagan ma'lumotni aniqlang.",
+        "correctAnswer": "Kapalaklar ko'krak qismida hazm, nafas, ko'payish jarayonlarini bajaradi.",
+        "selectedAnswer": "Kapalak qanotlari vazni og'ir bo'lmasa ham ular murakkab harakatni bajaradi.",
+        "flagged": false
+      },
+      {
+        "question": "Moslashtiring.",
+        "correctAnswer": "a: 2; b: 1,3,4",
+        "selectedAnswer": "a: 1,3; b: 2,4",
+        "flagged": false
+      },
+      {
+        "question": "Raqamlab ajratib ko'rsatilgan qaysi gap matnning mazmuniy qurilishida uslubiy g'alizlikni keltirib chiqarmoqda?",
+        "correctAnswer": "2",
+        "selectedAnswer": "3",
+        "flagged": false
+      },
+      {
+        "question": "Kapalaklarning qaysi xususiyatlari tabiatning turli xilligini ifoda qilmaydi?",
+        "correctAnswer": "Qanotlar rangi o'zgarishi",
+        "selectedAnswer": "Qanotlar rangi o'zgarishi",
+        "flagged": false
+      },
+      {
+        "question": "Asarning umumiy mazmuniga mos javobni belgilang.",
+        "correctAnswer": "Ikkiyuzlamachilik va shaxsiy foyda uchun harakat insonni qanday ko'pga solishi.",
+        "selectedAnswer": "Ikkiyuzlamachilik va shaxsiy foyda uchun harakat insonni qanday ko'pga solishi.",
+        "flagged": false
+      },
+      {
+        "question": "Nafanail obraziga mos ta'rifni aniqlang.",
+        "correctAnswer": "Yosh bo'lishiga qaramay jamiyatda kimdandir foyda kutgan obraz.",
+        "selectedAnswer": "Otasining do'stiga iltifot ko'rsatishda hech ham ikkilanmagan qahramon.",
+        "flagged": false
+      },
+      {
+        "question": "1 raqami bilan ajratib ko'rsatilgan jumla orqali anglashilgan ma'noni aniqlang.",
+        "correctAnswer": "Kuchli ehtirom va o'ng'aysizlanish.",
+        "selectedAnswer": "Kinoya va kuchli hayajonlanish.",
+        "flagged": false
+      },
+      {
+        "question": "2 raqami bilan ajratib ko'rsatilgan jumla orqali anglashilgan ma'noni aniqlang.",
+        "correctAnswer": "Do'stlar bilan yaqindan tanishganligi uchun sevinch.",
+        "selectedAnswer": "Do'stlar bilan yaqindan tanishganligi uchun sevinch.",
+        "flagged": false
+      },
+      {
+        "question": "Semiz obraziga berilgan noto'g'ri ta'rifni aniqlang.",
+        "correctAnswer": "O'zining mansabi do'stining mansabidan ustun ekanligiga biroz kibrlangan obraz.",
+        "selectedAnswer": "O'zining tashqi ko'rinishiga ham yaxshi e'tibor beradigan asar qahramoni.",
+        "flagged": false
+      },
+      {
+        "question": "G'azalning matla'si noto'g'ri izohlangan qatorni belgilang.",
+        "correctAnswer": "Ko'ngli qayergadir ketishi, bag'ri esa uning qaytishini so'rab yolvorishi bayon qilingan.",
+        "selectedAnswer": "Ko'ngli qayergadir ketishi, bag'ri esa uning qaytishini so'rab yolvorishi bayon qilingan.",
+        "flagged": false
+      },
+      {
+        "question": "Quyidagi baytlarning qaysi birida istiora san'ati qo'llangan?",
+        "correctAnswer": "5-bayt",
+        "selectedAnswer": "5-bayt",
+        "flagged": false
+      },
+      {
+        "question": "Quyida keltirilgan badiiy san'atlarning qaysi(lar)i g'azalda mavjud emas?",
+        "correctAnswer": "faqat 1",
+        "selectedAnswer": "faqat 1",
+        "flagged": false
+      },
+      {
+        "question": "G'azalda haqida noto'g'ri hukmni aniqlang.",
+        "correctAnswer": "Oshiqning ko'ngilga iltimos qilishi bayon qilingan.",
+        "selectedAnswer": "Ko'ngil olovli deya ta'kidlangan.",
+        "flagged": false
+      },
+      {
+        "question": "Baytlar tahlili noto'g'ri izohlangan qatorni belgilang.",
+        "correctAnswer": "6-bayt: Insonning ikki yuzli bo'lmasligi, agar unday bo'lsa, u birda qizarishi, birda sarg'ayib ketishi mumkinligi ta'kidlangan.",
+        "selectedAnswer": "6-bayt: Insonning ikki yuzli bo'lmasligi, agar unday bo'lsa, u birda qizarishi, birda sarg'ayib ketishi mumkinligi ta'kidlangan.",
+        "flagged": false
+      },
+      {
+        "question": "Gaplar (33, 34, 35) va sintaktik tahlilga oid izohlar (A-F) ni o'zaro to'g'ri moslashtiring. 33-gap uchun mos javobni belgilang. \"Dunyo turguncha turing, malikam, Baxtingiz daroday maylansin, bekam...\"",
+        "correctAnswer": "Undalmali gap",
+        "selectedAnswer": "Shaxsi noma'lum gap",
+        "flagged": false
+      },
+      {
+        "question": "Gaplar (33, 34, 35) va sintaktik tahlilga oid izohlar (A-F) ni o'zaro to'g'ri moslashtiring. 34-gap uchun mos javobni belgilang. \"Tantanali kecha.. Katta zal hamma yoqdan kelgan turli kasbdagi odamlar bilan lim-lim...\"",
+        "correctAnswer": "Atov gap",
+        "selectedAnswer": "Shaxsi noma'lum gap",
+        "flagged": false
+      },
+      {
+        "question": "Gaplar (33, 34, 35) va sintaktik tahlilga oid izohlar (A-F) ni o'zaro to'g'ri moslashtiring. 35-gap uchun mos javobni belgilang. \"Endi bu voqeani jurnalistlar bilmasidanog, imi-jimida hal qilishga to'g'ri keladi.\"",
+        "correctAnswer": "Shaxsi noma'lum gap",
+        "selectedAnswer": "Kiritma gap",
+        "flagged": false
+      },
+      {
+        "question": "Quyida berilgan har ikkala izohga ham mos kela oladigan shakldosh so'zni yozing.",
+        "correctAnswer": "Qor",
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "Berilgan gapda qaysi tinish belgisi xato qo'llangan? Payg'ambardan bir kishi so'rabdi: \"Ey Rasululloh, Men kimni hurmat qilay?\" \"O'z onangni\", — deb javob beribdi Payg'ambar.",
+        "correctAnswer": [
+          ",",
+          "vergul"
+        ],
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "Har uchala izohga ham mos kela oladigan kelishik qo'shimchasini yozing.",
+        "correctAnswer": "ga",
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "Gapdagi ajratib ko'rsatilgan sintaktik birlik turini yozing. Marhabo, - dedi kelgan notanish mehmonni uyiga kiritar ekan, - fikri ojizimcha, siz Asadbeksiz, a?",
+        "correctAnswer": "so'z gap",
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "Gapdagi so'zlarning mazmun va grammatik jihatdan bog'lanishini tahlil qiling. Ular olmazor etagidagi so'qmoq yo'lga burilishganda, quyosh tog' ortidan endigina mo'ralay boshlagan edi.",
+        "correctAnswer": [
+          "mo'ralay boshlagan edi",
+          "yo'lga"
+        ],
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "Berilgan gaplarni grammatik jihatdan to'g'ri bog'lang. 1) Grimlar bu qotillikdan hayratda edi 2) Unisi bir narsa deya oldi 3) Nunisi ovozini chiqarishga botindi.",
+        "correctAnswer": [
+          "na...na...",
+          "inkor"
+        ],
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "She'riy parchada aks etgan she'riy san'atni aniqlang va yozing. Ko'z zonasini qildi barandota bu ashk, Ko'z bordi vale xonabarandozi qoliptur.",
+        "correctAnswer": [
+          "anfora",
+          "xonabarandozi"
+        ],
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "She'riy parchaning qofiyasini tahlil qiling va yozing. Suda ermas mehr aksi, balki daryo joni'g'a Solg'an o'tlar zasta jonim ohi otashnokidur. Xas emas girdob arokim, boshinga evrulgali, Su uza sargashta oshiq jismining xoshokidur.",
+        "correctAnswer": [
+          "k",
+          "mutlaq"
+        ],
+        "selectedAnswer": null,
+        "flagged": false
+      },
+      {
+        "question": "She'riy parchani tahlil qiling va savollarga javob yozing. Raxshi himmat men tutub mahkam yolin, Yor izidin yet, Karam qil deb yolin Yo'q-u bormin yoqib kul ayladi, Ishq o'tidin ko'kka chirmoshg'on yolin.",
+        "correctAnswer": [
+          "tuyuq",
+          "yalin"
+        ],
+        "selectedAnswer": null,
+        "flagged": false
+      }
+    ]
   }
 ]

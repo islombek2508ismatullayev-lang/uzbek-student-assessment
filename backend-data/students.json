@@ -3,13 +3,16 @@
     "id": "student_1774028048143_vzmlt9",
     "email": "islombek2508ismatullayev@gmail.com",
     "phone": "+998907652508",
-    "fullName": "Islombek Ismatullayev",
+    "fullName": "islom ismatulla",
     "createdAt": "2026-03-20T17:34:08.143Z",
-    "updatedAt": "2026-03-20T17:42:10.361Z",
-    "lastSeenAt": "2026-03-20T17:42:10.361Z",
+    "updatedAt": "2026-03-22T20:46:28.351Z",
+    "lastSeenAt": "2026-03-22T20:46:28.351Z",
     "photoDataUrl": "",
-    "visitorId": "visitor_1774028041752_n3fe3ee7",
-    "currentPage": "dashboard"
+    "visitorId": "visitor_1774207039496_1511qapu",
+    "currentPage": "dashboard",
+    "sessionToken": "fe23522b79984c6079216214f21a1779114eeaef35968e57178070e4713fa730",
+    "dreamScore": "189",
+    "dreamUniversity": "New Uzbekistan University"
   },
   {
     "id": "student_1774028610449_tl55xc",
@@ -41,8 +44,8 @@
     "phone": "+998907652508",
     "fullName": "Islombek Ismatullayev",
     "createdAt": "2026-03-20T18:43:34.561Z",
-    "updatedAt": "2026-03-22T13:59:46.292Z",
-    "lastSeenAt": "2026-03-22T13:59:46.292Z",
+    "updatedAt": "2026-03-22T19:10:32.356Z",
+    "lastSeenAt": "2026-03-22T19:10:32.356Z",
     "photoDataUrl": "",
     "visitorId": "visitor_1774028041752_n3fe3ee7",
     "currentPage": "dashboard"
@@ -78,11 +81,11 @@
     "phone": "+998903453681",
     "fullName": "Odinaxon Muhammadova",
     "createdAt": "2026-03-21T15:52:27.731Z",
-    "updatedAt": "2026-03-21T15:54:46.737Z",
-    "lastSeenAt": "2026-03-21T15:54:46.737Z",
+    "updatedAt": "2026-03-22T20:46:28.392Z",
+    "lastSeenAt": "2026-03-22T20:46:28.392Z",
     "photoDataUrl": "",
     "visitorId": "visitor_1774108312750_lme4dgzo",
-    "currentPage": "exam:math",
+    "currentPage": "dashboard",
     "sessionToken": "16dfc8e66497939e0e2716019656975cc5fcb516390b150f94fbb92eb575cdaf"
   }
 ]
