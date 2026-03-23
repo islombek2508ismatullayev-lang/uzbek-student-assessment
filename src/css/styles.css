@@ -737,73 +737,8 @@ body {
 }
 
 .auth-shell {
-    width: min(920px, 100%);
+    width: min(550px, 100%);
     text-align: center;
-}
-
-.landing-info {
-    display: grid;
-    gap: 18px;
-    margin-top: 22px;
-}
-
-.landing-panel,
-.landing-card {
-    background: rgba(255, 255, 255, 0.96);
-    border-radius: 24px;
-    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.12);
-    text-align: left;
-}
-
-.landing-panel {
-    padding: 24px;
-}
-
-.landing-panel--compact {
-    padding-bottom: 18px;
-}
-
-.landing-panel__eyebrow {
-    margin: 0 0 8px;
-    color: var(--blue-700);
-    font-size: 0.84rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.landing-panel h2,
-.landing-card h3 {
-    margin: 0 0 10px;
-    color: var(--text-main);
-}
-
-.landing-panel p,
-.landing-card p {
-    margin: 0;
-    color: var(--text-soft);
-    line-height: 1.6;
-}
-
-.landing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.landing-card {
-    padding: 22px 20px;
-}
-
-.landing-steps {
-    margin: 0;
-    padding-left: 22px;
-    color: var(--text-soft);
-    line-height: 1.7;
-}
-
-.landing-steps li + li {
-    margin-top: 6px;
 }
 
 .auth-brand {
@@ -3019,10 +2954,6 @@ body {
 
 @media (max-width: 760px) {
     .dashboard-shell {
-        grid-template-columns: 1fr;
-    }
-
-    .landing-grid {
         grid-template-columns: 1fr;
     }
 

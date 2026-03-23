@@ -4,107 +4,54 @@ const RESULTS_BY_SUBJECT_STORAGE_KEY = "milliy-results-by-subject";
 const VISITOR_ID_STORAGE_KEY = "milliy-visitor-id";
 const SESSION_HEARTBEAT_MS = 1000 * 60;
 const API_BASE_URL = getApiBaseUrl();
+const UNIVERSAL_CERTIFICATE_BANDS = [
+    { min: 36, grade: "A+", percent: 100 },
+    { min: 31, grade: "A", percent: 100 },
+    { min: 27, grade: "B+", percent: 85 },
+    { min: 23, grade: "B", percent: 75 },
+    { min: 19, grade: "C+", percent: 65 },
+    { min: 15, grade: "C", percent: 55 },
+    { min: 0, grade: "Fail", percent: null }
+];
 
 const SUBJECTS = {
     "mother-tongue": {
         id: "mother-tongue",
         label: "Ona tili",
         file: "data/mother-tongue.json",
-        durationSeconds: 10800,
-        gradeBands: [
-            { min: 41, grade: "A+" },
-            { min: 37, grade: "A" },
-            { min: 34, grade: "B+" },
-            { min: 30, grade: "B" },
-            { min: 25, grade: "C+" },
-            { min: 16, grade: "C" },
-            { min: 0, grade: "Fail" }
-        ]
+        durationSeconds: 10800
     },
     math: {
         id: "math",
         label: "Matematika",
         file: "data/math.json",
-        durationSeconds: 10800,
-        gradeBands: [
-            { min: 42, grade: "A+" },
-            { min: 37, grade: "A" },
-            { min: 33, grade: "B+" },
-            { min: 28, grade: "B" },
-            { min: 24, grade: "C+" },
-            { min: 16, grade: "C" },
-            { min: 0, grade: "Fail" }
-        ]
+        durationSeconds: 10800
     },
     chemistry: {
         id: "chemistry",
         label: "Kimyo",
         file: "data/chemistry.json",
-        durationSeconds: 10800,
-        gradeBands: [
-            { min: 41, grade: "A+" },
-            { min: 37, grade: "A" },
-            { min: 33, grade: "B+" },
-            { min: 28, grade: "B" },
-            { min: 23, grade: "C+" },
-            { min: 16, grade: "C" },
-            { min: 0, grade: "Fail" }
-        ]
+        durationSeconds: 10800
     },
     biology: {
         id: "biology",
         label: "Biologiya",
         file: "data/biology.json",
-        durationSeconds: 10800,
-        gradeBands: [
-            { min: 40, grade: "A+" },
-            { min: 36, grade: "A" },
-            { min: 31, grade: "B+" },
-            { min: 26, grade: "B" },
-            { min: 21, grade: "C+" },
-            { min: 16, grade: "C" },
-            { min: 0, grade: "Fail" }
-        ]
+        durationSeconds: 10800
     },
     history: {
         id: "history",
         label: "Tarix",
         file: "data/history.json",
-        durationSeconds: 10800,
-        certificateBands: [
-            { min: 93, grade: "A+", percent: 100 },
-            { min: 91, grade: "A", percent: 100 },
-            { min: 84, grade: "B+", percent: 85 },
-            { min: 75, grade: "B", percent: 75 },
-            { min: 67, grade: "C+", percent: 65 },
-            { min: 52, grade: "C", percent: 55 }
-        ]
+        durationSeconds: 10800
     },
     physics: {
         id: "physics",
         label: "Fizika",
         file: "data/physics.json",
-        durationSeconds: 10800,
-        certificateBands: [
-            { min: 42, grade: "A+", percent: 100 },
-            { min: 40, grade: "A", percent: 100 },
-            { min: 36, grade: "B+", percent: 85 },
-            { min: 31, grade: "B", percent: 75 },
-            { min: 26, grade: "C+", percent: 65 },
-            { min: 21, grade: "C", percent: 55 }
-        ]
+        durationSeconds: 10800
     }
 };
-
-const DEFAULT_GRADE_BANDS = [
-    { min: 41, grade: "A+" },
-    { min: 37, grade: "A" },
-    { min: 34, grade: "B+" },
-    { min: 30, grade: "B" },
-    { min: 25, grade: "C+" },
-    { min: 16, grade: "C" },
-    { min: 0, grade: "Fail" }
-];
 
 const elements = {
     examSubjectTitle: document.getElementById("exam-subject-title"),
@@ -684,8 +631,8 @@ async function finishExam() {
         const response = state.responses[index];
         return sum + (isCorrectAnswer(response?.selectedAnswer, response?.correctAnswer) ? getQuestionPoints(question) : 0);
     }, 0));
-    const grade = getGrade(correct, earnedPoints);
-    const certificatePercent = getCertificatePercent(grade, earnedPoints);
+    const grade = getGrade(correct);
+    const certificatePercent = getCertificatePercent();
     const percent = getResultPercent(correct, total, certificatePercent);
 
     const result = {
@@ -761,16 +708,8 @@ function keepOnExam() {
     window.history.pushState(null, "", window.location.href);
 }
 
-function getGrade(correctCount, earnedPoints = 0) {
-    if (Array.isArray(state.subject?.certificateBands)) {
-        const referenceValue = (state.subject?.id === "history" || state.subject?.id === "physics")
-            ? correctCount
-            : earnedPoints;
-        return state.subject.certificateBands.find((item) => referenceValue >= item.min)?.grade || "Fail";
-    }
-
-    const gradeBands = state.subject?.gradeBands || DEFAULT_GRADE_BANDS;
-    return gradeBands.find((item) => correctCount >= item.min)?.grade || "Fail";
+function getGrade(correctCount) {
+    return getCertificateBand(correctCount)?.grade || "Fail";
 }
 
 function getQuestionPoints(question) {
@@ -840,15 +779,14 @@ function normalizeAnswer(value, options = {}) {
     return normalized;
 }
 
-function getCertificatePercent(grade, earnedPoints = 0) {
-    if (Array.isArray(state.subject?.certificateBands)) {
-        const referenceValue = (state.subject?.id === "history" || state.subject?.id === "physics")
-            ? state.responses.filter((item) => isCorrectAnswer(item.selectedAnswer, item.correctAnswer)).length
-            : earnedPoints;
-        return state.subject.certificateBands.find((item) => item.grade === grade && referenceValue >= item.min)?.percent || null;
-    }
+function getCertificatePercent() {
+    return getCertificateBand(
+        state.responses.filter((item) => isCorrectAnswer(item.selectedAnswer, item.correctAnswer)).length
+    )?.percent ?? null;
+}
 
-    return grade === "A" || grade === "A+" ? 100 : null;
+function getCertificateBand(correctCount) {
+    return UNIVERSAL_CERTIFICATE_BANDS.find((item) => correctCount >= item.min) || UNIVERSAL_CERTIFICATE_BANDS.at(-1);
 }
 
 function getResultPercent(correctCount, totalQuestions, certificatePercent) {

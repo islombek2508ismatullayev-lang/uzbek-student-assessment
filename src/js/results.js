@@ -1,6 +1,15 @@
 const LAST_RESULT_STORAGE_KEY = "milliy-last-result";
 const RESULTS_BY_SUBJECT_STORAGE_KEY = "milliy-results-by-subject";
 const ACTIVE_SECTION_STORAGE_KEY = "milliy-dashboard-active-section";
+const UNIVERSAL_CERTIFICATE_BANDS = [
+    { min: 36, grade: "A+", percent: 100 },
+    { min: 31, grade: "A", percent: 100 },
+    { min: 27, grade: "B+", percent: 85 },
+    { min: 23, grade: "B", percent: 75 },
+    { min: 19, grade: "C+", percent: 65 },
+    { min: 15, grade: "C", percent: 55 },
+    { min: 0, grade: "Fail", percent: null }
+];
 
 const elements = {
     resultsSubject: document.getElementById("results-subject"),
@@ -130,65 +139,24 @@ function normalizeResultPresentation(result) {
         return result;
     }
 
-    if (result.subjectId !== "history" && result.subjectId !== "physics") {
-        return result;
-    }
-
     const correct = Number(result.correct);
 
     if (!Number.isFinite(correct)) {
         return result;
     }
 
-    let grade = "Fail";
-    let certificatePercent = null;
-
-    if (result.subjectId === "history") {
-        if (Number(result.earnedPoints) >= 93) {
-            grade = "A+";
-            certificatePercent = 100;
-        } else if (Number(result.earnedPoints) >= 91) {
-            grade = "A";
-            certificatePercent = 100;
-        } else if (Number(result.earnedPoints) >= 84) {
-            grade = "B+";
-            certificatePercent = 85;
-        } else if (Number(result.earnedPoints) >= 75) {
-            grade = "B";
-            certificatePercent = 75;
-        } else if (Number(result.earnedPoints) >= 67) {
-            grade = "C+";
-            certificatePercent = 65;
-        } else if (Number(result.earnedPoints) >= 52) {
-            grade = "C";
-            certificatePercent = 55;
-        }
-    } else if (correct >= 42) {
-        grade = "A+";
-        certificatePercent = 100;
-    } else if (correct >= 40) {
-        grade = "A";
-        certificatePercent = 100;
-    } else if (correct >= 36) {
-        grade = "B+";
-        certificatePercent = 85;
-    } else if (correct >= 31) {
-        grade = "B";
-        certificatePercent = 75;
-    } else if (correct >= 26) {
-        grade = "C+";
-        certificatePercent = 65;
-    } else if (correct >= 21) {
-        grade = "C";
-        certificatePercent = 55;
-    }
+    const certificateBand = getCertificateBand(correct);
 
     return {
         ...result,
-        grade,
-        certificatePercent,
-        percent: result.subjectId === "physics" ? (certificatePercent ?? result.percent) : result.percent
+        grade: certificateBand.grade,
+        certificatePercent: certificateBand.percent,
+        percent: certificateBand.percent ?? result.percent
     };
+}
+
+function getCertificateBand(correctCount) {
+    return UNIVERSAL_CERTIFICATE_BANDS.find((item) => correctCount >= item.min) || UNIVERSAL_CERTIFICATE_BANDS.at(-1);
 }
 
 function escapeHtml(value) {
