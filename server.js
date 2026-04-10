@@ -122,7 +122,7 @@ app.get("/robots.txt", (req, res) => {
         `Sitemap: ${siteUrl}/sitemap.xml`
     ].join("\n");
 
-    res.type("text/plain; charset=utf-8");
+    res.setHeader("Content-Type", "text/plain; charset=utf-8");
     res.send(robotsBody);
 });
 
@@ -146,7 +146,7 @@ app.get("/sitemap.xml", (req, res) => {
         "</urlset>"
     ].join("\n");
 
-    res.type("application/xml; charset=utf-8");
+    res.setHeader("Content-Type", "application/xml; charset=utf-8");
     res.send(xmlBody);
 });
 
@@ -1232,7 +1232,7 @@ async function servePublicPage(req, res, fileName, pageConfig) {
             .replaceAll("{{PAGE_TITLE}}", escapeHtml(pageConfig.title || SITE_NAME))
             .replaceAll("{{PAGE_DESCRIPTION}}", escapeHtml(description));
 
-        res.type("html; charset=utf-8");
+        res.setHeader("Content-Type", "text/html; charset=utf-8");
         res.send(renderedHtml);
     } catch (error) {
         console.error(`Public page render bo'lmadi: ${fileName}`, error);
