@@ -1,7 +1,10 @@
+require("dotenv").config();
+
 const express = require("express");
 const fs = require("fs/promises");
 const path = require("path");
 const crypto = require("crypto");
+const { Pool } = require("pg");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -9,14 +12,41 @@ const SRC_DIR = path.join(__dirname, "src");
 const DATA_DIR = path.join(__dirname, "backend-data");
 const DEFAULT_SITE_NAME = "Milliy Sertifikat Platformasi";
 const DEFAULT_SITE_DESCRIPTION = "Milliy sertifikat imtihoniga tayyorgarlik uchun mo'ljallangan ko'p fanli test va natija platformasi.";
+const DEFAULT_SITE_KEYWORDS = [
+    "Milliy Sertifikat Platformasi",
+    "milliy sertifikat platformasi",
+    "milliy sertifikat testlari",
+    "milliy sertifikat diagnostik test",
+    "milliy sertifikat imtihoni",
+    "uzbek student assessment"
+].join(", ");
 const SITE_NAME = String(process.env.SITE_NAME || DEFAULT_SITE_NAME).trim();
 const SITE_DESCRIPTION = String(process.env.SITE_DESCRIPTION || DEFAULT_SITE_DESCRIPTION).trim();
+const SITE_KEYWORDS = String(process.env.SITE_KEYWORDS || DEFAULT_SITE_KEYWORDS).trim();
+const DATABASE_URL = String(process.env.DATABASE_URL || "").trim();
+const DATABASE_SSL = String(process.env.DATABASE_SSL || "true").trim().toLowerCase() !== "false";
 const STUDENTS_FILE = path.join(DATA_DIR, "students.json");
 const VISITS_FILE = path.join(DATA_DIR, "visits.json");
 const FEEDBACKS_FILE = path.join(DATA_DIR, "feedbacks.json");
 const DISCUSSIONS_FILE = path.join(DATA_DIR, "discussions.json");
 const NOTIFICATIONS_FILE = path.join(DATA_DIR, "notifications.json");
 const RESULTS_FILE = path.join(DATA_DIR, "results.json");
+const STORAGE_TABLE_NAME = "app_storage";
+const STORAGE_SOURCES = {
+    students: { filePath: STUDENTS_FILE, defaultValue: [] },
+    visits: {
+        filePath: VISITS_FILE,
+        defaultValue: {
+            totalVisits: 0,
+            uniqueVisitors: {},
+            updatedAt: null
+        }
+    },
+    feedbacks: { filePath: FEEDBACKS_FILE, defaultValue: [] },
+    discussions: { filePath: DISCUSSIONS_FILE, defaultValue: [] },
+    notifications: { filePath: NOTIFICATIONS_FILE, defaultValue: [] },
+    results: { filePath: RESULTS_FILE, defaultValue: [] }
+};
 const TEST_DATA_DIR = path.join(SRC_DIR, "data");
 const TEST_SUBJECT_FILES = {
     "mother-tongue": path.join(TEST_DATA_DIR, "mother-tongue.json"),
@@ -31,6 +61,11 @@ const ONLINE_WINDOW_MS = 1000 * 60 * 3;
 const STUDENT_SESSION_COOKIE = "student_session";
 const STUDENT_SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 365;
 const adminSessions = new Map();
+const postgresPool = DATABASE_URL ? new Pool({
+    connectionString: DATABASE_URL,
+    ssl: DATABASE_SSL ? { rejectUnauthorized: false } : false
+}) : null;
+let storageReadyPromise = null;
 
 app.use(express.json({ limit: "10mb" }));
 app.use((req, res, next) => {
@@ -44,17 +79,35 @@ app.use((req, res, next) => {
 
     next();
 });
-app.use((req, res, next) => {
+app.use("/api", (req, res, next) => {
     res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
     res.setHeader("Pragma", "no-cache");
     res.setHeader("Expires", "0");
     next();
 });
-app.use(express.static(SRC_DIR));
 
-app.get("/", (_req, res) => {
-    res.sendFile(path.join(SRC_DIR, "index.html"));
+app.get(["/", "/index.html"], async (req, res) => {
+    await servePublicPage(req, res, "index.html", {
+        pagePath: "/",
+        title: `${SITE_NAME} | Milliy sertifikat testlari`,
+        description: "Milliy Sertifikat Platformasi orqali milliy sertifikat imtihoniga tayyorlaning: ro'yxatdan o'ting, fanlar bo'yicha diagnostik testlarni ishlang va natijalaringizni kuzating."
+    });
 });
+
+app.get("/test.html", async (req, res) => {
+    await servePublicPage(req, res, "test.html", {
+        pagePath: "/test.html",
+        title: `${SITE_NAME} Testlari | Fanlar bo'yicha diagnostik testlar`,
+        description: "Milliy Sertifikat Platformasi testlar sahifasi: ona tili, matematika, kimyo va biologiya bo'yicha diagnostik testlarni ishlab, milliy sertifikat imtihoniga tayyorgarlik ko'ring."
+    });
+});
+
+app.get(["/admin.html", "/dashboard.html", "/exam.html", "/results.html"], (req, res) => {
+    setPrivatePageHeaders(res);
+    res.sendFile(path.join(SRC_DIR, req.path.replace(/^\//, "")));
+});
+
+app.use(express.static(SRC_DIR));
 
 app.get("/robots.txt", (req, res) => {
     const siteUrl = resolveSiteUrl(req);
@@ -106,7 +159,10 @@ app.get("/api/site-config", (req, res) => {
 });
 
 app.get("/api/health", (_req, res) => {
-    res.json({ ok: true });
+    res.json({
+        ok: true,
+        storage: postgresPool ? "postgres" : "file"
+    });
 });
 
 app.get("/api/student/session/current", async (req, res) => {
@@ -262,10 +318,76 @@ app.get("/api/admin/student-results", requireAdminAuth, async (_req, res) => {
                     bestResult,
                     completedTestsCount: studentResults.length
                 };
-            })
+            });
+        const studentByVisitorId = new Map();
+
+        studentSummaries.forEach((student) => {
+            const visitorIds = Array.isArray(student.visitorIds) ? student.visitorIds : [];
+            visitorIds.forEach((visitorId) => {
+                if (visitorId) {
+                    studentByVisitorId.set(visitorId, student);
+                }
+            });
+        });
+
+        const visitBasedSummaries = Object.entries(visits.uniqueVisitors || {})
+            .map(([visitorId, visit]) => {
+                const linkedStudent = studentByVisitorId.get(visitorId);
+
+                if (!linkedStudent) {
+                    return {
+                        id: `guest_${visitorId}`,
+                        email: "",
+                        phone: "",
+                        fullName: "Mehmon foydalanuvchi",
+                        createdAt: visit.firstSeenAt || null,
+                        updatedAt: visit.lastSeenAt || null,
+                        lastSeenAt: visit.lastSeenAt || null,
+                        photoDataUrl: "",
+                        visitorId,
+                        visitorIds: [visitorId],
+                        currentPage: "",
+                        mergedStudentIds: [],
+                        isGuest: true,
+                        isOnline: isVisitOnline(visit),
+                        firstSeenAt: visit.firstSeenAt || null,
+                        visitCount: Number(visit.visitCount || 0),
+                        ipAddress: visit.ipAddress || "-",
+                        results: [],
+                        bestResult: null,
+                        completedTestsCount: 0,
+                        dreamUniversity: "",
+                        dreamScore: ""
+                    };
+                }
+
+                return {
+                    ...linkedStudent,
+                    id: `${linkedStudent.id}__${visitorId}`,
+                    visitorId,
+                    visitorIds: [visitorId],
+                    firstSeenAt: visit.firstSeenAt || linkedStudent.firstSeenAt || linkedStudent.createdAt || null,
+                    lastSeenAt: visit.lastSeenAt || linkedStudent.lastSeenAt || null,
+                    updatedAt: visit.lastSeenAt || linkedStudent.updatedAt || null,
+                    visitCount: Number(visit.visitCount || 0),
+                    ipAddress: visit.ipAddress || linkedStudent.ipAddress || "-",
+                    isOnline: isVisitOnline(visit)
+                };
+            });
+        const unseenStudents = studentSummaries
+            .filter((student) => !Array.isArray(student.visitorIds) || !student.visitorIds.some((visitorId) => studentByVisitorId.has(visitorId)))
+            .map((student) => ({
+                ...student,
+                id: `${student.id}__direct`,
+                isOnline: isStudentOnline(student)
+            }));
+        const combinedSummaries = [...visitBasedSummaries, ...unseenStudents]
             .sort((left, right) => new Date(right.lastSeenAt || right.createdAt || 0) - new Date(left.lastSeenAt || left.createdAt || 0));
 
-        res.json({ students: studentSummaries });
+        res.json({
+            students: combinedSummaries,
+            registeredStudentsCount: studentSummaries.length
+        });
     } catch (error) {
         console.error("Student natijalarini o'qib bo'lmadi.", error);
         res.status(500).json({ message: "Student natijalarini o'qib bo'lmadi." });
@@ -1062,7 +1184,7 @@ app.listen(PORT, async () => {
 });
 
 function resolveSiteUrl(req) {
-    const configuredSiteUrl = String(process.env.SITE_URL || "").trim().replace(/\/$/, "");
+    const configuredSiteUrl = normalizeSiteUrl(process.env.SITE_URL);
 
     if (configuredSiteUrl) {
         return configuredSiteUrl;
@@ -1079,6 +1201,61 @@ function resolveSiteUrl(req) {
     return `${protocol}://${host}`;
 }
 
+function normalizeSiteUrl(value) {
+    const normalizedValue = String(value || "").trim().replace(/\/$/, "");
+
+    if (!normalizedValue) {
+        return "";
+    }
+
+    const placeholderHosts = ["your-domain.com", "sizning-domeningiz.com"];
+
+    if (placeholderHosts.some((host) => normalizedValue.includes(host))) {
+        return "";
+    }
+
+    return normalizedValue;
+}
+
+async function servePublicPage(req, res, fileName, pageConfig) {
+    try {
+        const template = await fs.readFile(path.join(SRC_DIR, fileName), "utf8");
+        const siteUrl = resolveSiteUrl(req);
+        const pageUrl = new URL(pageConfig.pagePath, `${siteUrl}/`).toString();
+        const description = pageConfig.description || SITE_DESCRIPTION;
+        const renderedHtml = template
+            .replaceAll("{{SITE_NAME}}", escapeHtml(SITE_NAME))
+            .replaceAll("{{SITE_DESCRIPTION}}", escapeHtml(SITE_DESCRIPTION))
+            .replaceAll("{{SITE_KEYWORDS}}", escapeHtml(SITE_KEYWORDS))
+            .replaceAll("{{SITE_URL}}", escapeHtml(siteUrl))
+            .replaceAll("{{PAGE_URL}}", escapeHtml(pageUrl))
+            .replaceAll("{{PAGE_TITLE}}", escapeHtml(pageConfig.title || SITE_NAME))
+            .replaceAll("{{PAGE_DESCRIPTION}}", escapeHtml(description));
+
+        res.type("html; charset=utf-8");
+        res.send(renderedHtml);
+    } catch (error) {
+        console.error(`Public page render bo'lmadi: ${fileName}`, error);
+        res.status(500).send("Sahifani yuklab bo'lmadi.");
+    }
+}
+
+function setPrivatePageHeaders(res) {
+    res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+    res.setHeader("X-Robots-Tag", "noindex, nofollow, noarchive");
+}
+
+function escapeHtml(value) {
+    return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+}
+
 function encodeXml(value) {
     return String(value)
         .replaceAll("&", "&amp;")
@@ -1089,6 +1266,46 @@ function encodeXml(value) {
 }
 
 async function ensureStorage() {
+    if (storageReadyPromise) {
+        return storageReadyPromise;
+    }
+
+    storageReadyPromise = DATABASE_URL ? ensureDatabaseStorage() : ensureFileStorage();
+    return storageReadyPromise;
+}
+
+async function ensureDatabaseStorage() {
+    if (!postgresPool) {
+        return;
+    }
+
+    await postgresPool.query(`
+        CREATE TABLE IF NOT EXISTS ${STORAGE_TABLE_NAME} (
+            storage_key TEXT PRIMARY KEY,
+            value JSONB NOT NULL,
+            updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        )
+    `);
+
+    for (const [storageKey, config] of Object.entries(STORAGE_SOURCES)) {
+        const existing = await postgresPool.query(
+            `SELECT 1 FROM ${STORAGE_TABLE_NAME} WHERE storage_key = $1 LIMIT 1`,
+            [storageKey]
+        );
+
+        if (existing.rowCount > 0) {
+            continue;
+        }
+
+        const seedValue = await readJsonFileOrDefault(config.filePath, config.defaultValue);
+        await postgresPool.query(
+            `INSERT INTO ${STORAGE_TABLE_NAME} (storage_key, value, updated_at) VALUES ($1, $2::jsonb, NOW())`,
+            [storageKey, JSON.stringify(seedValue)]
+        );
+    }
+}
+
+async function ensureFileStorage() {
     await fs.mkdir(DATA_DIR, { recursive: true });
     await fs.mkdir(TEST_DATA_DIR, { recursive: true });
 
@@ -1134,63 +1351,51 @@ async function ensureStorage() {
 }
 
 async function readStudents() {
-    await ensureStorage();
-    const raw = await fs.readFile(STUDENTS_FILE, "utf8");
-    return JSON.parse(raw);
+    return readStorageValue("students", []);
 }
 
 async function writeStudents(students) {
-    await fs.writeFile(STUDENTS_FILE, JSON.stringify(students, null, 2), "utf8");
+    await writeStorageValue("students", students);
 }
 
 async function readFeedbacks() {
-    await ensureStorage();
-    const raw = await fs.readFile(FEEDBACKS_FILE, "utf8");
-    const payload = JSON.parse(raw);
+    const payload = await readStorageValue("feedbacks", []);
     return Array.isArray(payload) ? payload.map(normalizeFeedbackEntry) : [];
 }
 
 async function writeFeedbacks(feedbacks) {
-    await fs.writeFile(FEEDBACKS_FILE, JSON.stringify(feedbacks.map(normalizeFeedbackEntry), null, 2), "utf8");
+    await writeStorageValue("feedbacks", feedbacks.map(normalizeFeedbackEntry));
 }
 
 async function readDiscussions() {
-    await ensureStorage();
-    const raw = await fs.readFile(DISCUSSIONS_FILE, "utf8");
-    const payload = JSON.parse(raw);
+    const payload = await readStorageValue("discussions", []);
     return Array.isArray(payload) ? payload.map(normalizeDiscussionPost) : [];
 }
 
 async function writeDiscussions(posts) {
-    await fs.writeFile(DISCUSSIONS_FILE, JSON.stringify(posts.map(normalizeDiscussionPost), null, 2), "utf8");
+    await writeStorageValue("discussions", posts.map(normalizeDiscussionPost));
 }
 
 async function readNotifications() {
-    await ensureStorage();
-    const raw = await fs.readFile(NOTIFICATIONS_FILE, "utf8");
-    const payload = JSON.parse(raw);
+    const payload = await readStorageValue("notifications", []);
     return Array.isArray(payload) ? payload.map(normalizeNotificationEntry) : [];
 }
 
 async function writeNotifications(notifications) {
-    await fs.writeFile(NOTIFICATIONS_FILE, JSON.stringify(notifications.map(normalizeNotificationEntry), null, 2), "utf8");
+    await writeStorageValue("notifications", notifications.map(normalizeNotificationEntry));
 }
 
 async function readResults() {
-    await ensureStorage();
-    const raw = await fs.readFile(RESULTS_FILE, "utf8");
-    const payload = JSON.parse(raw);
+    const payload = await readStorageValue("results", []);
     return Array.isArray(payload) ? payload.map(normalizeResultEntry) : [];
 }
 
 async function writeResults(results) {
-    await fs.writeFile(RESULTS_FILE, JSON.stringify(results.map(normalizeResultEntry), null, 2), "utf8");
+    await writeStorageValue("results", results.map(normalizeResultEntry));
 }
 
 async function readVisits() {
-    await ensureStorage();
-    const raw = await fs.readFile(VISITS_FILE, "utf8");
-    const payload = JSON.parse(raw);
+    const payload = await readStorageValue("visits", STORAGE_SOURCES.visits.defaultValue);
 
     return {
         totalVisits: Number(payload?.totalVisits || 0),
@@ -1202,7 +1407,60 @@ async function readVisits() {
 }
 
 async function writeVisits(visits) {
-    await fs.writeFile(VISITS_FILE, JSON.stringify(visits, null, 2), "utf8");
+    await writeStorageValue("visits", visits);
+}
+
+async function readStorageValue(storageKey, defaultValue) {
+    await ensureStorage();
+
+    if (postgresPool) {
+        const result = await postgresPool.query(
+            `SELECT value FROM ${STORAGE_TABLE_NAME} WHERE storage_key = $1 LIMIT 1`,
+            [storageKey]
+        );
+
+        if (result.rowCount > 0) {
+            return result.rows[0].value;
+        }
+
+        return structuredCloneSafe(defaultValue);
+    }
+
+    const config = STORAGE_SOURCES[storageKey];
+    return readJsonFileOrDefault(config.filePath, defaultValue);
+}
+
+async function writeStorageValue(storageKey, value) {
+    await ensureStorage();
+
+    if (postgresPool) {
+        await postgresPool.query(
+            `
+                INSERT INTO ${STORAGE_TABLE_NAME} (storage_key, value, updated_at)
+                VALUES ($1, $2::jsonb, NOW())
+                ON CONFLICT (storage_key)
+                DO UPDATE SET value = EXCLUDED.value, updated_at = NOW()
+            `,
+            [storageKey, JSON.stringify(value)]
+        );
+        return;
+    }
+
+    const config = STORAGE_SOURCES[storageKey];
+    await fs.writeFile(config.filePath, JSON.stringify(value, null, 2), "utf8");
+}
+
+async function readJsonFileOrDefault(filePath, defaultValue) {
+    try {
+        const raw = await fs.readFile(filePath, "utf8");
+        return JSON.parse(raw);
+    } catch {
+        return structuredCloneSafe(defaultValue);
+    }
+}
+
+function structuredCloneSafe(value) {
+    return JSON.parse(JSON.stringify(value));
 }
 
 async function readQuestions(subjectId) {
@@ -1719,6 +1977,11 @@ function normalizeNotificationEntry(entry) {
 
 function isStudentOnline(student) {
     const lastSeenTime = new Date(student?.lastSeenAt || 0).getTime();
+    return Number.isFinite(lastSeenTime) && Date.now() - lastSeenTime <= ONLINE_WINDOW_MS;
+}
+
+function isVisitOnline(visit) {
+    const lastSeenTime = new Date(visit?.lastSeenAt || 0).getTime();
     return Number.isFinite(lastSeenTime) && Date.now() - lastSeenTime <= ONLINE_WINDOW_MS;
 }
 

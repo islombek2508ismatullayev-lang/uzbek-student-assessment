@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="8FpBKyuP46e_Vhiz38yvyJis6JtLolJwudAlZSlviVU">
-    <title>Kirish | Milliy Sertifikat Platformasi</title>
-    <meta name="description" content="Milliy sertifikat platformasiga kirish va profil yaratish sahifasi.">
+    <title>{{PAGE_TITLE}}</title>
+    <meta name="description" content="{{PAGE_DESCRIPTION}}">
+    <meta name="keywords" content="{{SITE_KEYWORDS}}, millliy sertifikat platforms">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <meta name="theme-color" content="#10214f">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="canonical" href="{{PAGE_URL}}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Milliy Sertifikat Platformasi">
-    <meta property="og:description" content="Milliy sertifikat imtihoniga tayyorgarlik uchun testlar, natijalar va fanlar bo'yicha mashqlar platformasi.">
-    <meta property="og:image" content="/assets/social-preview.svg">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
+    <meta property="og:title" content="{{PAGE_TITLE}}">
+    <meta property="og:description" content="{{PAGE_DESCRIPTION}}">
+    <meta property="og:url" content="{{PAGE_URL}}">
+    <meta property="og:image" content="{{SITE_URL}}/assets/social-preview.svg">
     <meta property="og:locale" content="uz_UZ">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{PAGE_TITLE}}">
+    <meta name="twitter:description" content="{{PAGE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{SITE_URL}}/assets/social-preview.svg">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,24 +30,29 @@
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Milliy Sertifikat Platformasi",
-            "description": "Milliy sertifikat imtihoniga tayyorgarlik uchun ko'p fanli test va natija platformasi.",
+            "name": "{{SITE_NAME}}",
+            "description": "{{SITE_DESCRIPTION}}",
             "inLanguage": "uz",
-            "url": "/"
+            "url": "{{SITE_URL}}",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{{SITE_URL}}/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
         }
     </script>
 </head>
 <body class="auth-page">
     <main class="auth-shell">
         <section class="auth-brand">
-            <div class="auth-logo">
-                <span class="auth-logo__mark">MS</span>
-                <div>
-                    <strong>Milliy Sertifikat</strong>
-                    <span>Imtihoniga tayyorgarlik platformasi</span>
+                <div class="auth-logo">
+                    <span class="auth-logo__mark">MS</span>
+                    <div>
+                        <strong>Milliy Sertifikat Platformasi</strong>
+                        <span>Milliy sertifikat imtihoniga tayyorgarlik platformasi</span>
+                    </div>
                 </div>
-            </div>
-            <p>Websiteda haqiqiy milliy sertifikat testlari bilan bilim darajangizni aniqlang </p>
+            <p>Milliy Sertifikat Platformasi orqali haqiqiy milliy sertifikat testlari bilan bilim darajangizni aniqlang va imtihonga tayyorlaning.</p>
         </section>
 
         <section class="auth-card" aria-labelledby="signin-title">

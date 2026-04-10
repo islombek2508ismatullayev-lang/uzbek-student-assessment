@@ -114,6 +114,19 @@ Important variables:
 - `ADMIN_PASSWORD`: admin login password
 - `SITE_NAME`: platform name for metadata
 - `SITE_DESCRIPTION`: platform description for metadata
+- `SITE_KEYWORDS`: optional comma-separated search keywords for public page metadata
+- `DATABASE_URL`: persistent PostgreSQL connection string for students, results, visits, feedback, and notifications
+- `DATABASE_SSL`: set to `false` only if your PostgreSQL server does not require SSL
+
+## Persistent Data
+
+By default, the app can still work with local JSON files inside `backend-data/`.
+
+For production deployment, set `DATABASE_URL` to a PostgreSQL database such as Supabase. When `DATABASE_URL` is present:
+
+- all students, visits, results, feedbacks, discussions, and notifications are stored in PostgreSQL
+- existing local `backend-data` content is used as initial seed only when the database table is empty
+- future deploys will not wipe user data as long as the database stays active
 
 ## Recommended Next Steps
 

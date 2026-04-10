@@ -1,6 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#10214f"/>
-  <rect x="56" y="56" width="400" height="400" rx="108" fill="#0f766e"/>
-  <circle cx="372" cy="148" r="36" fill="#f4c84f"/>
-  <path d="M132 356V156h48l76 102 76-102h48v200h-44V228l-80 108-80-108v128z" fill="#ffffff"/>
+  <defs>
+    <linearGradient id="bg" x1="8%" y1="6%" x2="92%" y2="94%">
+      <stop offset="0%" stop-color="#0f2f6b"/>
+      <stop offset="55%" stop-color="#124d8a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="seal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe08a"/>
+      <stop offset="100%" stop-color="#e0a92d"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#0e2554"/>
+  <rect x="56" y="56" width="400" height="400" rx="112" fill="url(#bg)"/>
+  <path d="M150 106h154l58 58v154c0 35.346-28.654 64-64 64H150c-35.346 0-64-28.654-64-64V170c0-35.346 28.654-64 64-64Z" fill="#fff" opacity=".97"/>
+  <path d="M304 106v64c0 20.987 17.013 38 38 38h64z" fill="#dbeafe"/>
+  <path d="M168 208h150" stroke="#1d4f91" stroke-width="24" stroke-linecap="round"/>
+  <path d="M168 266h108" stroke="#2b6aa8" stroke-width="24" stroke-linecap="round"/>
+  <path d="M168 324h76" stroke="#76a7d8" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="350" cy="350" r="72" fill="url(#seal)"/>
+  <path d="m321 352 20 21 40-47" fill="none" stroke="#0f2f6b" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
