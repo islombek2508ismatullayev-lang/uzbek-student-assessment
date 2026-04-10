@@ -7,15 +7,20 @@
     "start": "node server.js",
     "dev": "node server.js",
     "serve": "node server.js",
-    "build": "echo \"Static project: no build step required.\""
+    "build": "echo \"Static project: no build step required.\"",
+    "apk:debug": "powershell -ExecutionPolicy Bypass -File .\\build-apk.ps1"
   },
   "author": "Islombek",
   "license": "MIT",
   "dependencies": {
+    "@capacitor/android": "^8.2.0",
+    "@capacitor/cli": "^8.2.0",
+    "@capacitor/core": "^8.2.0",
+    "dotenv": "^17.3.1",
     "express": "^4.21.2",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "pg": "^8.20.0"
   },
-  "devDependencies": {},
   "keywords": [
     "education",
     "assessment",
