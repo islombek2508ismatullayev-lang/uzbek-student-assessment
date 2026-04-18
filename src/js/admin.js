@@ -445,7 +445,8 @@ async function loadStudents() {
             throw new Error(payload.message || "Studentlar ro'yxatini olib bo'lmadi.");
         }
 
-        state.studentSummaries = payload.students || [];
+        const allStudentSummaries = Array.isArray(payload.students) ? payload.students : [];
+        state.studentSummaries = allStudentSummaries.filter((student) => !student?.isGuest);
         renderStudents(state.studentSummaries);
 
         if (!state.studentSummaries.length) {
