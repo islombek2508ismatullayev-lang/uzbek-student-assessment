@@ -69,10 +69,10 @@ const DISCUSSION_CHANNELS = [
 
 const LEGACY_UNIVERSITY_INFO = [
     {
-        title: "🥇 Eng TOP universitetlar",
+        title: "Eng top universitetlar",
         subtitle: "Eng yuqori ball talab qiladigan OTMlar",
         items: [
-            { name: "O‘zbekiston Milliy Universiteti (NUU)", grant: "170 - 190+", contract: "130 - 180" },
+            { name: "O'zbekiston Milliy Universiteti (NUU)", grant: "170 - 190+", contract: "130 - 180" },
             { name: "Jahon iqtisodiyoti va diplomatiya universiteti (UWED)", grant: "185 - 189", contract: "170 - 185" },
             { name: "Toshkent davlat yuridik universiteti", grant: "180 - 189", contract: "150 - 180" },
             { name: "Toshkent davlat iqtisodiyot universiteti", grant: "170 - 185", contract: "130 - 160" },
@@ -80,7 +80,7 @@ const LEGACY_UNIVERSITY_INFO = [
         ]
     },
     {
-        title: "💻 Texnika va IT yo‘nalishlari",
+        title: "Texnika va IT yo'nalishlari",
         subtitle: "Texnik va IT yo'nalishlari uchun kuchli variantlar",
         items: [
             { name: "TATU (Axborot texnologiyalari universiteti)", grant: "165 - 185", contract: "120 - 150" },
@@ -91,35 +91,35 @@ const LEGACY_UNIVERSITY_INFO = [
         ]
     },
     {
-        title: "📊 Iqtisod / Bank / Biznes",
+        title: "Iqtisod / Bank / Biznes",
         subtitle: "Moliya va biznes yo'nalishlari",
         items: [
             { name: "Bank-moliya akademiyasi", grant: "170 - 185", contract: "130 - 160" },
             { name: "TDIU Samarqand filiali", grant: "170 - 176", contract: "120 - 130" },
-            { name: "Farg‘ona davlat texnika universiteti", grant: "170 - 175", contract: "110 - 120" }
+            { name: "Farg'ona davlat texnika universiteti", grant: "170 - 175", contract: "110 - 120" }
         ]
     },
     {
-        title: "🌍 Xalqaro / Til / Diplomatiya",
+        title: "Xalqaro / Til / Diplomatiya",
         subtitle: "Til, turizm va diplomatiya yo'nalishlari",
         items: [
-            { name: "O‘zbekiston davlat jahon tillari universiteti", grant: "170 - 185", contract: "130 - 170" },
-            { name: "Ipak yo‘li xalqaro turizm universiteti", grant: "180 - 187", contract: "145 - 150" }
+            { name: "O'zbekiston davlat jahon tillari universiteti", grant: "170 - 185", contract: "130 - 170" },
+            { name: "Ipak yo'li xalqaro turizm universiteti", grant: "180 - 187", contract: "145 - 150" }
         ]
     },
     {
-        title: "🏫 Pedagogika va umumiy universitetlar",
+        title: "Pedagogika va umumiy universitetlar",
         subtitle: "Keng tarqalgan davlat universitetlari",
         items: [
             { name: "Nizomiy nomidagi TDPU", grant: "150 - 170", contract: "110 - 140" },
             { name: "Andijon davlat universiteti", grant: "155 - 165", contract: "75 - 100" },
-            { name: "Farg‘ona davlat universiteti", grant: "150 - 165", contract: "90 - 120" },
+            { name: "Farg'ona davlat universiteti", grant: "150 - 165", contract: "90 - 120" },
             { name: "Namangan davlat universiteti", grant: "145 - 160", contract: "85 - 115" },
             { name: "Samarqand davlat universiteti", grant: "155 - 175", contract: "110 - 140" }
         ]
     },
     {
-        title: "⚙️ Boshqa muhim OTMlar",
+        title: "Boshqa muhim OTMlar",
         subtitle: "Qo'shimcha muhim universitetlar",
         items: [
             { name: "Qarshi davlat universiteti" },
@@ -152,12 +152,12 @@ const UNIVERSITY_INFO = [
     { id: 4, name: "Jahon Iqtisodiyoti va Diplomatiya Univ.", grant: "160-185", contract: "140-175", aliases: ["Jahon Iqtisodiyoti va Diplomatiya Universiteti"] },
     { id: 5, name: "Toshkent Moliya Instituti", grant: "150-175", contract: "130-165" },
     { id: 6, name: "Toshkent Davlat Iqtisodiyot Univ.", grant: "140-170", contract: "120-160", aliases: ["Toshkent Davlat Iqtisodiyot Universiteti"] },
-    { id: 7, name: "O‘zbekiston Milliy Universiteti", grant: "130-165", contract: "110-150", aliases: ["O'zbekiston Milliy Universiteti"] },
+    { id: 7, name: "O'zbekiston Milliy Universiteti", grant: "130-165", contract: "110-150", aliases: ["O'zbekiston Milliy Universiteti"] },
     { id: 8, name: "Samarqand Davlat Universiteti", grant: "120-155", contract: "100-140" },
     { id: 9, name: "Buxoro Davlat Universiteti", grant: "110-145", contract: "90-130" },
     { id: 10, name: "Andijon Davlat Universiteti", grant: "110-140", contract: "90-125" },
     { id: 11, name: "Namangan Davlat Universiteti", grant: "100-135", contract: "85-120" },
-    { id: 12, name: "Farg‘ona Davlat Universiteti", grant: "100-135", contract: "85-120", aliases: ["Farg'ona Davlat Universiteti"] },
+    { id: 12, name: "Farg'ona Davlat Universiteti", grant: "100-135", contract: "85-120", aliases: ["Farg'ona Davlat Universiteti"] },
     { id: 13, name: "Qarshi Davlat Universiteti", grant: "95-130", contract: "80-115" },
     { id: 14, name: "Nukus Davlat Universiteti", grant: "90-125", contract: "75-110" },
     { id: 15, name: "Urganch Davlat Universiteti", grant: "95-130", contract: "80-115" },
@@ -165,14 +165,14 @@ const UNIVERSITY_INFO = [
     { id: 17, name: "Toshkent Davlat Pedagogika Universiteti", grant: "100-140", contract: "85-125" },
     { id: 18, name: "Nizomiy nomidagi TDPU", grant: "105-145", contract: "90-130", aliases: ["Nizomiy nomidagi Toshkent Davlat Pedagogika Universiteti"] },
     { id: 19, name: "Toshkent Arxitektura Qurilish Univ.", grant: "120-150", contract: "100-135", aliases: ["Toshkent Arxitektura-Qurilish Universiteti"] },
-    { id: 20, name: "Toshkent Temiryo‘l Muhandislari Instituti", grant: "110-145", contract: "90-130" },
+    { id: 20, name: "Toshkent Temiryo'l Muhandislari Instituti", grant: "110-145", contract: "90-130" },
     { id: 21, name: "Transport Universiteti", grant: "110-150", contract: "90-135", aliases: ["Toshkent Davlat Transport Universiteti"] },
-    { id: 22, name: "Qishloq xo‘jaligi universiteti", grant: "90-130", contract: "75-115", aliases: ["Toshkent Davlat Agrar Universiteti"] },
+    { id: 22, name: "Qishloq xo'jaligi universiteti", grant: "90-130", contract: "75-115", aliases: ["Toshkent Davlat Agrar Universiteti"] },
     { id: 23, name: "Irrigatsiya va Melioratsiya Instituti", grant: "100-140", contract: "85-125" },
     { id: 24, name: "Kimyo-Texnologiya Instituti", grant: "95-135", contract: "80-120" },
     { id: 25, name: "Farmatsevtika Instituti", grant: "140-175", contract: "120-160" },
     { id: 26, name: "Sport Universiteti", grant: "90-130", contract: "75-115", aliases: ["O'zbekiston Davlat Jismoniy Tarbiya va Sport Universiteti"] },
-    { id: 27, name: "San’at va Madaniyat Instituti", grant: "100-140", contract: "85-125", aliases: ["O'zbekiston Davlat San'at va Madaniyat Instituti"] },
+    { id: 27, name: "San'at va Madaniyat Instituti", grant: "100-140", contract: "85-125", aliases: ["O'zbekiston Davlat San'at va Madaniyat Instituti"] },
     { id: 28, name: "Xalqaro Islom Akademiyasi", grant: "110-150", contract: "90-135" },
     {
         id: 29,
@@ -2009,17 +2009,28 @@ function getCurrentUsername() {
 
 function getSavedActiveSection() {
     try {
-        return window.sessionStorage.getItem(ACTIVE_SECTION_STORAGE_KEY) || "exams";
+        return window.sessionStorage.getItem(ACTIVE_SECTION_STORAGE_KEY)
+            || window.localStorage.getItem(ACTIVE_SECTION_STORAGE_KEY)
+            || "exams";
     } catch {
-        return "exams";
+        try {
+            return window.localStorage.getItem(ACTIVE_SECTION_STORAGE_KEY) || "exams";
+        } catch {
+            return "exams";
+        }
     }
 }
 
 function saveActiveSection(sectionId) {
     try {
         window.sessionStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, sectionId);
+        window.localStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, sectionId);
     } catch {
-        // no-op
+        try {
+            window.localStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, sectionId);
+        } catch {
+            // no-op
+        }
     }
 }
 
@@ -2035,6 +2046,7 @@ async function handleProfilePhotoChange(event) {
     if (!student || !file) {
         return;
     }
+
 
     if (!file.type.startsWith("image/")) {
         setText(elements.profilePhotoStatus, "Faqat rasm fayl yuklang.");
@@ -2287,10 +2299,10 @@ function normalizeText(value) {
 
 function normalizeUniversityName(value) {
     return normalizeText(value)
-        .replaceAll("o‘", "o'")
-        .replaceAll("g‘", "g'")
-        .replaceAll("ʻ", "'")
-        .replaceAll("’", "'")
+        .replaceAll("o\u2018", "o'")
+        .replaceAll("g\u2018", "g'")
+        .replaceAll("\u00bb", "'")
+        .replaceAll("\u2019", "'")
         .replaceAll("`", "'")
         .replace(/\s+/g, " ")
         .trim();

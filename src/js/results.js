@@ -80,12 +80,13 @@ function bindReviewLinks() {
     if (elements.reviewSubjectLink) {
         elements.reviewSubjectLink.addEventListener("click", () => {
             window.localStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, "analysis");
+            window.sessionStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, "analysis");
         });
     }
-
     if (elements.reviewFeedbackLink) {
         elements.reviewFeedbackLink.addEventListener("click", () => {
             window.localStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, "feedback");
+            window.sessionStorage.setItem(ACTIVE_SECTION_STORAGE_KEY, "feedback");
         });
     }
 }
@@ -216,8 +217,8 @@ function normalizeAnswer(value, options = {}) {
         .trim()
         .toLocaleLowerCase("uz-UZ")
         .normalize("NFKC")
-        .replace(/[ʻʼ‘’`´]/g, "'")
-        .replace(/[–—−]/g, "-")
+        .replace(/[\u00ab\u00bb\u2018\u2019`\u00b4]/g, "'")
+        .replace(/[\u2013\u2014\u2212]/g, "-")
         .replace(/\s*([,;:%/=()\-+])\s*/g, "$1")
         .replace(/\s+/g, " ");
 

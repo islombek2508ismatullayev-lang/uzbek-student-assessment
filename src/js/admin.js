@@ -99,7 +99,8 @@ const state = {
     currentQuestions: [],
     editingQuestionIndex: null,
     studentSummaries: [],
-    selectedStudentId: ""
+    selectedStudentId: "",
+    registeredStudentsCount: 0
 };
 
 bootAdmin();
@@ -284,7 +285,9 @@ async function loadVisits() {
 
         elements.visitsCount.textContent = String(payload.totalVisits ?? 0);
         elements.uniqueVisitorsCount.textContent = String(payload.uniqueVisitors ?? 0);
-        renderVisits(Array.isArray(payload.visitEntries) ? payload.visitEntries : []);
+        if (elements.visitsTableBody) {
+            renderVisits(Array.isArray(payload.visitEntries) ? payload.visitEntries : []);
+        }
     } catch (error) {
         if (isUnauthorized(error)) {
             handleLogout();
@@ -293,7 +296,9 @@ async function loadVisits() {
 
         elements.visitsCount.textContent = "0";
         elements.uniqueVisitorsCount.textContent = "0";
-        renderVisits([]);
+        if (elements.visitsTableBody) {
+            renderVisits([]);
+        }
         if (elements.visitsMessage) {
             elements.visitsMessage.textContent = error.message || "Tashriflar statistikasi yuklanmadi.";
         }
@@ -447,6 +452,7 @@ async function loadStudents() {
 
         const allStudentSummaries = Array.isArray(payload.students) ? payload.students : [];
         state.studentSummaries = allStudentSummaries.filter((student) => !student?.isGuest);
+        state.registeredStudentsCount = Number(payload.registeredStudentsCount || 0);
         renderStudents(state.studentSummaries);
 
         if (!state.studentSummaries.length) {
@@ -465,6 +471,7 @@ async function loadStudents() {
 
         elements.studentsTableBody.innerHTML = "";
         elements.studentsCount.textContent = "0";
+        state.registeredStudentsCount = 0;
         renderStudentDetail(null);
         setStudentStatus("Xatolik", error.message || "Server bilan ulanishda xatolik yuz berdi.");
     }
@@ -815,12 +822,12 @@ function buildQuestionPayload() {
 }
 
 function renderStudents(students) {
-    elements.studentsCount.textContent = String(students.length);
+    elements.studentsCount.textContent = String(state.registeredStudentsCount || 0);
     const onlineCount = students.filter((student) => student.isOnline).length;
     elements.studentsStatus.textContent = students.length ? `${onlineCount} ta online` : "Bo'sh";
     elements.message.textContent = students.length
-        ? "Backend orqali saqlangan studentlar va ularning natijalari."
-        : "Hali birorta student ro'yxatdan o'tmagan.";
+        ? "Websitega kirgan foydalanuvchilar, studentlar va ularning natijalari."
+        : "Hozircha websitega kirgan foydalanuvchilar topilmadi.";
 
     if (!students.length) {
         elements.studentsTableBody.innerHTML = `
@@ -889,13 +896,18 @@ function renderStudentDetail(student) {
         return;
     }
 
-    elements.studentDetailStatus.textContent = "Tanlangan student bo'yicha batafsil ma'lumot.";
+    const displayName = student.fullName || "Noma'lum foydalanuvchi";
+    const email = student.email || "-";
+    const phone = student.phone || "-";
+    elements.studentDetailStatus.textContent = student.isGuest
+        ? "Tanlangan visitor bo'yicha batafsil ma'lumot."
+        : "Tanlangan student bo'yicha batafsil ma'lumot.";
     renderStudentDetailAvatar(student);
-    elements.detailStudentName.textContent = student.fullName;
-    elements.detailStudentEmail.textContent = student.email;
-    elements.detailStudentPhone.textContent = student.phone;
-    elements.detailStudentEmailInline.textContent = student.email;
-    elements.detailStudentPhoneInline.textContent = student.phone;
+    elements.detailStudentName.textContent = displayName;
+    elements.detailStudentEmail.textContent = email;
+    elements.detailStudentPhone.textContent = phone;
+    elements.detailStudentEmailInline.textContent = email;
+    elements.detailStudentPhoneInline.textContent = phone;
     elements.detailStudentOnline.textContent = student.isOnline ? "Online" : "Offline";
     elements.detailStudentLastSeen.textContent = formatDate(student.lastSeenAt);
     elements.detailStudentFirstSeen.textContent = formatDate(student.firstSeenAt);
@@ -913,7 +925,7 @@ function renderStudentDetail(student) {
     if (!student.results?.length) {
         elements.studentResultsBody.innerHTML = `
             <tr>
-                <td colspan="6">Bu student hali birorta test ishlamagan.</td>
+                <td colspan="6">${student.isGuest ? "Bu foydalanuvchi hali ro'yxatdan o'tmagan yoki test ishlamagan." : "Bu student hali birorta test ishlamagan."}</td>
             </tr>
         `;
         return;
@@ -934,6 +946,10 @@ function renderStudentDetail(student) {
 }
 
 function renderVisits(visits) {
+    if (!elements.visitsTableBody) {
+        return;
+    }
+
     elements.visitsMessage.textContent = visits.length
         ? "Websitega kirgan foydalanuvchilar ro'yxati."
         : "Hozircha tashriflar qayd etilmagan.";
